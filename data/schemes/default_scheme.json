@@ -1,0 +1,462 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "default-document-extraction",
+  "title": "Default Document Extraction Schema",
+  "type": "object",
+  "additionalProperties": false,
+
+  "required": [
+    "document_type",
+    "parties",
+    "line_items",
+    "totals"
+  ],
+
+  "properties": {
+    "document_type": {
+      "type": ["string", "null"],
+      "description": "Type of document, for example invoice, proforma_invoice, credit_note."
+    },
+
+    "document_number": {
+      "type": ["string", "null"],
+      "description": "Document or invoice number."
+    },
+
+    "issue_date": {
+      "type": ["string", "null"],
+      "description": "Document issue date in YYYY-MM-DD format."
+    },
+
+    "due_date": {
+      "type": ["string", "null"],
+      "description": "Payment due date in YYYY-MM-DD format."
+    },
+
+    "currency": {
+      "type": ["string", "null"],
+      "description": "Document currency using ISO 4217 where possible.",
+      "pattern": "^[A-Z]{3}$"
+    },
+
+    "language": {
+      "type": ["string", "null"],
+      "description": "Primary document language, preferably ISO 639-1."
+    },
+
+    "parties": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "properties": {
+        "seller": {
+          "$ref": "#/$defs/party"
+        },
+
+        "buyer": {
+          "$ref": "#/$defs/party"
+        },
+
+        "ship_to": {
+          "anyOf": [
+            { "$ref": "#/$defs/party" },
+            { "type": "null" }
+          ]
+        },
+
+        "bill_to": {
+          "anyOf": [
+            { "$ref": "#/$defs/party" },
+            { "type": "null" }
+          ]
+        }
+      },
+
+      "required": [
+        "seller",
+        "buyer"
+      ]
+    },
+
+    "commercial_terms": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "properties": {
+        "purchase_order_number": {
+          "type": ["string", "null"]
+        },
+
+        "contract_number": {
+          "type": ["string", "null"]
+        },
+
+        "payment_terms": {
+          "type": ["string", "null"]
+        },
+
+        "payment_method": {
+          "type": ["string", "null"]
+        },
+
+        "incoterms": {
+          "type": ["string", "null"]
+        },
+
+        "delivery_terms": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+
+    "shipping": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "properties": {
+        "carrier": {
+          "type": ["string", "null"]
+        },
+
+        "tracking_number": {
+          "type": ["string", "null"]
+        },
+
+        "waybill_number": {
+          "type": ["string", "null"]
+        },
+
+        "packages": {
+          "type": ["number", "null"]
+        },
+
+        "gross_weight": {
+          "$ref": "#/$defs/measurement"
+        },
+
+        "net_weight": {
+          "$ref": "#/$defs/measurement"
+        },
+
+        "shipping_date": {
+          "type": ["string", "null"]
+        },
+
+        "origin": {
+          "type": ["string", "null"]
+        },
+
+        "destination": {
+          "type": ["string", "null"]
+        },
+
+        "reason_for_export": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+
+    "line_items": {
+      "type": "array",
+
+      "items": {
+        "$ref": "#/$defs/line_item"
+      }
+    },
+
+    "totals": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "properties": {
+        "subtotal": {
+          "$ref": "#/$defs/money"
+        },
+
+        "discount": {
+          "$ref": "#/$defs/money"
+        },
+
+        "shipping_amount": {
+          "$ref": "#/$defs/money"
+        },
+
+        "tax": {
+          "$ref": "#/$defs/tax"
+        },
+
+        "other_charges": {
+          "$ref": "#/$defs/money"
+        },
+
+        "grand_total": {
+          "$ref": "#/$defs/money"
+        },
+
+        "amount_paid": {
+          "$ref": "#/$defs/money"
+        },
+
+        "amount_due": {
+          "$ref": "#/$defs/money"
+        }
+      },
+
+      "required": [
+        "grand_total"
+      ]
+    },
+
+    "tax_details": {
+      "type": "array",
+
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+
+        "properties": {
+          "tax_type": {
+            "type": ["string", "null"]
+          },
+
+          "rate": {
+            "type": ["number", "null"]
+          },
+
+          "taxable_amount": {
+            "$ref": "#/$defs/money"
+          },
+
+          "amount": {
+            "$ref": "#/$defs/money"
+          }
+        }
+      }
+    },
+
+    "payment_details": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "properties": {
+        "bank_name": {
+          "type": ["string", "null"]
+        },
+
+        "account_name": {
+          "type": ["string", "null"]
+        },
+
+        "iban": {
+          "type": ["string", "null"]
+        },
+
+        "swift_bic": {
+          "type": ["string", "null"]
+        },
+
+        "account_number": {
+          "type": ["string", "null"]
+        },
+
+        "routing_number": {
+          "type": ["string", "null"]
+        },
+
+        "payment_reference": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+
+    "authorization": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "properties": {
+        "authorized_by": {
+          "type": ["string", "null"]
+        },
+
+        "title": {
+          "type": ["string", "null"]
+        },
+
+        "date": {
+          "type": ["string", "null"]
+        },
+
+        "signature_present": {
+          "type": ["boolean", "null"]
+        },
+
+        "stamp_present": {
+          "type": ["boolean", "null"]
+        }
+      }
+    },
+
+    "notes": {
+      "type": ["string", "null"]
+    }
+  },
+
+  "$defs": {
+
+    "party": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "properties": {
+        "name": {
+          "type": ["string", "null"]
+        },
+
+        "address": {
+          "type": ["string", "null"]
+        },
+
+        "city": {
+          "type": ["string", "null"]
+        },
+
+        "postal_code": {
+          "type": ["string", "null"]
+        },
+
+        "country": {
+          "type": ["string", "null"]
+        },
+
+        "tax_id": {
+          "type": ["string", "null"]
+        },
+
+        "registration_number": {
+          "type": ["string", "null"]
+        },
+
+        "email": {
+          "type": ["string", "null"]
+        },
+
+        "phone": {
+          "type": ["string", "null"]
+        },
+
+        "website": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+
+    "money": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "properties": {
+        "amount": {
+          "type": ["number", "null"]
+        },
+
+        "currency": {
+          "type": ["string", "null"],
+          "pattern": "^[A-Z]{3}$"
+        }
+      }
+    },
+
+    "tax": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "properties": {
+        "rate": {
+          "type": ["number", "null"]
+        },
+
+        "amount": {
+          "$ref": "#/$defs/money"
+        },
+
+        "tax_type": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+
+    "measurement": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "properties": {
+        "value": {
+          "type": ["number", "null"]
+        },
+
+        "unit": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+
+    "line_item": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "properties": {
+        "line_number": {
+          "type": ["integer", "null"]
+        },
+
+        "description": {
+          "type": ["string", "null"]
+        },
+
+        "sku": {
+          "type": ["string", "null"]
+        },
+
+        "product_code": {
+          "type": ["string", "null"]
+        },
+
+        "hs_commodity_code": {
+          "type": ["string", "null"]
+        },
+
+        "country_of_origin": {
+          "type": ["string", "null"]
+        },
+
+        "quantity": {
+          "type": ["number", "null"]
+        },
+
+        "unit": {
+          "type": ["string", "null"]
+        },
+
+        "unit_price": {
+          "$ref": "#/$defs/money"
+        },
+
+        "discount": {
+          "$ref": "#/$defs/money"
+        },
+
+        "tax_rate": {
+          "type": ["number", "null"]
+        },
+
+        "line_total": {
+          "$ref": "#/$defs/money"
+        }
+      },
+
+      "required": [
+        "description"
+      ]
+    }
+  }
+}
