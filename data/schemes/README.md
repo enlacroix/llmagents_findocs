@@ -1,12 +1,10 @@
-# Набор данных для извлечения из документов
+## Schema selection
 
-## Выбор схемы
+The dataset uses `default_scheme.json` as the default extraction schema.
 
-В наборе данных в качестве схемы извлечения по умолчанию используется `default_scheme.json`.
+Each document is mapped to exactly one schema.
 
-Каждый документ сопоставляется ровно с одной схемой.
-
-| Документ | Схема |
+| Document | Schema |
 |---|---|
 | proforma_invoice_01.pdf | default_scheme.json |
 | proforma_invoice_02.pdf | default_scheme.json |
@@ -19,22 +17,22 @@
 | proforma_invoice_09.pdf | default_scheme.json |
 | proforma_invoice_10.pdf | default_scheme.json |
 
-## Правила извлечения
+## Extraction rules
 
-ИИ-агент должен извлекать только поля, определённые выбранной схемой.
+The AI agent must extract only fields defined by the selected schema.
 
-Если поле отсутствует в документе:
-- скалярное поле → `null`
-- поле-массив → `[]`
+If a field is not present in the document:
+- scalar field → `null`
+- array field → `[]`
 
-Агент не должен домысливать отсутствующие значения.
+The agent must not infer missing values.
 
-Даты должны использовать формат `ГГГГ-ММ-ДД`.
+Dates should use `YYYY-MM-DD`.
 
-Валюты должны по возможности использовать коды ISO 4217.
+Currencies should use ISO 4217 codes where possible.
 
-Позиции строк должны сохранять исходный порядок в документе.
+Line items must preserve their original document order.
 
-## Специальные схемы
+## Special schemas
 
-Используется один default_scheme.json для всех десяти инвойсов. Специальная схема здесь не нужна: HS code, origin, shipping, packages, weights и Incoterms уже покрываются default-схемой.
+A single default_scheme.json is used for all ten invoices. No special schema is needed here: HS code, origin, shipping, packages, weights, and Incoterms are already covered by the default schema.
