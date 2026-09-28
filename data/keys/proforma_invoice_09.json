@@ -1,0 +1,94 @@
+{
+  "document_id": "proforma_invoice_09",
+  "source_pdf": "proforma_invoice_09.pdf",
+  "invoice_number": "PF-2026-0925",
+  "invoice_date": "17 September 2026",
+  "invoice_date_iso": "2026-09-17",
+  "due_date": "17 October 2026",
+  "due_date_iso": "2026-10-17",
+  "currency": "USD",
+  "seller_exporter": {
+    "company_name": "Harbor Retail Technologies Inc.",
+    "address": "200 Market Street",
+    "city_postal_country": "San Francisco, CA 94105, USA",
+    "vat_tax_id": "US 94-8123456",
+    "email": "finance@example.invalid",
+    "phone": "+00 000 000 000"
+  },
+  "buyer_importer": {
+    "company_name": "Pacific Merchandising Inc.",
+    "address": "600 Townsend Street",
+    "city_postal_country": "San Francisco, CA 94103, USA",
+    "vat_tax_id": "US 77-4567891",
+    "email": "finance@example.invalid",
+    "phone": "+00 000 000 000"
+  },
+  "commercial_terms": {
+    "incoterms": "DAP — Buyer’s premises",
+    "payment_terms": "Net 30 days",
+    "purchase_order": "PO-2026-408"
+  },
+  "shipping": {
+    "number_of_packages": 7,
+    "gross_weight_kg": 124.8,
+    "net_weight_kg": 112.3,
+    "carrier": "Example International Logistics",
+    "country_of_final_destination": "Austria",
+    "reason_for_export": "Commercial sale"
+  },
+  "line_items": [
+    {
+      "description": "POS hardware bundle",
+      "hs_commodity_code": "8536 00",
+      "country_of_origin": "CA 94105",
+      "quantity": 6,
+      "unit_price": 890,
+      "line_total": 5340
+    },
+    {
+      "description": "Software licenses",
+      "hs_commodity_code": "8537 01",
+      "country_of_origin": "CA 94105",
+      "quantity": 6,
+      "unit_price": 240,
+      "line_total": 1440
+    },
+    {
+      "description": "Installation service",
+      "hs_commodity_code": "8538 02",
+      "country_of_origin": "CA 94105",
+      "quantity": 3,
+      "unit_price": 360,
+      "line_total": 1080
+    },
+    {
+      "description": "Training session",
+      "hs_commodity_code": "8539 03",
+      "country_of_origin": "CA 94105",
+      "quantity": 2,
+      "unit_price": 420,
+      "line_total": 840
+    }
+  ],
+  "totals": {
+    "subtotal": 8700,
+    "vat_rate": 0.2,
+    "vat_rate_display": "20%",
+    "vat_amount": 1740.0,
+    "total": 10440.0
+  },
+  "authorization": {
+    "authorized_by": "Jordan Taylor",
+    "title": "Finance Manager",
+    "date": "17 September 2026",
+    "signature_present": true,
+    "stamp_place_present": true
+  },
+  "payment_details": {
+    "bank": "Example Commercial Bank",
+    "iban": "XX00 0000 0000 0000 0000 00",
+    "swift_bic": "EXAMPLEX00",
+    "payment_reference": "PF-2026-0925"
+  },
+  "document_notice": "SAMPLE / FICTIONAL DATA ONLY — NOT A VALID CUSTOMS, TAX, SHIPPING OR ACCOUNTING DOCUMENT"
+}

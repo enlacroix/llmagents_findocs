@@ -1,0 +1,94 @@
+{
+  "document_id": "proforma_invoice_03",
+  "source_pdf": "proforma_invoice_03.pdf",
+  "invoice_number": "PF-2026-0919",
+  "invoice_date": "17 September 2026",
+  "invoice_date_iso": "2026-09-17",
+  "due_date": "17 October 2026",
+  "due_date_iso": "2026-10-17",
+  "currency": "EUR",
+  "seller_exporter": {
+    "company_name": "Meridian Trading OÜ",
+    "address": "Tartu mnt 18",
+    "city_postal_country": "10115 Tallinn, Estonia",
+    "vat_tax_id": "EE102345678",
+    "email": "finance@example.invalid",
+    "phone": "+00 000 000 000"
+  },
+  "buyer_importer": {
+    "company_name": "Baltic Home Group OÜ",
+    "address": "Pärnu mnt 67",
+    "city_postal_country": "10134 Tallinn, Estonia",
+    "vat_tax_id": "EE109876543",
+    "email": "finance@example.invalid",
+    "phone": "+00 000 000 000"
+  },
+  "commercial_terms": {
+    "incoterms": "DAP — Buyer’s premises",
+    "payment_terms": "Net 30 days",
+    "purchase_order": "PO-2026-402"
+  },
+  "shipping": {
+    "number_of_packages": 7,
+    "gross_weight_kg": 124.8,
+    "net_weight_kg": 112.3,
+    "carrier": "Example International Logistics",
+    "country_of_final_destination": "Austria",
+    "reason_for_export": "Commercial sale"
+  },
+  "line_items": [
+    {
+      "description": "Cloud migration assessment",
+      "hs_commodity_code": "8434 00",
+      "country_of_origin": "Estonia",
+      "quantity": 1,
+      "unit_price": 3200,
+      "line_total": 3200
+    },
+    {
+      "description": "Data migration",
+      "hs_commodity_code": "8435 01",
+      "country_of_origin": "Estonia",
+      "quantity": 1,
+      "unit_price": 4600,
+      "line_total": 4600
+    },
+    {
+      "description": "Security configuration",
+      "hs_commodity_code": "8436 02",
+      "country_of_origin": "Estonia",
+      "quantity": 1,
+      "unit_price": 2100,
+      "line_total": 2100
+    },
+    {
+      "description": "Post-migration support",
+      "hs_commodity_code": "8437 03",
+      "country_of_origin": "Estonia",
+      "quantity": 10,
+      "unit_price": 180,
+      "line_total": 1800
+    }
+  ],
+  "totals": {
+    "subtotal": 11700,
+    "vat_rate": 0.2,
+    "vat_rate_display": "20%",
+    "vat_amount": 2340.0,
+    "total": 14040.0
+  },
+  "authorization": {
+    "authorized_by": "Jordan Taylor",
+    "title": "Finance Manager",
+    "date": "17 September 2026",
+    "signature_present": true,
+    "stamp_place_present": true
+  },
+  "payment_details": {
+    "bank": "Example Commercial Bank",
+    "iban": "XX00 0000 0000 0000 0000 00",
+    "swift_bic": "EXAMPLEX00",
+    "payment_reference": "PF-2026-0919"
+  },
+  "document_notice": "SAMPLE / FICTIONAL DATA ONLY — NOT A VALID CUSTOMS, TAX, SHIPPING OR ACCOUNTING DOCUMENT"
+}

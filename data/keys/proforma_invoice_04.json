@@ -1,0 +1,94 @@
+{
+  "document_id": "proforma_invoice_04",
+  "source_pdf": "proforma_invoice_04.pdf",
+  "invoice_number": "PF-2026-0920",
+  "invoice_date": "17 September 2026",
+  "invoice_date_iso": "2026-09-17",
+  "due_date": "17 October 2026",
+  "due_date_iso": "2026-10-17",
+  "currency": "PLN",
+  "seller_exporter": {
+    "company_name": "Silverline Logistics Sp. z o.o.",
+    "address": "ul. Domaniewska 37",
+    "city_postal_country": "02-672 Warsaw, Poland",
+    "vat_tax_id": "PL5273012345",
+    "email": "finance@example.invalid",
+    "phone": "+00 000 000 000"
+  },
+  "buyer_importer": {
+    "company_name": "Central Market Sp. z o.o.",
+    "address": "ul. Marszałkowska 104",
+    "city_postal_country": "00-017 Warsaw, Poland",
+    "vat_tax_id": "PL5219988776",
+    "email": "finance@example.invalid",
+    "phone": "+00 000 000 000"
+  },
+  "commercial_terms": {
+    "incoterms": "DAP — Buyer’s premises",
+    "payment_terms": "Net 30 days",
+    "purchase_order": "PO-2026-403"
+  },
+  "shipping": {
+    "number_of_packages": 7,
+    "gross_weight_kg": 124.8,
+    "net_weight_kg": 112.3,
+    "carrier": "Example International Logistics",
+    "country_of_final_destination": "Austria",
+    "reason_for_export": "Commercial sale"
+  },
+  "line_items": [
+    {
+      "description": "Freight forwarding service",
+      "hs_commodity_code": "8451 00",
+      "country_of_origin": "Poland",
+      "quantity": 1,
+      "unit_price": 2750,
+      "line_total": 2750
+    },
+    {
+      "description": "Warehouse handling",
+      "hs_commodity_code": "8452 01",
+      "country_of_origin": "Poland",
+      "quantity": 6,
+      "unit_price": 180,
+      "line_total": 1080
+    },
+    {
+      "description": "Export documentation",
+      "hs_commodity_code": "8453 02",
+      "country_of_origin": "Poland",
+      "quantity": 1,
+      "unit_price": 420,
+      "line_total": 420
+    },
+    {
+      "description": "Insurance administration",
+      "hs_commodity_code": "8454 03",
+      "country_of_origin": "Poland",
+      "quantity": 1,
+      "unit_price": 310,
+      "line_total": 310
+    }
+  ],
+  "totals": {
+    "subtotal": 4560,
+    "vat_rate": 0.2,
+    "vat_rate_display": "20%",
+    "vat_amount": 912.0,
+    "total": 5472.0
+  },
+  "authorization": {
+    "authorized_by": "Jordan Taylor",
+    "title": "Finance Manager",
+    "date": "17 September 2026",
+    "signature_present": true,
+    "stamp_place_present": true
+  },
+  "payment_details": {
+    "bank": "Example Commercial Bank",
+    "iban": "XX00 0000 0000 0000 0000 00",
+    "swift_bic": "EXAMPLEX00",
+    "payment_reference": "PF-2026-0920"
+  },
+  "document_notice": "SAMPLE / FICTIONAL DATA ONLY — NOT A VALID CUSTOMS, TAX, SHIPPING OR ACCOUNTING DOCUMENT"
+}
