@@ -1,0 +1,94 @@
+{
+  "document_id": "proforma_invoice_07",
+  "source_pdf": "proforma_invoice_07.pdf",
+  "invoice_number": "PF-2026-0923",
+  "invoice_date": "17 September 2026",
+  "invoice_date_iso": "2026-09-17",
+  "due_date": "17 October 2026",
+  "due_date_iso": "2026-10-17",
+  "currency": "EUR",
+  "seller_exporter": {
+    "company_name": "Oakbridge Consulting B.V.",
+    "address": "Keizersgracht 391 A",
+    "city_postal_country": "1016 EJ Amsterdam, Netherlands",
+    "vat_tax_id": "NL861234567B01",
+    "email": "finance@example.invalid",
+    "phone": "+00 000 000 000"
+  },
+  "buyer_importer": {
+    "company_name": "Canal Street Imports B.V.",
+    "address": "Wibautstraat 131-D",
+    "city_postal_country": "1091 GL Amsterdam, Netherlands",
+    "vat_tax_id": "NL850123456B02",
+    "email": "finance@example.invalid",
+    "phone": "+00 000 000 000"
+  },
+  "commercial_terms": {
+    "incoterms": "DAP — Buyer’s premises",
+    "payment_terms": "Net 30 days",
+    "purchase_order": "PO-2026-406"
+  },
+  "shipping": {
+    "number_of_packages": 7,
+    "gross_weight_kg": 124.8,
+    "net_weight_kg": 112.3,
+    "carrier": "Example International Logistics",
+    "country_of_final_destination": "Austria",
+    "reason_for_export": "Commercial sale"
+  },
+  "line_items": [
+    {
+      "description": "Financial process review",
+      "hs_commodity_code": "8502 00",
+      "country_of_origin": "Netherlands",
+      "quantity": 1,
+      "unit_price": 2900,
+      "line_total": 2900
+    },
+    {
+      "description": "Management workshop",
+      "hs_commodity_code": "8503 01",
+      "country_of_origin": "Netherlands",
+      "quantity": 2,
+      "unit_price": 850,
+      "line_total": 1700
+    },
+    {
+      "description": "Reporting package",
+      "hs_commodity_code": "8504 02",
+      "country_of_origin": "Netherlands",
+      "quantity": 1,
+      "unit_price": 1250,
+      "line_total": 1250
+    },
+    {
+      "description": "Advisory support",
+      "hs_commodity_code": "8505 03",
+      "country_of_origin": "Netherlands",
+      "quantity": 8,
+      "unit_price": 190,
+      "line_total": 1520
+    }
+  ],
+  "totals": {
+    "subtotal": 7370,
+    "vat_rate": 0.2,
+    "vat_rate_display": "20%",
+    "vat_amount": 1474.0,
+    "total": 8844.0
+  },
+  "authorization": {
+    "authorized_by": "Jordan Taylor",
+    "title": "Finance Manager",
+    "date": "17 September 2026",
+    "signature_present": true,
+    "stamp_place_present": true
+  },
+  "payment_details": {
+    "bank": "Example Commercial Bank",
+    "iban": "XX00 0000 0000 0000 0000 00",
+    "swift_bic": "EXAMPLEX00",
+    "payment_reference": "PF-2026-0923"
+  },
+  "document_notice": "SAMPLE / FICTIONAL DATA ONLY — NOT A VALID CUSTOMS, TAX, SHIPPING OR ACCOUNTING DOCUMENT"
+}

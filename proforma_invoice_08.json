@@ -1,0 +1,94 @@
+{
+  "document_id": "proforma_invoice_08",
+  "source_pdf": "proforma_invoice_08.pdf",
+  "invoice_number": "PF-2026-0924",
+  "invoice_date": "17 September 2026",
+  "invoice_date_iso": "2026-09-17",
+  "due_date": "17 October 2026",
+  "due_date_iso": "2026-10-17",
+  "currency": "EUR",
+  "seller_exporter": {
+    "company_name": "Caspian Engineering S.A.",
+    "address": "Avenida da Liberdade 245",
+    "city_postal_country": "1250-143 Lisbon, Portugal",
+    "vat_tax_id": "PT516234567",
+    "email": "finance@example.invalid",
+    "phone": "+00 000 000 000"
+  },
+  "buyer_importer": {
+    "company_name": "Lisbon Industrial Group S.A.",
+    "address": "Rua Augusta 110",
+    "city_postal_country": "1100-053 Lisbon, Portugal",
+    "vat_tax_id": "PT509876543",
+    "email": "finance@example.invalid",
+    "phone": "+00 000 000 000"
+  },
+  "commercial_terms": {
+    "incoterms": "DAP — Buyer’s premises",
+    "payment_terms": "Net 30 days",
+    "purchase_order": "PO-2026-407"
+  },
+  "shipping": {
+    "number_of_packages": 7,
+    "gross_weight_kg": 124.8,
+    "net_weight_kg": 112.3,
+    "carrier": "Example International Logistics",
+    "country_of_final_destination": "Austria",
+    "reason_for_export": "Commercial sale"
+  },
+  "line_items": [
+    {
+      "description": "Engineering drawings",
+      "hs_commodity_code": "8519 00",
+      "country_of_origin": "Portugal",
+      "quantity": 12,
+      "unit_price": 310,
+      "line_total": 3720
+    },
+    {
+      "description": "Prototype fabrication",
+      "hs_commodity_code": "8520 01",
+      "country_of_origin": "Portugal",
+      "quantity": 3,
+      "unit_price": 1450,
+      "line_total": 4350
+    },
+    {
+      "description": "Material testing",
+      "hs_commodity_code": "8521 02",
+      "country_of_origin": "Portugal",
+      "quantity": 4,
+      "unit_price": 280,
+      "line_total": 1120
+    },
+    {
+      "description": "Technical certification support",
+      "hs_commodity_code": "8522 03",
+      "country_of_origin": "Portugal",
+      "quantity": 1,
+      "unit_price": 1100,
+      "line_total": 1100
+    }
+  ],
+  "totals": {
+    "subtotal": 10290,
+    "vat_rate": 0.2,
+    "vat_rate_display": "20%",
+    "vat_amount": 2058.0,
+    "total": 12348.0
+  },
+  "authorization": {
+    "authorized_by": "Jordan Taylor",
+    "title": "Finance Manager",
+    "date": "17 September 2026",
+    "signature_present": true,
+    "stamp_place_present": true
+  },
+  "payment_details": {
+    "bank": "Example Commercial Bank",
+    "iban": "XX00 0000 0000 0000 0000 00",
+    "swift_bic": "EXAMPLEX00",
+    "payment_reference": "PF-2026-0924"
+  },
+  "document_notice": "SAMPLE / FICTIONAL DATA ONLY — NOT A VALID CUSTOMS, TAX, SHIPPING OR ACCOUNTING DOCUMENT"
+}

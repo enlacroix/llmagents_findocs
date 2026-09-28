@@ -1,0 +1,94 @@
+{
+  "document_id": "proforma_invoice_10",
+  "source_pdf": "proforma_invoice_10.pdf",
+  "invoice_number": "PF-2026-0926",
+  "invoice_date": "17 September 2026",
+  "invoice_date_iso": "2026-09-17",
+  "due_date": "17 October 2026",
+  "due_date_iso": "2026-10-17",
+  "currency": "EUR",
+  "seller_exporter": {
+    "company_name": "Vertex Manufacturing SAS",
+    "address": "12 Rue Lafayette",
+    "city_postal_country": "75009 Paris, France",
+    "vat_tax_id": "FR 92812345678",
+    "email": "finance@example.invalid",
+    "phone": "+00 000 000 000"
+  },
+  "buyer_importer": {
+    "company_name": "Paris Office Systems SAS",
+    "address": "18 Avenue de l'Opéra",
+    "city_postal_country": "75001 Paris, France",
+    "vat_tax_id": "FR 84765432109",
+    "email": "finance@example.invalid",
+    "phone": "+00 000 000 000"
+  },
+  "commercial_terms": {
+    "incoterms": "DAP — Buyer’s premises",
+    "payment_terms": "Net 30 days",
+    "purchase_order": "PO-2026-409"
+  },
+  "shipping": {
+    "number_of_packages": 7,
+    "gross_weight_kg": 124.8,
+    "net_weight_kg": 112.3,
+    "carrier": "Example International Logistics",
+    "country_of_final_destination": "Austria",
+    "reason_for_export": "Commercial sale"
+  },
+  "line_items": [
+    {
+      "description": "Office automation equipment",
+      "hs_commodity_code": "8553 00",
+      "country_of_origin": "France",
+      "quantity": 10,
+      "unit_price": 540,
+      "line_total": 5400
+    },
+    {
+      "description": "Network accessories",
+      "hs_commodity_code": "8554 01",
+      "country_of_origin": "France",
+      "quantity": 20,
+      "unit_price": 48,
+      "line_total": 960
+    },
+    {
+      "description": "Installation and setup",
+      "hs_commodity_code": "8555 02",
+      "country_of_origin": "France",
+      "quantity": 1,
+      "unit_price": 1850,
+      "line_total": 1850
+    },
+    {
+      "description": "Maintenance package",
+      "hs_commodity_code": "8556 03",
+      "country_of_origin": "France",
+      "quantity": 1,
+      "unit_price": 720,
+      "line_total": 720
+    }
+  ],
+  "totals": {
+    "subtotal": 8930,
+    "vat_rate": 0.2,
+    "vat_rate_display": "20%",
+    "vat_amount": 1786.0,
+    "total": 10716.0
+  },
+  "authorization": {
+    "authorized_by": "Jordan Taylor",
+    "title": "Finance Manager",
+    "date": "17 September 2026",
+    "signature_present": true,
+    "stamp_place_present": true
+  },
+  "payment_details": {
+    "bank": "Example Commercial Bank",
+    "iban": "XX00 0000 0000 0000 0000 00",
+    "swift_bic": "EXAMPLEX00",
+    "payment_reference": "PF-2026-0926"
+  },
+  "document_notice": "SAMPLE / FICTIONAL DATA ONLY — NOT A VALID CUSTOMS, TAX, SHIPPING OR ACCOUNTING DOCUMENT"
+}

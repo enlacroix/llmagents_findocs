@@ -1,0 +1,94 @@
+{
+  "document_id": "proforma_invoice_05",
+  "source_pdf": "proforma_invoice_05.pdf",
+  "invoice_number": "PF-2026-0921",
+  "invoice_date": "17 September 2026",
+  "invoice_date_iso": "2026-09-17",
+  "due_date": "17 October 2026",
+  "due_date_iso": "2026-10-17",
+  "currency": "EUR",
+  "seller_exporter": {
+    "company_name": "Apex Components S.r.l.",
+    "address": "Via Roma 84",
+    "city_postal_country": "20121 Milan, Italy",
+    "vat_tax_id": "IT09876543210",
+    "email": "finance@example.invalid",
+    "phone": "+00 000 000 000"
+  },
+  "buyer_importer": {
+    "company_name": "Milano Distribution S.r.l.",
+    "address": "Corso Buenos Aires 15",
+    "city_postal_country": "20124 Milan, Italy",
+    "vat_tax_id": "IT11223344556",
+    "email": "finance@example.invalid",
+    "phone": "+00 000 000 000"
+  },
+  "commercial_terms": {
+    "incoterms": "DAP — Buyer’s premises",
+    "payment_terms": "Net 30 days",
+    "purchase_order": "PO-2026-404"
+  },
+  "shipping": {
+    "number_of_packages": 7,
+    "gross_weight_kg": 124.8,
+    "net_weight_kg": 112.3,
+    "carrier": "Example International Logistics",
+    "country_of_final_destination": "Austria",
+    "reason_for_export": "Commercial sale"
+  },
+  "line_items": [
+    {
+      "description": "Electronic components",
+      "hs_commodity_code": "8468 00",
+      "country_of_origin": "Italy",
+      "quantity": 25,
+      "unit_price": 145,
+      "line_total": 3625
+    },
+    {
+      "description": "Control modules",
+      "hs_commodity_code": "8469 01",
+      "country_of_origin": "Italy",
+      "quantity": 8,
+      "unit_price": 380,
+      "line_total": 3040
+    },
+    {
+      "description": "Power supplies",
+      "hs_commodity_code": "8470 02",
+      "country_of_origin": "Italy",
+      "quantity": 12,
+      "unit_price": 95,
+      "line_total": 1140
+    },
+    {
+      "description": "Testing service",
+      "hs_commodity_code": "8471 03",
+      "country_of_origin": "Italy",
+      "quantity": 1,
+      "unit_price": 860,
+      "line_total": 860
+    }
+  ],
+  "totals": {
+    "subtotal": 8665,
+    "vat_rate": 0.2,
+    "vat_rate_display": "20%",
+    "vat_amount": 1733.0,
+    "total": 10398.0
+  },
+  "authorization": {
+    "authorized_by": "Jordan Taylor",
+    "title": "Finance Manager",
+    "date": "17 September 2026",
+    "signature_present": true,
+    "stamp_place_present": true
+  },
+  "payment_details": {
+    "bank": "Example Commercial Bank",
+    "iban": "XX00 0000 0000 0000 0000 00",
+    "swift_bic": "EXAMPLEX00",
+    "payment_reference": "PF-2026-0921"
+  },
+  "document_notice": "SAMPLE / FICTIONAL DATA ONLY — NOT A VALID CUSTOMS, TAX, SHIPPING OR ACCOUNTING DOCUMENT"
+}
