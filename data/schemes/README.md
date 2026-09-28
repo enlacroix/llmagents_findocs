@@ -35,4 +35,4 @@ Line items must preserve their original document order.
 
 ## Special schemas
 
-A single default_scheme.json is used for all ten invoices. No special schema is needed here: HS code, origin, shipping, packages, weights, and Incoterms are already covered by the default schema.
+A single `default_scheme.json` is used for all ten invoices. No special schema is needed here: HS code, origin, shipping, packages, weights, and Incoterms are already covered by the default schema.
