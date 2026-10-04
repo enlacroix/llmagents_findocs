@@ -1,0 +1,428 @@
+{
+  "document_id": "04_malaysia_import_landed_cost",
+  "source_pdf": "04_malaysia_import_landed_cost.pdf",
+  "document_type": "invoice",
+  "document_language": "en",
+  "invoice_number": "SCS-MY-908177",
+  "invoice_date": "18 Sep 2026",
+  "invoice_date_iso": "2026-09-18",
+  "due_date": "18 Oct 2026",
+  "due_date_iso": "2026-10-18",
+  "currency": "MYR",
+  "seller": {
+    "company_name": "Straits Commerce Supplies Sdn. Bhd.",
+    "address": "Lot 18, Jalan Perindustrian 4, Shah Alam 40460, Selangor, Malaysia",
+    "tax_label": "SST No.",
+    "tax_id": "B16-2409-320001"
+  },
+  "buyer": {
+    "company_name": "Aster Lane Retail LLC",
+    "address": "Office 504, Creekside Tower, Business Bay, Dubai, UAE",
+    "tax_label": "TRN",
+    "tax_id": "100912376400003"
+  },
+  "commercial_terms": {
+    "purchase_order": "PO-MY-93281",
+    "payment_terms": "Net 30",
+    "delivery_ref": "BOL-KLG-889177",
+    "incoterm": "CIP Jebel Ali",
+    "origin": "Malaysia"
+  },
+  "line_items": [
+    {
+      "line_number": 1,
+      "sku": "BE-1207",
+      "hs_code": "960329",
+      "description": "Facial cleansing brush manual",
+      "quantity": 12.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 5.27,
+        "currency": "MYR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 63.24,
+        "currency": "MYR"
+      }
+    },
+    {
+      "line_number": 2,
+      "sku": "KD-9033",
+      "hs_code": "950300",
+      "description": "Reusable drawing mat 80x60cm",
+      "quantity": 60.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 38.04,
+        "currency": "MYR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 2282.4,
+        "currency": "MYR"
+      }
+    },
+    {
+      "line_number": 3,
+      "sku": "PC-6021",
+      "hs_code": "420292",
+      "description": "Travel organizer pouch set",
+      "quantity": 36.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 25.8,
+        "currency": "MYR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 928.8,
+        "currency": "MYR"
+      }
+    },
+    {
+      "line_number": 4,
+      "sku": "OF-1340",
+      "hs_code": "392690",
+      "description": "Cable management clips - 20 pack",
+      "quantity": 20.0,
+      "unit": "pack",
+      "unit_price": {
+        "amount": 30.93,
+        "currency": "MYR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 618.6,
+        "currency": "MYR"
+      }
+    },
+    {
+      "line_number": 5,
+      "sku": "SP-1708",
+      "hs_code": "392490",
+      "description": "Silicone food storage bags 4pc",
+      "quantity": 30.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 38.01,
+        "currency": "MYR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 1140.3,
+        "currency": "MYR"
+      }
+    },
+    {
+      "line_number": 6,
+      "sku": "HB-1001",
+      "hs_code": "961700",
+      "description": "Stainless steel insulated bottle 750ml",
+      "quantity": 36.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 54.29,
+        "currency": "MYR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 1954.44,
+        "currency": "MYR"
+      }
+    },
+    {
+      "line_number": 7,
+      "sku": "CF-1601",
+      "hs_code": "701349",
+      "description": "Cold brew bottle 1L",
+      "quantity": 60.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 24.58,
+        "currency": "MYR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 1474.8,
+        "currency": "MYR"
+      }
+    },
+    {
+      "line_number": 8,
+      "sku": "TR-1505",
+      "hs_code": "842381",
+      "description": "Digital luggage scale 50kg",
+      "quantity": 48.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 29.9,
+        "currency": "MYR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 1435.2,
+        "currency": "MYR"
+      }
+    },
+    {
+      "line_number": 9,
+      "sku": "EL-3412",
+      "hs_code": "850440",
+      "description": "GaN wall charger 65W dual-port",
+      "quantity": 6.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 9.85,
+        "currency": "MYR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 59.1,
+        "currency": "MYR"
+      }
+    },
+    {
+      "line_number": 10,
+      "sku": "ST-8012",
+      "hs_code": "482010",
+      "description": "A5 dotted notebook 160 pages",
+      "quantity": 72.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 53.09,
+        "currency": "MYR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 3822.48,
+        "currency": "MYR"
+      }
+    },
+    {
+      "line_number": 11,
+      "sku": "PT-1128",
+      "hs_code": "392490",
+      "description": "Slow feeder bowl 1.2L",
+      "quantity": 18.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 36.25,
+        "currency": "MYR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 652.5,
+        "currency": "MYR"
+      }
+    },
+    {
+      "line_number": 12,
+      "sku": "HM-4120",
+      "hs_code": "630710",
+      "description": "Microfiber cleaning cloth 40x40cm",
+      "quantity": 30.0,
+      "unit": "pack",
+      "unit_price": {
+        "amount": 31.19,
+        "currency": "MYR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 935.7,
+        "currency": "MYR"
+      }
+    },
+    {
+      "line_number": 13,
+      "sku": "GG-1431",
+      "hs_code": "392690",
+      "description": "Self-watering globe set of 6",
+      "quantity": 96.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 45.95,
+        "currency": "MYR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 4411.2,
+        "currency": "MYR"
+      }
+    },
+    {
+      "line_number": 14,
+      "sku": "FT-7050",
+      "hs_code": "950691",
+      "description": "Resistance bands set 5-level",
+      "quantity": 48.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 48.15,
+        "currency": "MYR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 2311.2,
+        "currency": "MYR"
+      }
+    },
+    {
+      "line_number": 15,
+      "sku": "ST-8030",
+      "hs_code": "960810",
+      "description": "Gel pen black 0.5mm - 12 pack",
+      "quantity": 72.0,
+      "unit": "box",
+      "unit_price": {
+        "amount": 41.38,
+        "currency": "MYR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 2979.36,
+        "currency": "MYR"
+      }
+    },
+    {
+      "line_number": 16,
+      "sku": "PT-1102",
+      "hs_code": "960390",
+      "description": "Pet grooming glove pair",
+      "quantity": 8.0,
+      "unit": "pair",
+      "unit_price": {
+        "amount": 49.84,
+        "currency": "MYR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 398.72,
+        "currency": "MYR"
+      }
+    },
+    {
+      "line_number": 17,
+      "sku": "EL-3408",
+      "hs_code": "854442",
+      "description": "USB-C braided cable 2m, 100W",
+      "quantity": 16.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 23.92,
+        "currency": "MYR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 382.72,
+        "currency": "MYR"
+      }
+    },
+    {
+      "line_number": 18,
+      "sku": "PC-6044",
+      "hs_code": "420292",
+      "description": "Compression packing cubes - 4pc",
+      "quantity": 72.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 29.91,
+        "currency": "MYR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 2153.52,
+        "currency": "MYR"
+      }
+    },
+    {
+      "line_number": 19,
+      "sku": "OF-1309",
+      "hs_code": "761699",
+      "description": "Aluminium laptop stand foldable",
+      "quantity": 10.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 11.62,
+        "currency": "MYR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 116.2,
+        "currency": "MYR"
+      }
+    },
+    {
+      "line_number": 20,
+      "sku": "SP-1732",
+      "hs_code": "701349",
+      "description": "Glass meal prep containers 3pc",
+      "quantity": 6.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 41.31,
+        "currency": "MYR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 247.86,
+        "currency": "MYR"
+      }
+    }
+  ],
+  "totals": {
+    "subtotal": {
+      "amount": 28368.34,
+      "currency": "MYR"
+    },
+    "invoice_discount": null,
+    "freight_handling": {
+      "amount": 1425.0,
+      "currency": "MYR"
+    },
+    "customs_duty": {
+      "amount": 786.4,
+      "currency": "MYR"
+    },
+    "other_charges": {
+      "amount": 95.0,
+      "currency": "MYR"
+    },
+    "tax": null,
+    "amount_due": {
+      "amount": 30674.74,
+      "currency": "MYR"
+    }
+  },
+  "additional_references": {
+    "container_shipment": "LCL 4.8 CBM",
+    "broker_reference": "BRK-DXB-55187",
+    "country_of_origin": "Mixed - see line product master",
+    "hs_coding": "Per customs packing list"
+  },
+  "document_control": {
+    "status": "Issued",
+    "revision": "0"
+  },
+  "document_notice": "Generated for testing"
+}

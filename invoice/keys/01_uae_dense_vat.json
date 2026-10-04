@@ -1,0 +1,497 @@
+{
+  "document_id": "01_uae_dense_vat",
+  "source_pdf": "01_uae_dense_vat.pdf",
+  "document_type": "invoice",
+  "document_language": "en",
+  "invoice_number": "GM-260921-1847",
+  "invoice_date": "21 Sep 2026",
+  "invoice_date_iso": "2026-09-21",
+  "due_date": "21 Oct 2026",
+  "due_date_iso": "2026-10-21",
+  "currency": "AED",
+  "seller": {
+    "company_name": "Gulf Meridian Trading LLC",
+    "address": "Warehouse 12, Dubai Investment Park 2, Dubai, UAE",
+    "tax_label": "TRN",
+    "tax_id": "100394857200003"
+  },
+  "buyer": {
+    "company_name": "Aster Lane Retail LLC",
+    "address": "Office 504, Creekside Tower, Business Bay, Dubai, UAE",
+    "tax_label": "TRN",
+    "tax_id": "100912376400003"
+  },
+  "commercial_terms": {
+    "purchase_order": "PO-AST-46821",
+    "payment_terms": "Net 30",
+    "delivery_ref": "DN-88421",
+    "ship_to": "JAFZA DC-03",
+    "incoterm": "DAP Dubai"
+  },
+  "line_items": [
+    {
+      "line_number": 1,
+      "sku": "EL-3412",
+      "hs_code": "850440",
+      "description": "GaN wall charger 65W dual-port",
+      "quantity": 6.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 43.67,
+        "currency": "AED"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 275.12,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 2,
+      "sku": "SP-1732",
+      "hs_code": "701349",
+      "description": "Glass meal prep containers 3pc",
+      "quantity": 20.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 45.05,
+        "currency": "AED"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 946.05,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 3,
+      "sku": "EL-3408",
+      "hs_code": "854442",
+      "description": "USB-C braided cable 2m, 100W",
+      "quantity": 12.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 39.63,
+        "currency": "AED"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 499.34,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 4,
+      "sku": "CF-1640",
+      "hs_code": "821000",
+      "description": "Manual coffee grinder ceramic burr",
+      "quantity": 24.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 44.03,
+        "currency": "AED"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 1109.56,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 5,
+      "sku": "PC-6044",
+      "hs_code": "420292",
+      "description": "Compression packing cubes - 4pc",
+      "quantity": 16.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 10.89,
+        "currency": "AED"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 182.95,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 6,
+      "sku": "FT-7115",
+      "hs_code": "950691",
+      "description": "Yoga mat 6mm non-slip",
+      "quantity": 8.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 8.99,
+        "currency": "AED"
+      },
+      "discount_percent": 2.5,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 73.63,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 7,
+      "sku": "SP-1708",
+      "hs_code": "392490",
+      "description": "Silicone food storage bags 4pc",
+      "quantity": 18.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 9.65,
+        "currency": "AED"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 182.38,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 8,
+      "sku": "KD-9014",
+      "hs_code": "392410",
+      "description": "Kids silicone snack cup",
+      "quantity": 30.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 25.33,
+        "currency": "AED"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 797.9,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 9,
+      "sku": "CF-1601",
+      "hs_code": "701349",
+      "description": "Cold brew bottle 1L",
+      "quantity": 20.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 15.77,
+        "currency": "AED"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 331.17,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 10,
+      "sku": "HB-1001",
+      "hs_code": "961700",
+      "description": "Stainless steel insulated bottle 750ml",
+      "quantity": 36.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 48.16,
+        "currency": "AED"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 1820.45,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 11,
+      "sku": "AR-1806",
+      "hs_code": "850980",
+      "description": "Mini aroma diffuser USB 180ml",
+      "quantity": 10.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 17.76,
+        "currency": "AED"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 186.48,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 12,
+      "sku": "FT-7050",
+      "hs_code": "950691",
+      "description": "Resistance bands set 5-level",
+      "quantity": 12.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 48.76,
+        "currency": "AED"
+      },
+      "discount_percent": 2.5,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 599.02,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 13,
+      "sku": "ST-8030",
+      "hs_code": "960810",
+      "description": "Gel pen black 0.5mm - 12 pack",
+      "quantity": 18.0,
+      "unit": "box",
+      "unit_price": {
+        "amount": 9.99,
+        "currency": "AED"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 188.81,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 14,
+      "sku": "KT-2210",
+      "hs_code": "441919",
+      "description": "Bamboo kitchen utensil set - 6 piece",
+      "quantity": 20.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 27.6,
+        "currency": "AED"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 579.6,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 15,
+      "sku": "TR-1505",
+      "hs_code": "842381",
+      "description": "Digital luggage scale 50kg",
+      "quantity": 6.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 36.16,
+        "currency": "AED"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 227.81,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 16,
+      "sku": "OF-1340",
+      "hs_code": "392690",
+      "description": "Cable management clips - 20 pack",
+      "quantity": 18.0,
+      "unit": "pack",
+      "unit_price": {
+        "amount": 20.58,
+        "currency": "AED"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 388.96,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 17,
+      "sku": "GG-1418",
+      "hs_code": "940542",
+      "description": "LED garden string lights 12m",
+      "quantity": 12.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 15.71,
+        "currency": "AED"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 197.95,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 18,
+      "sku": "HM-4120",
+      "hs_code": "630710",
+      "description": "Microfiber cleaning cloth 40x40cm",
+      "quantity": 6.0,
+      "unit": "pack",
+      "unit_price": {
+        "amount": 15.4,
+        "currency": "AED"
+      },
+      "discount_percent": 10.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 87.32,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 19,
+      "sku": "BT-5075",
+      "hs_code": "691490",
+      "description": "Ceramic planter matte 18cm",
+      "quantity": 30.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 40.25,
+        "currency": "AED"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 1267.88,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 20,
+      "sku": "OF-1309",
+      "hs_code": "761699",
+      "description": "Aluminium laptop stand foldable",
+      "quantity": 20.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 43.18,
+        "currency": "AED"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 906.78,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 21,
+      "sku": "KD-9033",
+      "hs_code": "950300",
+      "description": "Reusable drawing mat 80x60cm",
+      "quantity": 60.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 7.09,
+        "currency": "AED"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 446.67,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 22,
+      "sku": "ST-8012",
+      "hs_code": "482010",
+      "description": "A5 dotted notebook 160 pages",
+      "quantity": 96.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 6.49,
+        "currency": "AED"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 654.19,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 23,
+      "sku": "BE-1207",
+      "hs_code": "960329",
+      "description": "Facial cleansing brush manual",
+      "quantity": 96.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 43.04,
+        "currency": "AED"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 4338.43,
+        "currency": "AED"
+      }
+    },
+    {
+      "line_number": 24,
+      "sku": "PC-6021",
+      "hs_code": "420292",
+      "description": "Travel organizer pouch set",
+      "quantity": 8.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 27.35,
+        "currency": "AED"
+      },
+      "discount_percent": 5.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 218.25,
+        "currency": "AED"
+      }
+    }
+  ],
+  "totals": {
+    "subtotal": {
+      "amount": 15720.65,
+      "currency": "AED"
+    },
+    "invoice_discount": null,
+    "freight_handling": {
+      "amount": 185.0,
+      "currency": "AED"
+    },
+    "customs_duty": null,
+    "other_charges": null,
+    "tax": {
+      "amount": 795.28,
+      "currency": "AED"
+    },
+    "amount_due": {
+      "amount": 16700.94,
+      "currency": "AED"
+    }
+  },
+  "additional_references": {
+    "vendor_account": "VND-000184",
+    "buyer_cost_centre": "RET-DXB-07",
+    "shipment_references": "CTN 001-046 / 46 cartons",
+    "prepared_by": "Accounts Receivable - Wholesale Division"
+  },
+  "document_control": {
+    "status": "Issued",
+    "revision": "0"
+  },
+  "document_notice": "Generated for testing"
+}

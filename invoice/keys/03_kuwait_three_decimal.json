@@ -1,0 +1,386 @@
+{
+  "document_id": "03_kuwait_three_decimal",
+  "source_pdf": "03_kuwait_three_decimal.pdf",
+  "document_type": "invoice",
+  "document_language": "en",
+  "invoice_number": "KHG-INV-118244",
+  "invoice_date": "19 Sep 2026",
+  "invoice_date_iso": "2026-09-19",
+  "due_date": "19 Oct 2026",
+  "due_date_iso": "2026-10-19",
+  "currency": "KWD",
+  "seller": {
+    "company_name": "Kuwait Harbor General Trading W.L.L.",
+    "address": "Shuwaikh Industrial, Block 1, Kuwait City, Kuwait",
+    "tax_label": "Tax Ref",
+    "tax_id": "KH-8841092"
+  },
+  "buyer": {
+    "company_name": "Aster Lane Retail LLC",
+    "address": "Office 504, Creekside Tower, Business Bay, Dubai, UAE",
+    "tax_label": "TRN",
+    "tax_id": "100912376400003"
+  },
+  "commercial_terms": {
+    "purchase_order": "PO-KW-55310",
+    "payment_terms": "Net 30",
+    "delivery_ref": "DN-552891",
+    "dispatch": "Shuwaikh Bay 4",
+    "route": "KWI-DXB consolidated"
+  },
+  "line_items": [
+    {
+      "line_number": 1,
+      "sku": "KD-9014",
+      "hs_code": "392410",
+      "description": "Kids silicone snack cup",
+      "quantity": 10.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 18.605,
+        "currency": "KWD"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 186.05,
+        "currency": "KWD"
+      }
+    },
+    {
+      "line_number": 2,
+      "sku": "CF-1601",
+      "hs_code": "701349",
+      "description": "Cold brew bottle 1L",
+      "quantity": 6.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 23.256,
+        "currency": "KWD"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 139.536,
+        "currency": "KWD"
+      }
+    },
+    {
+      "line_number": 3,
+      "sku": "EL-3408",
+      "hs_code": "854442",
+      "description": "USB-C braided cable 2m, 100W",
+      "quantity": 16.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 45.532,
+        "currency": "KWD"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 728.512,
+        "currency": "KWD"
+      }
+    },
+    {
+      "line_number": 4,
+      "sku": "HB-1001",
+      "hs_code": "961700",
+      "description": "Stainless steel insulated bottle 750ml",
+      "quantity": 72.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 16.665,
+        "currency": "KWD"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 1199.88,
+        "currency": "KWD"
+      }
+    },
+    {
+      "line_number": 5,
+      "sku": "CF-1640",
+      "hs_code": "821000",
+      "description": "Manual coffee grinder ceramic burr",
+      "quantity": 30.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 41.146,
+        "currency": "KWD"
+      },
+      "discount_percent": 5.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 1172.661,
+        "currency": "KWD"
+      }
+    },
+    {
+      "line_number": 6,
+      "sku": "PC-6021",
+      "hs_code": "420292",
+      "description": "Travel organizer pouch set",
+      "quantity": 10.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 42.82,
+        "currency": "KWD"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 428.2,
+        "currency": "KWD"
+      }
+    },
+    {
+      "line_number": 7,
+      "sku": "ST-8012",
+      "hs_code": "482010",
+      "description": "A5 dotted notebook 160 pages",
+      "quantity": 36.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 3.474,
+        "currency": "KWD"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 125.064,
+        "currency": "KWD"
+      }
+    },
+    {
+      "line_number": 8,
+      "sku": "OF-1340",
+      "hs_code": "392690",
+      "description": "Cable management clips - 20 pack",
+      "quantity": 18.0,
+      "unit": "pack",
+      "unit_price": {
+        "amount": 19.508,
+        "currency": "KWD"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 351.144,
+        "currency": "KWD"
+      }
+    },
+    {
+      "line_number": 9,
+      "sku": "TR-1544",
+      "hs_code": "853669",
+      "description": "Universal travel adapter 35W",
+      "quantity": 8.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 8.157,
+        "currency": "KWD"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 65.256,
+        "currency": "KWD"
+      }
+    },
+    {
+      "line_number": 10,
+      "sku": "BE-1226",
+      "hs_code": "630790",
+      "description": "Satin sleep mask adjustable",
+      "quantity": 24.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 38.465,
+        "currency": "KWD"
+      },
+      "discount_percent": 5.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 877.002,
+        "currency": "KWD"
+      }
+    },
+    {
+      "line_number": 11,
+      "sku": "AR-1806",
+      "hs_code": "850980",
+      "description": "Mini aroma diffuser USB 180ml",
+      "quantity": 18.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 25.718,
+        "currency": "KWD"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 462.924,
+        "currency": "KWD"
+      }
+    },
+    {
+      "line_number": 12,
+      "sku": "EL-3412",
+      "hs_code": "850440",
+      "description": "GaN wall charger 65W dual-port",
+      "quantity": 60.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 41.148,
+        "currency": "KWD"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 2468.88,
+        "currency": "KWD"
+      }
+    },
+    {
+      "line_number": 13,
+      "sku": "OF-1309",
+      "hs_code": "761699",
+      "description": "Aluminium laptop stand foldable",
+      "quantity": 36.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 7.744,
+        "currency": "KWD"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 278.784,
+        "currency": "KWD"
+      }
+    },
+    {
+      "line_number": 14,
+      "sku": "FT-7050",
+      "hs_code": "950691",
+      "description": "Resistance bands set 5-level",
+      "quantity": 12.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 4.988,
+        "currency": "KWD"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 59.856,
+        "currency": "KWD"
+      }
+    },
+    {
+      "line_number": 15,
+      "sku": "KD-9033",
+      "hs_code": "950300",
+      "description": "Reusable drawing mat 80x60cm",
+      "quantity": 30.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 40.502,
+        "currency": "KWD"
+      },
+      "discount_percent": 5.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 1154.307,
+        "currency": "KWD"
+      }
+    },
+    {
+      "line_number": 16,
+      "sku": "PT-1102",
+      "hs_code": "960390",
+      "description": "Pet grooming glove pair",
+      "quantity": 24.0,
+      "unit": "pair",
+      "unit_price": {
+        "amount": 11.129,
+        "currency": "KWD"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 267.096,
+        "currency": "KWD"
+      }
+    },
+    {
+      "line_number": 17,
+      "sku": "GG-1418",
+      "hs_code": "940542",
+      "description": "LED garden string lights 12m",
+      "quantity": 72.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 12.222,
+        "currency": "KWD"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 879.984,
+        "currency": "KWD"
+      }
+    },
+    {
+      "line_number": 18,
+      "sku": "ST-8030",
+      "hs_code": "960810",
+      "description": "Gel pen black 0.5mm - 12 pack",
+      "quantity": 18.0,
+      "unit": "box",
+      "unit_price": {
+        "amount": 51.946,
+        "currency": "KWD"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 935.028,
+        "currency": "KWD"
+      }
+    }
+  ],
+  "totals": {
+    "subtotal": {
+      "amount": 11780.164,
+      "currency": "KWD"
+    },
+    "invoice_discount": null,
+    "freight_handling": {
+      "amount": 24.75,
+      "currency": "KWD"
+    },
+    "customs_duty": null,
+    "other_charges": null,
+    "tax": null,
+    "amount_due": {
+      "amount": 11804.914,
+      "currency": "KWD"
+    }
+  },
+  "additional_references": {
+    "gross_weight": "486.3 kg",
+    "net_weight": "451.7 kg",
+    "cartons": "39",
+    "packing_list": "PL-118244-A"
+  },
+  "document_control": {
+    "status": "Issued",
+    "revision": "0"
+  },
+  "document_notice": "Generated for testing"
+}

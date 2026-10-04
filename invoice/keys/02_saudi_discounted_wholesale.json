@@ -1,0 +1,443 @@
+{
+  "document_id": "02_saudi_discounted_wholesale",
+  "source_pdf": "02_saudi_discounted_wholesale.pdf",
+  "document_type": "invoice",
+  "document_language": "en",
+  "invoice_number": "NSD-R26-77491",
+  "invoice_date": "20 Sep 2026",
+  "invoice_date_iso": "2026-09-20",
+  "due_date": "20 Oct 2026",
+  "due_date_iso": "2026-10-20",
+  "currency": "SAR",
+  "seller": {
+    "company_name": "Najd Supply & Distribution Co.",
+    "address": "Industrial Area 2, Riyadh 14334, Saudi Arabia",
+    "tax_label": "VAT",
+    "tax_id": "310883972100003"
+  },
+  "buyer": {
+    "company_name": "Aster Lane Retail LLC",
+    "address": "Office 504, Creekside Tower, Business Bay, Dubai, UAE",
+    "tax_label": "TRN",
+    "tax_id": "100912376400003"
+  },
+  "commercial_terms": {
+    "purchase_order": "PO-KSA-772004",
+    "payment_terms": "30 days EOM",
+    "delivery_ref": "SHP-332991",
+    "warehouse": "Riyadh DC-2",
+    "sales_order": "SO-709812"
+  },
+  "line_items": [
+    {
+      "line_number": 1,
+      "sku": "PT-1128",
+      "hs_code": "392490",
+      "description": "Slow feeder bowl 1.2L",
+      "quantity": 30.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 25.34,
+        "currency": "SAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 15.0,
+      "line_total": {
+        "amount": 874.23,
+        "currency": "SAR"
+      }
+    },
+    {
+      "line_number": 2,
+      "sku": "FT-7115",
+      "hs_code": "950691",
+      "description": "Yoga mat 6mm non-slip",
+      "quantity": 72.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 6.71,
+        "currency": "SAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 15.0,
+      "line_total": {
+        "amount": 555.59,
+        "currency": "SAR"
+      }
+    },
+    {
+      "line_number": 3,
+      "sku": "HB-1001",
+      "hs_code": "961700",
+      "description": "Stainless steel insulated bottle 750ml",
+      "quantity": 12.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 5.7,
+        "currency": "SAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 15.0,
+      "line_total": {
+        "amount": 78.66,
+        "currency": "SAR"
+      }
+    },
+    {
+      "line_number": 4,
+      "sku": "KT-2210",
+      "hs_code": "441919",
+      "description": "Bamboo kitchen utensil set - 6 piece",
+      "quantity": 72.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 4.6,
+        "currency": "SAR"
+      },
+      "discount_percent": 7.5,
+      "tax_percent": 15.0,
+      "line_total": {
+        "amount": 352.31,
+        "currency": "SAR"
+      }
+    },
+    {
+      "line_number": 5,
+      "sku": "EL-3412",
+      "hs_code": "850440",
+      "description": "GaN wall charger 65W dual-port",
+      "quantity": 60.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 6.22,
+        "currency": "SAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 15.0,
+      "line_total": {
+        "amount": 429.18,
+        "currency": "SAR"
+      }
+    },
+    {
+      "line_number": 6,
+      "sku": "TR-1544",
+      "hs_code": "853669",
+      "description": "Universal travel adapter 35W",
+      "quantity": 8.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 10.97,
+        "currency": "SAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 15.0,
+      "line_total": {
+        "amount": 100.92,
+        "currency": "SAR"
+      }
+    },
+    {
+      "line_number": 7,
+      "sku": "KD-9033",
+      "hs_code": "950300",
+      "description": "Reusable drawing mat 80x60cm",
+      "quantity": 20.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 19.36,
+        "currency": "SAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 15.0,
+      "line_total": {
+        "amount": 445.28,
+        "currency": "SAR"
+      }
+    },
+    {
+      "line_number": 8,
+      "sku": "TR-1505",
+      "hs_code": "842381",
+      "description": "Digital luggage scale 50kg",
+      "quantity": 48.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 16.87,
+        "currency": "SAR"
+      },
+      "discount_percent": 5.0,
+      "tax_percent": 15.0,
+      "line_total": {
+        "amount": 884.66,
+        "currency": "SAR"
+      }
+    },
+    {
+      "line_number": 9,
+      "sku": "PC-6021",
+      "hs_code": "420292",
+      "description": "Travel organizer pouch set",
+      "quantity": 16.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 37.66,
+        "currency": "SAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 15.0,
+      "line_total": {
+        "amount": 692.94,
+        "currency": "SAR"
+      }
+    },
+    {
+      "line_number": 10,
+      "sku": "SP-1708",
+      "hs_code": "392490",
+      "description": "Silicone food storage bags 4pc",
+      "quantity": 20.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 5.9,
+        "currency": "SAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 15.0,
+      "line_total": {
+        "amount": 135.7,
+        "currency": "SAR"
+      }
+    },
+    {
+      "line_number": 11,
+      "sku": "CF-1640",
+      "hs_code": "821000",
+      "description": "Manual coffee grinder ceramic burr",
+      "quantity": 36.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 57.77,
+        "currency": "SAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 15.0,
+      "line_total": {
+        "amount": 2391.68,
+        "currency": "SAR"
+      }
+    },
+    {
+      "line_number": 12,
+      "sku": "AR-1806",
+      "hs_code": "850980",
+      "description": "Mini aroma diffuser USB 180ml",
+      "quantity": 8.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 20.0,
+        "currency": "SAR"
+      },
+      "discount_percent": 2.5,
+      "tax_percent": 15.0,
+      "line_total": {
+        "amount": 179.4,
+        "currency": "SAR"
+      }
+    },
+    {
+      "line_number": 13,
+      "sku": "ST-8012",
+      "hs_code": "482010",
+      "description": "A5 dotted notebook 160 pages",
+      "quantity": 8.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 19.56,
+        "currency": "SAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 15.0,
+      "line_total": {
+        "amount": 179.95,
+        "currency": "SAR"
+      }
+    },
+    {
+      "line_number": 14,
+      "sku": "OF-1309",
+      "hs_code": "761699",
+      "description": "Aluminium laptop stand foldable",
+      "quantity": 8.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 29.86,
+        "currency": "SAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 15.0,
+      "line_total": {
+        "amount": 274.71,
+        "currency": "SAR"
+      }
+    },
+    {
+      "line_number": 15,
+      "sku": "BT-5090",
+      "hs_code": "340600",
+      "description": "Scented soy candle 220g - amber",
+      "quantity": 72.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 26.23,
+        "currency": "SAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 15.0,
+      "line_total": {
+        "amount": 2171.84,
+        "currency": "SAR"
+      }
+    },
+    {
+      "line_number": 16,
+      "sku": "SP-1732",
+      "hs_code": "701349",
+      "description": "Glass meal prep containers 3pc",
+      "quantity": 20.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 3.03,
+        "currency": "SAR"
+      },
+      "discount_percent": 10.0,
+      "tax_percent": 15.0,
+      "line_total": {
+        "amount": 62.72,
+        "currency": "SAR"
+      }
+    },
+    {
+      "line_number": 17,
+      "sku": "PC-6044",
+      "hs_code": "420292",
+      "description": "Compression packing cubes - 4pc",
+      "quantity": 6.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 40.73,
+        "currency": "SAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 15.0,
+      "line_total": {
+        "amount": 281.04,
+        "currency": "SAR"
+      }
+    },
+    {
+      "line_number": 18,
+      "sku": "EL-3408",
+      "hs_code": "854442",
+      "description": "USB-C braided cable 2m, 100W",
+      "quantity": 10.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 44.67,
+        "currency": "SAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 15.0,
+      "line_total": {
+        "amount": 513.7,
+        "currency": "SAR"
+      }
+    },
+    {
+      "line_number": 19,
+      "sku": "BT-5075",
+      "hs_code": "691490",
+      "description": "Ceramic planter matte 18cm",
+      "quantity": 30.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 10.25,
+        "currency": "SAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 15.0,
+      "line_total": {
+        "amount": 353.62,
+        "currency": "SAR"
+      }
+    },
+    {
+      "line_number": 20,
+      "sku": "GG-1431",
+      "hs_code": "392690",
+      "description": "Self-watering globe set of 6",
+      "quantity": 8.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 56.98,
+        "currency": "SAR"
+      },
+      "discount_percent": 2.5,
+      "tax_percent": 15.0,
+      "line_total": {
+        "amount": 511.11,
+        "currency": "SAR"
+      }
+    },
+    {
+      "line_number": 21,
+      "sku": "FT-7050",
+      "hs_code": "950691",
+      "description": "Resistance bands set 5-level",
+      "quantity": 16.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 5.83,
+        "currency": "SAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 15.0,
+      "line_total": {
+        "amount": 107.27,
+        "currency": "SAR"
+      }
+    }
+  ],
+  "totals": {
+    "subtotal": {
+      "amount": 10066.56,
+      "currency": "SAR"
+    },
+    "invoice_discount": {
+      "amount": -120.0,
+      "currency": "SAR"
+    },
+    "freight_handling": null,
+    "customs_duty": null,
+    "other_charges": null,
+    "tax": {
+      "amount": 1491.98,
+      "currency": "SAR"
+    },
+    "amount_due": {
+      "amount": 11438.54,
+      "currency": "SAR"
+    }
+  },
+  "additional_references": {
+    "customer_vat_id": "310995418700003",
+    "commercial_reference": "CR-1010817742",
+    "carrier": "Desert Route Logistics",
+    "pallet_count": "7 standard export pallets"
+  },
+  "document_control": {
+    "status": "Issued",
+    "revision": "0"
+  },
+  "document_notice": "Generated for testing"
+}

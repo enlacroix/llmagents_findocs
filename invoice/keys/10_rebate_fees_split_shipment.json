@@ -1,0 +1,611 @@
+{
+  "document_id": "10_rebate_fees_split_shipment",
+  "source_pdf": "10_rebate_fees_split_shipment.pdf",
+  "document_type": "invoice",
+  "document_language": "en",
+  "invoice_number": "CMD-ZA-448291",
+  "invoice_date": "12 Sep 2026",
+  "invoice_date_iso": "2026-09-12",
+  "due_date": "12 Oct 2026",
+  "due_date_iso": "2026-10-12",
+  "currency": "ZAR",
+  "seller": {
+    "company_name": "Cape Meridian Distribution (Pty) Ltd.",
+    "address": "18 Electron Road, Montague Gardens, Cape Town 7441, South Africa",
+    "tax_label": "VAT",
+    "tax_id": "4870291847"
+  },
+  "buyer": {
+    "company_name": "Aster Lane Retail LLC",
+    "address": "Office 504, Creekside Tower, Business Bay, Dubai, UAE",
+    "tax_label": "TRN",
+    "tax_id": "100912376400003"
+  },
+  "commercial_terms": {
+    "purchase_order": "PO-ZA-117991",
+    "payment_terms": "Net 30",
+    "delivery_ref": "DN-448291-A / DN-448291-B",
+    "shipment_split": "2 deliveries",
+    "buyer_dept": "E-commerce Operations"
+  },
+  "line_items": [
+    {
+      "line_number": 1,
+      "sku": "HB-1001",
+      "hs_code": "961700",
+      "description": "Stainless steel insulated bottle 750ml",
+      "quantity": 96.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 44.09,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 4444.27,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 2,
+      "sku": "GG-1431",
+      "hs_code": "392690",
+      "description": "Self-watering globe set of 6",
+      "quantity": 18.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 41.11,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 776.98,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 3,
+      "sku": "KD-9033",
+      "hs_code": "950300",
+      "description": "Reusable drawing mat 80x60cm",
+      "quantity": 18.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 15.19,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 287.09,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 4,
+      "sku": "KD-9014",
+      "hs_code": "392410",
+      "description": "Kids silicone snack cup",
+      "quantity": 72.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 14.35,
+        "currency": "ZAR"
+      },
+      "discount_percent": 10.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 976.37,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 5,
+      "sku": "PT-1102",
+      "hs_code": "960390",
+      "description": "Pet grooming glove pair",
+      "quantity": 60.0,
+      "unit": "pair",
+      "unit_price": {
+        "amount": 56.3,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 3546.9,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 6,
+      "sku": "FT-7050",
+      "hs_code": "950691",
+      "description": "Resistance bands set 5-level",
+      "quantity": 48.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 6.1,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 307.44,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 7,
+      "sku": "ST-8012",
+      "hs_code": "482010",
+      "description": "A5 dotted notebook 160 pages",
+      "quantity": 48.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 10.41,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 524.66,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 8,
+      "sku": "EL-3412",
+      "hs_code": "850440",
+      "description": "GaN wall charger 65W dual-port",
+      "quantity": 30.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 40.06,
+        "currency": "ZAR"
+      },
+      "discount_percent": 7.5,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 1167.25,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 9,
+      "sku": "TR-1505",
+      "hs_code": "842381",
+      "description": "Digital luggage scale 50kg",
+      "quantity": 72.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 3.92,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 296.35,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 10,
+      "sku": "PC-6021",
+      "hs_code": "420292",
+      "description": "Travel organizer pouch set",
+      "quantity": 36.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 51.95,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 1963.71,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 11,
+      "sku": "SP-1732",
+      "hs_code": "701349",
+      "description": "Glass meal prep containers 3pc",
+      "quantity": 24.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 53.33,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 1343.92,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 12,
+      "sku": "AR-1806",
+      "hs_code": "850980",
+      "description": "Mini aroma diffuser USB 180ml",
+      "quantity": 12.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 57.46,
+        "currency": "ZAR"
+      },
+      "discount_percent": 2.5,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 705.9,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 13,
+      "sku": "BE-1226",
+      "hs_code": "630790",
+      "description": "Satin sleep mask adjustable",
+      "quantity": 72.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 14.44,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 1091.66,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 14,
+      "sku": "OF-1309",
+      "hs_code": "761699",
+      "description": "Aluminium laptop stand foldable",
+      "quantity": 72.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 40.9,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 3092.04,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 15,
+      "sku": "ST-8030",
+      "hs_code": "960810",
+      "description": "Gel pen black 0.5mm - 12 pack",
+      "quantity": 36.0,
+      "unit": "box",
+      "unit_price": {
+        "amount": 27.91,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 1055.0,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 16,
+      "sku": "KT-2210",
+      "hs_code": "441919",
+      "description": "Bamboo kitchen utensil set - 6 piece",
+      "quantity": 18.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 44.5,
+        "currency": "ZAR"
+      },
+      "discount_percent": 10.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 756.94,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 17,
+      "sku": "BT-5075",
+      "hs_code": "691490",
+      "description": "Ceramic planter matte 18cm",
+      "quantity": 6.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 47.32,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 298.12,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 18,
+      "sku": "PC-6044",
+      "hs_code": "420292",
+      "description": "Compression packing cubes - 4pc",
+      "quantity": 8.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 48.5,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 407.4,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 19,
+      "sku": "FT-7115",
+      "hs_code": "950691",
+      "description": "Yoga mat 6mm non-slip",
+      "quantity": 18.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 54.1,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 1022.49,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 20,
+      "sku": "HM-4120",
+      "hs_code": "630710",
+      "description": "Microfiber cleaning cloth 40x40cm",
+      "quantity": 12.0,
+      "unit": "pack",
+      "unit_price": {
+        "amount": 17.69,
+        "currency": "ZAR"
+      },
+      "discount_percent": 2.5,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 217.32,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 21,
+      "sku": "CF-1640",
+      "hs_code": "821000",
+      "description": "Manual coffee grinder ceramic burr",
+      "quantity": 36.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 31.32,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 1183.9,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 22,
+      "sku": "CF-1601",
+      "hs_code": "701349",
+      "description": "Cold brew bottle 1L",
+      "quantity": 10.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 37.67,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 395.54,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 23,
+      "sku": "GG-1418",
+      "hs_code": "940542",
+      "description": "LED garden string lights 12m",
+      "quantity": 16.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 35.64,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 598.75,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 24,
+      "sku": "OF-1340",
+      "hs_code": "392690",
+      "description": "Cable management clips - 20 pack",
+      "quantity": 30.0,
+      "unit": "pack",
+      "unit_price": {
+        "amount": 29.21,
+        "currency": "ZAR"
+      },
+      "discount_percent": 7.5,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 851.11,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 25,
+      "sku": "SP-1708",
+      "hs_code": "392490",
+      "description": "Silicone food storage bags 4pc",
+      "quantity": 10.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 40.07,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 420.74,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 26,
+      "sku": "PT-1128",
+      "hs_code": "392490",
+      "description": "Slow feeder bowl 1.2L",
+      "quantity": 30.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 47.69,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 1502.24,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 27,
+      "sku": "BE-1207",
+      "hs_code": "960329",
+      "description": "Facial cleansing brush manual",
+      "quantity": 20.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 32.8,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 688.8,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 28,
+      "sku": "BT-5090",
+      "hs_code": "340600",
+      "description": "Scented soy candle 220g - amber",
+      "quantity": 60.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 50.37,
+        "currency": "ZAR"
+      },
+      "discount_percent": 5.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 3014.64,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 29,
+      "sku": "EL-3408",
+      "hs_code": "854442",
+      "description": "USB-C braided cable 2m, 100W",
+      "quantity": 16.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 31.28,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 525.5,
+        "currency": "ZAR"
+      }
+    },
+    {
+      "line_number": 30,
+      "sku": "TR-1544",
+      "hs_code": "853669",
+      "description": "Universal travel adapter 35W",
+      "quantity": 18.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 57.15,
+        "currency": "ZAR"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 5.0,
+      "line_total": {
+        "amount": 1080.14,
+        "currency": "ZAR"
+      }
+    }
+  ],
+  "totals": {
+    "subtotal": {
+      "amount": 32898.25,
+      "currency": "ZAR"
+    },
+    "invoice_discount": {
+      "amount": -145.75,
+      "currency": "ZAR"
+    },
+    "freight_handling": {
+      "amount": 268.5,
+      "currency": "ZAR"
+    },
+    "customs_duty": null,
+    "other_charges": {
+      "amount": 39.95,
+      "currency": "ZAR"
+    },
+    "tax": {
+      "amount": 1651.05,
+      "currency": "ZAR"
+    },
+    "amount_due": {
+      "amount": 34712.0,
+      "currency": "ZAR"
+    }
+  },
+  "additional_references": {
+    "delivery_a": "DN-448291-A - 10 Sep 2026 - 17 cartons",
+    "delivery_b": "DN-448291-B - 11 Sep 2026 - 21 cartons",
+    "rebate_authorization": "RA-2609-119",
+    "handling_schedule": "Supplier services tariff v4.2"
+  },
+  "document_control": {
+    "status": "Issued",
+    "revision": "0"
+  },
+  "document_notice": "Generated for testing"
+}

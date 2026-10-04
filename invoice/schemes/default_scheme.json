@@ -1,9 +1,304 @@
 {
-  "document_type": "",
-  "title": "",
-  "date": "",
-  "parties": [],
-  "amounts": [],
-  "identifiers": [],
-  "summary": ""
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "default-invoice-extraction",
+  "title": "Default Invoice Extraction Schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "document_type",
+    "document_language",
+    "invoice_number",
+    "invoice_date_iso",
+    "due_date_iso",
+    "currency",
+    "seller",
+    "buyer",
+    "commercial_terms",
+    "line_items",
+    "totals"
+  ],
+  "properties": {
+    "document_id": {
+      "type": ["string", "null"],
+      "description": "Dataset document identifier, usually the source PDF filename without extension."
+    },
+    "source_pdf": {
+      "type": ["string", "null"],
+      "description": "Source PDF filename."
+    },
+    "document_type": {
+      "type": "string",
+      "const": "invoice"
+    },
+    "document_language": {
+      "type": ["string", "null"],
+      "description": "Primary document language, preferably ISO 639-1."
+    },
+    "invoice_number": {
+      "type": ["string", "null"]
+    },
+    "invoice_date": {
+      "type": ["string", "null"],
+      "description": "Invoice date as printed in the document."
+    },
+    "invoice_date_iso": {
+      "type": ["string", "null"],
+      "description": "Invoice date in YYYY-MM-DD format."
+    },
+    "due_date": {
+      "type": ["string", "null"],
+      "description": "Due date as printed in the document."
+    },
+    "due_date_iso": {
+      "type": ["string", "null"],
+      "description": "Due date in YYYY-MM-DD format."
+    },
+    "currency": {
+      "type": ["string", "null"],
+      "pattern": "^[A-Z]{3}$"
+    },
+    "seller": {
+      "$ref": "#/$defs/party"
+    },
+    "buyer": {
+      "$ref": "#/$defs/party"
+    },
+    "commercial_terms": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "purchase_order": {
+          "type": ["string", "null"]
+        },
+        "payment_terms": {
+          "type": ["string", "null"]
+        },
+        "delivery_ref": {
+          "type": ["string", "null"]
+        },
+        "ship_to": {
+          "type": ["string", "null"]
+        },
+        "incoterm": {
+          "type": ["string", "null"]
+        },
+        "warehouse": {
+          "type": ["string", "null"]
+        },
+        "sales_order": {
+          "type": ["string", "null"]
+        },
+        "dispatch": {
+          "type": ["string", "null"]
+        },
+        "route": {
+          "type": ["string", "null"]
+        },
+        "origin": {
+          "type": ["string", "null"]
+        },
+        "receiving_dock": {
+          "type": ["string", "null"]
+        },
+        "pages": {
+          "type": ["string", "null"]
+        },
+        "inventory_uom": {
+          "type": ["string", "null"]
+        },
+        "invoice_uom": {
+          "type": ["string", "null"]
+        },
+        "campaign": {
+          "type": ["string", "null"]
+        },
+        "ship_mode": {
+          "type": ["string", "null"]
+        },
+        "customer_class": {
+          "type": ["string", "null"]
+        },
+        "price_list": {
+          "type": ["string", "null"]
+        },
+        "consignment": {
+          "type": ["string", "null"]
+        },
+        "shipment_split": {
+          "type": ["string", "null"]
+        },
+        "buyer_dept": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "line_items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/line_item"
+      }
+    },
+    "totals": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["subtotal", "amount_due"],
+      "properties": {
+        "subtotal": {
+          "$ref": "#/$defs/nullable_money"
+        },
+        "invoice_discount": {
+          "$ref": "#/$defs/nullable_money"
+        },
+        "freight_handling": {
+          "$ref": "#/$defs/nullable_money"
+        },
+        "customs_duty": {
+          "$ref": "#/$defs/nullable_money"
+        },
+        "other_charges": {
+          "$ref": "#/$defs/nullable_money"
+        },
+        "tax": {
+          "$ref": "#/$defs/nullable_money"
+        },
+        "amount_due": {
+          "$ref": "#/$defs/nullable_money"
+        }
+      }
+    },
+    "additional_references": {
+      "type": "object",
+      "description": "Additional reference fields printed outside the main invoice table.",
+      "additionalProperties": {
+        "type": ["string", "number", "null"]
+      }
+    },
+    "document_control": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": ["string", "null"]
+        },
+        "revision": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "document_notice": {
+      "type": ["string", "null"]
+    }
+  },
+  "$defs": {
+    "party": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["company_name", "address"],
+      "properties": {
+        "company_name": {
+          "type": ["string", "null"]
+        },
+        "address": {
+          "type": ["string", "null"]
+        },
+        "tax_label": {
+          "type": ["string", "null"]
+        },
+        "tax_id": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "money": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["amount", "currency"],
+      "properties": {
+        "amount": {
+          "type": ["number", "null"]
+        },
+        "currency": {
+          "type": ["string", "null"],
+          "pattern": "^[A-Z]{3}$"
+        }
+      }
+    },
+    "nullable_money": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/money"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "line_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "line_number",
+        "sku",
+        "hs_code",
+        "description",
+        "quantity",
+        "unit",
+        "unit_price",
+        "discount_percent",
+        "tax_percent",
+        "line_total"
+      ],
+      "properties": {
+        "line_number": {
+          "type": ["integer", "null"]
+        },
+        "sku": {
+          "type": ["string", "null"]
+        },
+        "hs_code": {
+          "type": ["string", "null"]
+        },
+        "description": {
+          "type": ["string", "null"]
+        },
+        "quantity": {
+          "type": ["number", "null"]
+        },
+        "unit": {
+          "type": ["string", "null"]
+        },
+        "unit_price": {
+          "$ref": "#/$defs/nullable_money"
+        },
+        "discount_percent": {
+          "type": ["number", "null"]
+        },
+        "tax_percent": {
+          "type": ["number", "null"]
+        },
+        "lot_number": {
+          "type": ["string", "null"]
+        },
+        "pack": {
+          "type": ["string", "null"]
+        },
+        "eaches": {
+          "type": ["integer", "null"]
+        },
+        "foc_quantity": {
+          "type": ["integer", "null"],
+          "description": "Free-of-charge promotional quantity."
+        },
+        "origin": {
+          "type": ["string", "null"]
+        },
+        "carton": {
+          "type": ["string", "null"]
+        },
+        "line_total": {
+          "$ref": "#/$defs/nullable_money"
+        }
+      }
+    }
+  }
 }

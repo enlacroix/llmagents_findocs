@@ -1,0 +1,514 @@
+{
+  "document_id": "08_mixed_tax_and_discounts",
+  "source_pdf": "08_mixed_tax_and_discounts.pdf",
+  "document_type": "invoice",
+  "document_language": "en",
+  "invoice_number": "MBW-VN-772640",
+  "invoice_date": "14 Sep 2026",
+  "invoice_date_iso": "2026-09-14",
+  "due_date": "14 Oct 2026",
+  "due_date_iso": "2026-10-14",
+  "currency": "VND",
+  "seller": {
+    "company_name": "Mekong Bridge Wholesale JSC",
+    "address": "88 Nguyen Van Linh, District 7, Ho Chi Minh City, Vietnam",
+    "tax_label": "Tax Code",
+    "tax_id": "0317482196"
+  },
+  "buyer": {
+    "company_name": "Aster Lane Retail LLC",
+    "address": "Office 504, Creekside Tower, Business Bay, Dubai, UAE",
+    "tax_label": "TRN",
+    "tax_id": "100912376400003"
+  },
+  "commercial_terms": {
+    "purchase_order": "PO-VN-220941",
+    "payment_terms": "Net 30",
+    "delivery_ref": "DN-772640",
+    "customer_class": "Export wholesale",
+    "price_list": "INTL-WHOLESALE-26"
+  },
+  "line_items": [
+    {
+      "line_number": 1,
+      "sku": "EL-3408",
+      "hs_code": "854442",
+      "description": "USB-C braided cable 2m, 100W",
+      "quantity": 24.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 496000.0,
+        "currency": "VND"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 11904000.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 2,
+      "sku": "FT-7050",
+      "hs_code": "950691",
+      "description": "Resistance bands set 5-level",
+      "quantity": 96.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 68750.0,
+        "currency": "VND"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 8.0,
+      "line_total": {
+        "amount": 7128000.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 3,
+      "sku": "OF-1309",
+      "hs_code": "761699",
+      "description": "Aluminium laptop stand foldable",
+      "quantity": 6.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 820500.0,
+        "currency": "VND"
+      },
+      "discount_percent": 10.0,
+      "tax_percent": 8.0,
+      "line_total": {
+        "amount": 4785156.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 4,
+      "sku": "BE-1226",
+      "hs_code": "630790",
+      "description": "Satin sleep mask adjustable",
+      "quantity": 96.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 1214250.0,
+        "currency": "VND"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 8.0,
+      "line_total": {
+        "amount": 125893440.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 5,
+      "sku": "ST-8012",
+      "hs_code": "482010",
+      "description": "A5 dotted notebook 160 pages",
+      "quantity": 60.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 1207000.0,
+        "currency": "VND"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 8.0,
+      "line_total": {
+        "amount": 78213600.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 6,
+      "sku": "SP-1732",
+      "hs_code": "701349",
+      "description": "Glass meal prep containers 3pc",
+      "quantity": 18.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 763750.0,
+        "currency": "VND"
+      },
+      "discount_percent": 2.5,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 13403813.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 7,
+      "sku": "KT-2210",
+      "hs_code": "441919",
+      "description": "Bamboo kitchen utensil set - 6 piece",
+      "quantity": 20.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 1073000.0,
+        "currency": "VND"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 8.0,
+      "line_total": {
+        "amount": 23176800.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 8,
+      "sku": "PC-6021",
+      "hs_code": "420292",
+      "description": "Travel organizer pouch set",
+      "quantity": 60.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 192250.0,
+        "currency": "VND"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 8.0,
+      "line_total": {
+        "amount": 12457800.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 9,
+      "sku": "AR-1806",
+      "hs_code": "850980",
+      "description": "Mini aroma diffuser USB 180ml",
+      "quantity": 16.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 507000.0,
+        "currency": "VND"
+      },
+      "discount_percent": 2.5,
+      "tax_percent": 8.0,
+      "line_total": {
+        "amount": 8541936.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 10,
+      "sku": "PT-1102",
+      "hs_code": "960390",
+      "description": "Pet grooming glove pair",
+      "quantity": 24.0,
+      "unit": "pair",
+      "unit_price": {
+        "amount": 1350750.0,
+        "currency": "VND"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 8.0,
+      "line_total": {
+        "amount": 35011440.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 11,
+      "sku": "EL-3412",
+      "hs_code": "850440",
+      "description": "GaN wall charger 65W dual-port",
+      "quantity": 20.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 956250.0,
+        "currency": "VND"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 19125000.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 12,
+      "sku": "GG-1418",
+      "hs_code": "940542",
+      "description": "LED garden string lights 12m",
+      "quantity": 36.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 1245000.0,
+        "currency": "VND"
+      },
+      "discount_percent": 10.0,
+      "tax_percent": 8.0,
+      "line_total": {
+        "amount": 43565040.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 13,
+      "sku": "FT-7115",
+      "hs_code": "950691",
+      "description": "Yoga mat 6mm non-slip",
+      "quantity": 24.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 125250.0,
+        "currency": "VND"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 8.0,
+      "line_total": {
+        "amount": 3246480.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 14,
+      "sku": "OF-1340",
+      "hs_code": "392690",
+      "description": "Cable management clips - 20 pack",
+      "quantity": 16.0,
+      "unit": "pack",
+      "unit_price": {
+        "amount": 219750.0,
+        "currency": "VND"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 8.0,
+      "line_total": {
+        "amount": 3797280.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 15,
+      "sku": "BT-5090",
+      "hs_code": "340600",
+      "description": "Scented soy candle 220g - amber",
+      "quantity": 96.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 469000.0,
+        "currency": "VND"
+      },
+      "discount_percent": 5.0,
+      "tax_percent": 8.0,
+      "line_total": {
+        "amount": 46194624.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 16,
+      "sku": "PC-6044",
+      "hs_code": "420292",
+      "description": "Compression packing cubes - 4pc",
+      "quantity": 20.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 1390500.0,
+        "currency": "VND"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 27810000.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 17,
+      "sku": "PT-1128",
+      "hs_code": "392490",
+      "description": "Slow feeder bowl 1.2L",
+      "quantity": 24.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 131000.0,
+        "currency": "VND"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 8.0,
+      "line_total": {
+        "amount": 3395520.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 18,
+      "sku": "BT-5075",
+      "hs_code": "691490",
+      "description": "Ceramic planter matte 18cm",
+      "quantity": 16.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 1301750.0,
+        "currency": "VND"
+      },
+      "discount_percent": 10.0,
+      "tax_percent": 8.0,
+      "line_total": {
+        "amount": 20244816.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 19,
+      "sku": "HB-1001",
+      "hs_code": "961700",
+      "description": "Stainless steel insulated bottle 750ml",
+      "quantity": 30.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 1065000.0,
+        "currency": "VND"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 8.0,
+      "line_total": {
+        "amount": 34506000.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 20,
+      "sku": "SP-1708",
+      "hs_code": "392490",
+      "description": "Silicone food storage bags 4pc",
+      "quantity": 16.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 1330500.0,
+        "currency": "VND"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 8.0,
+      "line_total": {
+        "amount": 22991040.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 21,
+      "sku": "BE-1207",
+      "hs_code": "960329",
+      "description": "Facial cleansing brush manual",
+      "quantity": 8.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 353750.0,
+        "currency": "VND"
+      },
+      "discount_percent": 7.5,
+      "tax_percent": 0.0,
+      "line_total": {
+        "amount": 2617750.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 22,
+      "sku": "HM-4120",
+      "hs_code": "630710",
+      "description": "Microfiber cleaning cloth 40x40cm",
+      "quantity": 30.0,
+      "unit": "pack",
+      "unit_price": {
+        "amount": 468500.0,
+        "currency": "VND"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 8.0,
+      "line_total": {
+        "amount": 15179400.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 23,
+      "sku": "GG-1431",
+      "hs_code": "392690",
+      "description": "Self-watering globe set of 6",
+      "quantity": 24.0,
+      "unit": "set",
+      "unit_price": {
+        "amount": 1444000.0,
+        "currency": "VND"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 8.0,
+      "line_total": {
+        "amount": 37428480.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 24,
+      "sku": "KD-9014",
+      "hs_code": "392410",
+      "description": "Kids silicone snack cup",
+      "quantity": 18.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 1315500.0,
+        "currency": "VND"
+      },
+      "discount_percent": 10.0,
+      "tax_percent": 8.0,
+      "line_total": {
+        "amount": 23015988.0,
+        "currency": "VND"
+      }
+    },
+    {
+      "line_number": 25,
+      "sku": "CF-1601",
+      "hs_code": "701349",
+      "description": "Cold brew bottle 1L",
+      "quantity": 18.0,
+      "unit": "pcs",
+      "unit_price": {
+        "amount": 622250.0,
+        "currency": "VND"
+      },
+      "discount_percent": 0.0,
+      "tax_percent": 8.0,
+      "line_total": {
+        "amount": 12096540.0,
+        "currency": "VND"
+      }
+    }
+  ],
+  "totals": {
+    "subtotal": {
+      "amount": 594184063.0,
+      "currency": "VND"
+    },
+    "invoice_discount": {
+      "amount": -2125000.0,
+      "currency": "VND"
+    },
+    "freight_handling": null,
+    "customs_duty": null,
+    "other_charges": null,
+    "tax": {
+      "amount": 41545880.0,
+      "currency": "VND"
+    },
+    "amount_due": {
+      "amount": 633604943.0,
+      "currency": "VND"
+    }
+  },
+  "additional_references": {
+    "tax_categories": "Standard / zero-rated by item master",
+    "export_file": "EXP-260914-77",
+    "sales_representative": "Region 04"
+  },
+  "document_control": {
+    "status": "Issued",
+    "revision": "0"
+  },
+  "document_notice": "Generated for testing"
+}
