@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "transport_order.json",
+  "title": "Договор-заявка на перевозку",
+  "description": "Базовая схема плюс груз, маршрут и условия перевозки. Стоимость услуг — в totals.",
+  "allOf": [
+    {
+      "$ref": "default_scheme.json"
+    }
+  ],
+  "required": [
+    "vehicle",
+    "cargo_description",
+    "cargo_weight_kg",
+    "cargo_value",
+    "loading_place",
+    "customs_point",
+    "unloading_place",
+    "deadlines",
+    "transport_type",
+    "payment_terms",
+    "contact_person"
+  ],
+  "properties": {
+    "document_type": {
+      "const": "transport_order"
+    },
+    "vehicle": {
+      "anyOf": [
+        {
+          "$ref": "default_scheme.json#/$defs/vehicle"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "Перевозимое транспортное средство, если груз — ТС."
+    },
+    "cargo_description": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "cargo_weight_kg": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "cargo_value": {
+      "$ref": "default_scheme.json#/$defs/money"
+    },
+    "loading_place": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "customs_point": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "unloading_place": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "deadlines": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "transport_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "payment_terms": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "contact_person": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "phone"
+          ],
+          "properties": {
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "phone": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "unevaluatedProperties": false
+}

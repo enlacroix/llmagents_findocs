@@ -1,0 +1,95 @@
+{
+  "source_file": "12_Договор-заявка_и_акт_приема-передачи_ТС.pdf",
+  "page": 1,
+  "schema": "transport_order.json",
+  "expected": {
+    "document_type": "transport_order",
+    "title": "Договор-заявка",
+    "document_number": "БЭ-1029",
+    "document_date": "2026-09-22",
+    "currency": "RUB",
+    "period": null,
+    "parties": [
+      {
+        "role": "forwarder",
+        "name": "ООО «Балтийская Экспедиция»",
+        "inn": "3906123450",
+        "kpp": "390601001",
+        "ogrn": null,
+        "address": "236006, г. Калининград, ул. Портовая, д. 41, офис 12",
+        "phone": "+7 (4012) 00-46-10",
+        "email": "info@baltexp-example.ru",
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      },
+      {
+        "role": "customer",
+        "name": "ООО «Чистые руки»",
+        "inn": "7700004172",
+        "kpp": "770001001",
+        "ogrn": null,
+        "address": "109000, г. Москва, ул. Условная, д. 14, стр. 2, помещ. 6/1",
+        "phone": null,
+        "email": null,
+        "bank_account": "40702810900000412700",
+        "bank_name": "АО «Платежом-Красен-Банк»",
+        "bik": "044500412",
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      }
+    ],
+    "references": [],
+    "line_items": [],
+    "totals": {
+      "amount_without_vat": null,
+      "vat_rate": 22,
+      "vat_amount": 124426.23,
+      "total": 690000.0
+    },
+    "signatories": [
+      {
+        "side": "forwarder",
+        "position": "Генеральный директор",
+        "name": "Ковалёв И. С."
+      },
+      {
+        "side": "customer",
+        "position": "Генеральный директор",
+        "name": "Гудман С."
+      }
+    ],
+    "stamps": [
+      "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ г. КАЛИНИНГРАД «БАЛТИЙСКАЯ ЭКСПЕДИЦИЯ» ИНН 3906123450",
+      "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ МОСКВА «ЧИСТЫЕ РУКИ»"
+    ],
+    "handwritten_notes": [
+      "в оплату 07.10 / ЛЧ"
+    ],
+    "vehicle": {
+      "model": "BMW X5 xDrive40d",
+      "year": 2026,
+      "vin": "WBA11EV0X0LK40427",
+      "color": "черный (Carbon Black)",
+      "epts": null,
+      "plate": null
+    },
+    "cargo_description": "Легковой автомобиль BMW X5 xDrive40d, 2026 г. в., VIN WBA11EV0X0LK40427, цвет черный (Carbon Black), новый, без пробега",
+    "cargo_weight_kg": 2315,
+    "cargo_value": 9600000.0,
+    "loading_place": "Германия, 80939 München, Frankfurter Ring 18 (площадка продавца)",
+    "customs_point": "Калининградская областная таможня, т/п Калининградский",
+    "unloading_place": "г. Москва, ул. Тихая, д. 32, помещ. 2 (Россия)",
+    "deadlines": "погрузка 25.09.2026, доставка не позднее 05.10.2026",
+    "transport_type": "автовоз, закрытая перевозка (одноместный модуль)",
+    "payment_terms": "100% предоплата в течение 5 банковских дней с даты подписания заявки",
+    "contact_person": {
+      "name": "Шадипов Марк Ильич",
+      "phone": "+7 (916) 000-27-41"
+    }
+  }
+}

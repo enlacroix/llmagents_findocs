@@ -1,0 +1,108 @@
+{
+  "source_file": "08_Счет_и_реестр_размещений.pdf",
+  "page": 1,
+  "schema": "default_scheme.json",
+  "expected": {
+    "document_type": "invoice",
+    "title": "Счет",
+    "document_number": "PCA-10/26-51",
+    "document_date": "2026-10-01",
+    "currency": "RUB",
+    "period": null,
+    "parties": [
+      {
+        "role": "contractor",
+        "name": "ООО «ПраймКаст Альянс»",
+        "inn": "7700008614",
+        "kpp": "771001001",
+        "ogrn": "1237700086142",
+        "address": "125047, г. Москва, ул. 1-я Тверская-Ямская, д. 23, стр. 1",
+        "phone": "+7 (495) 123-45-67",
+        "email": "info@primecast-alliance.ru",
+        "bank_account": "40702810500000086140",
+        "bank_name": "АО «Платежом-Красен-Банк», г. Москва",
+        "bik": "044500412",
+        "corr_account": "30101810900000000412",
+        "representative_name": null,
+        "representative_position": null
+      },
+      {
+        "role": "customer",
+        "name": "ООО «Чистые руки»",
+        "inn": "7700004127",
+        "kpp": "770001001",
+        "ogrn": null,
+        "address": "109000, г. Москва, ул. Условная, д. 14, стр. 2, помещ. 6/1",
+        "phone": null,
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      }
+    ],
+    "references": [
+      {
+        "type": "contract",
+        "number": "18/02-MEDIA",
+        "date": "2026-02-18"
+      },
+      {
+        "type": "supplementary_agreement",
+        "number": "3",
+        "date": "2026-09-01"
+      }
+    ],
+    "line_items": [
+      {
+        "line_number": 1,
+        "description": "Пакет размещений PC-OCT-B (период 16.09.2026 - 30.09.2026)",
+        "unit": "усл.",
+        "quantity": 1,
+        "unit_price": null,
+        "amount": 1180000.0
+      },
+      {
+        "line_number": 2,
+        "description": "Подготовка графических материалов и адаптация форматов",
+        "unit": "усл.",
+        "quantity": 1,
+        "unit_price": null,
+        "amount": 142000.0
+      },
+      {
+        "line_number": 3,
+        "description": "Сводный отчет по размещениям и передача исходных материалов",
+        "unit": "усл.",
+        "quantity": 1,
+        "unit_price": null,
+        "amount": 168000.0
+      }
+    ],
+    "totals": {
+      "amount_without_vat": null,
+      "vat_rate": 22,
+      "vat_amount": 268688.52,
+      "total": 1490000.0
+    },
+    "signatories": [
+      {
+        "side": "contractor",
+        "position": "Генеральный директор",
+        "name": "Симонюк М. Д."
+      },
+      {
+        "side": "contractor",
+        "position": "Главный бухгалтер",
+        "name": "Симонюк М. Д."
+      }
+    ],
+    "stamps": [
+      "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ МОСКВА «ПРАЙМКАСТ АЛЬЯНС» ОГРН 1237700086142",
+      "ООО «ЧИСТЫЕ РУКИ» Вх. № 1517 «02» октября 2026 г."
+    ],
+    "handwritten_notes": []
+  }
+}

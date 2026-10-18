@@ -1,0 +1,97 @@
+{
+  "source_file": "04_Акт_оказанных_услуг_и_реестр.pdf",
+  "page": 2,
+  "schema": "placement_registry.json",
+  "expected": {
+    "document_type": "placement_registry",
+    "title": "Реестр размещений",
+    "document_number": "1",
+    "document_date": null,
+    "currency": "RUB",
+    "period": {
+      "from": "2026-09-01",
+      "to": "2026-09-15"
+    },
+    "parties": [],
+    "references": [
+      {
+        "type": "act",
+        "number": "PCA-09/26-44",
+        "date": "2026-09-15"
+      }
+    ],
+    "line_items": [],
+    "totals": null,
+    "signatories": [
+      {
+        "side": null,
+        "position": "Ответственный за реестр",
+        "name": "Симонюк М. Д."
+      }
+    ],
+    "stamps": [
+      "ООО «Чистые руки» вх. № 1438 16.09.2026"
+    ],
+    "handwritten_notes": [
+      "акт и реестр получены 16.09 / ЛЧ"
+    ],
+    "placements": [
+      {
+        "code": "PC-441",
+        "channel": "DonPeach",
+        "performer": "Шадипов Марк Ильич",
+        "campaign_code": "IF-RU-SEP-01",
+        "campaign_name": "«Империя Фортуны»",
+        "placements_count": 6,
+        "amount": 760000.0
+      },
+      {
+        "code": "PC-447",
+        "channel": "MiraLime",
+        "performer": "ООО «ПраймКаст Альянс»",
+        "campaign_code": "IF-RU-SEP-01",
+        "campaign_name": "«Империя Фортуны»",
+        "placements_count": 4,
+        "amount": 312000.0
+      },
+      {
+        "code": "PC-452",
+        "channel": "KorsarTV",
+        "performer": "ООО «ПраймКаст Альянс»",
+        "campaign_code": "IF-RU-SEP-02",
+        "campaign_name": "«Империя Фортуны»",
+        "placements_count": 3,
+        "amount": 228000.0
+      },
+      {
+        "code": "PC-456",
+        "channel": "NikaRay",
+        "performer": "ИП Новикова Н. А.",
+        "campaign_code": "CH-BRAND-09",
+        "campaign_name": "«Чистые руки»",
+        "placements_count": 2,
+        "amount": 160000.0
+      }
+    ],
+    "campaigns": [
+      {
+        "campaign_code": "IF-RU-SEP-01",
+        "client": "ООО «Империя Фортуны»",
+        "material_type": "видеовставка / графические материалы",
+        "report_id": "IF-2609-118"
+      },
+      {
+        "campaign_code": "IF-RU-SEP-02",
+        "client": "ООО «Империя Фортуны»",
+        "material_type": "информационный блок",
+        "report_id": "IF-2609-121"
+      },
+      {
+        "campaign_code": "CH-BRAND-09",
+        "client": "ООО «Чистые руки»",
+        "material_type": "упоминание бренда / заставка",
+        "report_id": "CH-2609-044"
+      }
+    ]
+  }
+}

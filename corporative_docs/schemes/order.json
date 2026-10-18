@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "order.json",
+  "title": "Приказ",
+  "description": "Базовая схема плюс тема приказа, его пункты, лицо, которому передаются полномочия, и денежный лимит полномочий.",
+  "allOf": [{ "$ref": "default_scheme.json" }],
+  "required": ["subject", "provisions", "authorized_person", "authority_limit"],
+  "properties": {
+    "document_type": { "const": "order" },
+
+    "subject": {
+      "type": ["string", "null"],
+      "description": "Тема приказа, например «О распределении полномочий...»."
+    },
+
+    "provisions": {
+      "type": "array",
+      "description": "Текст пунктов приказа по порядку, без номеров пунктов.",
+      "items": { "type": "string" }
+    },
+
+    "authorized_person": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["name", "position"],
+          "properties": {
+            "name": { "type": ["string", "null"] },
+            "position": { "type": ["string", "null"] }
+          }
+        },
+        { "type": "null" }
+      ]
+    },
+
+    "authority_limit": {
+      "$ref": "default_scheme.json#/$defs/money",
+      "description": "Сумма, выше которой документы подписывает только руководитель, если указана."
+    }
+  },
+  "unevaluatedProperties": false
+}

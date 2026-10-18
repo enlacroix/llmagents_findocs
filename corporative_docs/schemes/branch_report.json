@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "branch_report.json",
+  "title": "Сводный отчет по филиалам",
+  "description": "Базовая схема плюс строки по подразделениям, итоговая строка и нераспределенные поступления.",
+  "allOf": [{ "$ref": "default_scheme.json" }],
+  "required": ["branch_rows", "branch_totals", "unallocated_receipts"],
+  "properties": {
+    "document_type": { "const": "branch_report" },
+
+    "branch_rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "branch_code",
+          "working_days",
+          "bookings",
+          "services",
+          "cash",
+          "acquiring",
+          "certificates_other",
+          "total"
+        ],
+        "properties": {
+          "branch_code": { "type": ["string", "null"] },
+          "working_days": { "type": ["integer", "null"] },
+          "bookings": { "type": ["integer", "null"], "description": "Колонка «Записей»." },
+          "services": { "type": ["integer", "null"], "description": "Колонка «Оказано услуг»." },
+          "cash": { "$ref": "default_scheme.json#/$defs/money" },
+          "acquiring": { "$ref": "default_scheme.json#/$defs/money" },
+          "certificates_other": { "$ref": "default_scheme.json#/$defs/money" },
+          "total": { "$ref": "default_scheme.json#/$defs/money" }
+        }
+      }
+    },
+
+    "branch_totals": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["bookings", "services", "cash", "acquiring", "certificates_other", "total"],
+          "properties": {
+            "bookings": { "type": ["integer", "null"] },
+            "services": { "type": ["integer", "null"] },
+            "cash": { "$ref": "default_scheme.json#/$defs/money" },
+            "acquiring": { "$ref": "default_scheme.json#/$defs/money" },
+            "certificates_other": { "$ref": "default_scheme.json#/$defs/money" },
+            "total": { "$ref": "default_scheme.json#/$defs/money" }
+          }
+        },
+        { "type": "null" }
+      ]
+    },
+
+    "unallocated_receipts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["code", "basis", "amount", "allocation"],
+        "properties": {
+          "code": { "type": ["string", "null"] },
+          "basis": { "type": ["string", "null"] },
+          "amount": { "$ref": "default_scheme.json#/$defs/money" },
+          "allocation": {
+            "type": "array",
+            "description": "Коды подразделений из колонки «Распределение».",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    }
+  },
+  "unevaluatedProperties": false
+}

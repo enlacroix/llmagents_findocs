@@ -1,0 +1,124 @@
+{
+  "source_file": "02_Банковская_выписка_и_сводный_отчет.pdf",
+  "page": 2,
+  "schema": "branch_report.json",
+  "expected": {
+    "document_type": "branch_report",
+    "title": "Сводный отчет по филиалам",
+    "document_number": null,
+    "document_date": null,
+    "currency": "RUB",
+    "period": {
+      "from": "2026-09-01",
+      "to": "2026-09-30"
+    },
+    "parties": [],
+    "references": [],
+    "line_items": [],
+    "totals": null,
+    "signatories": [],
+    "stamps": [
+      "Бухгалтерия принято 01.10.2026 реестр 09/26"
+    ],
+    "handwritten_notes": [],
+    "branch_rows": [
+      {
+        "branch_code": "CH-00",
+        "working_days": 30,
+        "bookings": 1138,
+        "services": 1421,
+        "cash": 1286400,
+        "acquiring": 4612960,
+        "certificates_other": 418000,
+        "total": 6317360
+      },
+      {
+        "branch_code": "CH-01",
+        "working_days": 30,
+        "bookings": 562,
+        "services": 684,
+        "cash": 524700,
+        "acquiring": 1936250,
+        "certificates_other": 196000,
+        "total": 2656950
+      },
+      {
+        "branch_code": "CH-02",
+        "working_days": 30,
+        "bookings": 498,
+        "services": 621,
+        "cash": 471300,
+        "acquiring": 1764800,
+        "certificates_other": 248000,
+        "total": 2484100
+      },
+      {
+        "branch_code": "CH-03",
+        "working_days": 30,
+        "bookings": 447,
+        "services": 590,
+        "cash": 386500,
+        "acquiring": 1503400,
+        "certificates_other": 512000,
+        "total": 2401900
+      },
+      {
+        "branch_code": "CH-04",
+        "working_days": 30,
+        "bookings": 389,
+        "services": 544,
+        "cash": 338900,
+        "acquiring": 1441700,
+        "certificates_other": 612000,
+        "total": 2392600
+      },
+      {
+        "branch_code": "CH-05",
+        "working_days": 30,
+        "bookings": 301,
+        "services": 428,
+        "cash": 276200,
+        "acquiring": 1118900,
+        "certificates_other": 1482000,
+        "total": 2877100
+      }
+    ],
+    "branch_totals": {
+      "bookings": 3335,
+      "services": 4288,
+      "cash": 3284000,
+      "acquiring": 12378010,
+      "certificates_other": 3468000,
+      "total": 19130010
+    },
+    "unallocated_receipts": [
+      {
+        "code": "SR-09-118",
+        "basis": "Погашение подарочных сертификатов прошлых периодов",
+        "amount": 812000.0,
+        "allocation": [
+          "CH-00",
+          "CH-03"
+        ]
+      },
+      {
+        "code": "SR-09-124",
+        "basis": "Корпоративные сертификаты по реестру № 18",
+        "amount": 1124000.0,
+        "allocation": [
+          "CH-04",
+          "CH-05"
+        ]
+      },
+      {
+        "code": "SR-09-131",
+        "basis": "Корректировка реестров эквайринга за 08.2026",
+        "amount": 384000.0,
+        "allocation": [
+          "CH-02",
+          "CH-05"
+        ]
+      }
+    ]
+  }
+}

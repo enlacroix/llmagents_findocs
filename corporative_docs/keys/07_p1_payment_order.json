@@ -1,0 +1,80 @@
+{
+  "source_file": "07_Платежные_поручения.pdf",
+  "page": 1,
+  "schema": "payment_order.json",
+  "expected": {
+    "document_type": "payment_order",
+    "title": "Платежное поручение",
+    "document_number": "1906",
+    "document_date": "2026-10-09",
+    "currency": "RUB",
+    "period": null,
+    "parties": [
+      {
+        "role": "payer",
+        "name": "ООО «Чистые руки»",
+        "inn": "7700004127",
+        "kpp": "770001001",
+        "ogrn": null,
+        "address": null,
+        "phone": null,
+        "email": null,
+        "bank_account": "40702810900000412700",
+        "bank_name": "АО «Платежом-Красен-Банк» г. Москва",
+        "bik": "044500412",
+        "corr_account": "30101810900000000412",
+        "representative_name": null,
+        "representative_position": null
+      },
+      {
+        "role": "payee",
+        "name": "ООО «ХимТекстильСнаб»",
+        "inn": "5900002197",
+        "kpp": "590001001",
+        "ogrn": null,
+        "address": null,
+        "phone": null,
+        "email": null,
+        "bank_account": "40702810649000021970",
+        "bank_name": "Пермский филиал АО «Уралстройкредит» г. Пермь",
+        "bik": "045773961",
+        "corr_account": "30101810900000000961",
+        "representative_name": null,
+        "representative_position": null
+      }
+    ],
+    "references": [
+      {
+        "type": "invoice",
+        "number": "ХТС-2311/26",
+        "date": "2026-10-05"
+      },
+      {
+        "type": "contract",
+        "number": "41-П/26",
+        "date": "2026-02-11"
+      }
+    ],
+    "line_items": [],
+    "totals": {
+      "amount_without_vat": null,
+      "vat_rate": 22,
+      "vat_amount": 45939.52,
+      "total": 254755.52
+    },
+    "signatories": [],
+    "stamps": [
+      "АО «ПЛАТЕЖОМ-КРАСЕН-БАНК» ИСПОЛНЕНО 09.10.2026 БИК 044500412"
+    ],
+    "handwritten_notes": [
+      "к сч. 60.01, ХТС НК"
+    ],
+    "purpose": "Оплата по счету № ХТС-2311/26 от 05.10.2026 по договору поставки № 41-П/26 от 11.02.2026 за хозяйственные товары. Сумма 254 755,52, в т.ч. НДС (22%) 45 939,52",
+    "payment_kind": "электронно",
+    "operation_type": "01",
+    "priority": "5",
+    "received_by_bank": "2026-10-09",
+    "debited": "2026-10-09",
+    "executed": "2026-10-09"
+  }
+}

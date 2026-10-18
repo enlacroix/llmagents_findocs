@@ -1,0 +1,128 @@
+{
+  "source_file": "10_Счет_на_аренду_и_акт_сверки.pdf",
+  "page": 2,
+  "schema": "reconciliation_act.json",
+  "expected": {
+    "document_type": "reconciliation_act",
+    "title": "Акт сверки",
+    "document_number": null,
+    "document_date": null,
+    "currency": "RUB",
+    "period": {
+      "from": "2026-07-01",
+      "to": "2026-09-30"
+    },
+    "parties": [
+      {
+        "role": "lessor",
+        "name": "ООО «МосАренда Плюс»",
+        "inn": null,
+        "kpp": null,
+        "ogrn": null,
+        "address": null,
+        "phone": null,
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      },
+      {
+        "role": "lessee",
+        "name": "ООО «Чистые руки»",
+        "inn": null,
+        "kpp": null,
+        "ogrn": null,
+        "address": null,
+        "phone": null,
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      }
+    ],
+    "references": [
+      {
+        "type": "contract",
+        "number": "А-112/24",
+        "date": null
+      },
+      {
+        "type": "contract",
+        "number": "А-131/25",
+        "date": null
+      }
+    ],
+    "line_items": [],
+    "totals": null,
+    "signatories": [
+      {
+        "side": "lessor",
+        "position": "Главный бухгалтер",
+        "name": "Гусева Т. В."
+      },
+      {
+        "side": "lessee",
+        "position": "Главный бухгалтер",
+        "name": "Петрова Н. К."
+      }
+    ],
+    "stamps": [
+      "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ МОСКВА «МОСАРЕНДА ПЛЮС» ИНН 7702334671"
+    ],
+    "handwritten_notes": [
+      "сверено, расхождений нет НК 06.10"
+    ],
+    "data_of": "ООО «МосАренда Плюс»",
+    "opening_debit": null,
+    "opening_credit": 312000.0,
+    "turnover_debit": 936000.0,
+    "turnover_credit": 936000.0,
+    "closing_debit": null,
+    "closing_credit": 312000.0,
+    "entries": [
+      {
+        "date": "2026-07-01",
+        "document": "Продажа (0601)",
+        "debit": 312000,
+        "credit": null
+      },
+      {
+        "date": "2026-08-01",
+        "document": "Продажа (0702)",
+        "debit": 312000,
+        "credit": null
+      },
+      {
+        "date": "2026-07-24",
+        "document": "Оплата (п/п 1441)",
+        "debit": null,
+        "credit": 312000
+      },
+      {
+        "date": "2026-09-01",
+        "document": "Продажа (0815)",
+        "debit": 312000,
+        "credit": null
+      },
+      {
+        "date": "2026-08-25",
+        "document": "Оплата (п/п 1596)",
+        "debit": null,
+        "credit": 312000
+      },
+      {
+        "date": "2026-09-25",
+        "document": "Оплата (п/п 1874)",
+        "debit": null,
+        "credit": 312000
+      }
+    ],
+    "conclusion": "на 30.09.2026 задолженность в пользу ООО «МосАренда Плюс» отсутствует, переплата ООО «Чистые руки» составляет 312 000,00 руб. (аванс за октябрь 2026 г.)"
+  }
+}

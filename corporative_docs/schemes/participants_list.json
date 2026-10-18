@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "participants_list.json",
+  "title": "Список участников мероприятий",
+  "description": "Базовая схема плюс мероприятия с площадками и участниками. Документ-основание — в references.",
+  "allOf": [
+    {
+      "$ref": "default_scheme.json"
+    }
+  ],
+  "required": [
+    "events"
+  ],
+  "properties": {
+    "document_type": {
+      "const": "participants_list"
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "date",
+          "venue",
+          "lead",
+          "participants",
+          "start_time",
+          "end_time"
+        ],
+        "properties": {
+          "date": {
+            "$ref": "default_scheme.json#/$defs/date"
+          },
+          "venue": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Площадка: адрес и пояснение в скобках, как напечатано."
+          },
+          "lead": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Старший."
+          },
+          "participants": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "ФИО участников по одному."
+          },
+          "start_time": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "ЧЧ:ММ"
+          },
+          "end_time": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "ЧЧ:ММ"
+          }
+        }
+      }
+    }
+  },
+  "unevaluatedProperties": false
+}

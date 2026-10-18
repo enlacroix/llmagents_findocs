@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "insurance_policy.json",
+  "title": "Страховой полис КАСКО",
+  "description": "Базовая схема плюс ТС, условия страхования и допущенные к управлению лица. Серия и номер полиса — в document_number, срок действия — в period, премия — в totals.total.",
+  "allOf": [
+    {
+      "$ref": "default_scheme.json"
+    }
+  ],
+  "required": [
+    "vehicle",
+    "risks",
+    "sum_insured",
+    "deductible",
+    "premium_due",
+    "drivers"
+  ],
+  "properties": {
+    "document_type": {
+      "const": "insurance_policy"
+    },
+    "vehicle": {
+      "$ref": "default_scheme.json#/$defs/vehicle"
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sum_insured": {
+      "$ref": "default_scheme.json#/$defs/money"
+    },
+    "deductible": {
+      "$ref": "default_scheme.json#/$defs/money"
+    },
+    "premium_due": {
+      "$ref": "default_scheme.json#/$defs/date"
+    },
+    "drivers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "birth_date",
+          "license",
+          "experience_since"
+        ],
+        "properties": {
+          "name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "birth_date": {
+            "$ref": "default_scheme.json#/$defs/date"
+          },
+          "license": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "experience_since": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "unevaluatedProperties": false
+}

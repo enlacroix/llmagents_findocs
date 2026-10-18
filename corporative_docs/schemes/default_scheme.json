@@ -1,0 +1,295 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "default_scheme.json",
+  "title": "Базовая схема корпоративного документа",
+  "description": "Общие поля для всех документов. Особые типы документов расширяют эту схему через allOf. Значения извлекаются так, как они напечатаны в документе; отсутствующее скалярное поле — null, отсутствующий список — [].",
+  "type": "object",
+
+  "required": [
+    "document_type",
+    "title",
+    "document_number",
+    "document_date",
+    "currency",
+    "period",
+    "parties",
+    "references",
+    "line_items",
+    "totals",
+    "signatories",
+    "stamps",
+    "handwritten_notes"
+  ],
+
+  "properties": {
+    "document_type": {
+      "type": "string",
+      "enum": [
+        "company_card",
+        "order",
+        "bank_statement",
+        "branch_report",
+        "invoice",
+        "transfer_document",
+        "service_act",
+        "placement_registry",
+        "contract",
+        "contract_appendix",
+        "participants_list",
+        "tax_invoice",
+        "payment_order",
+        "reconciliation_act",
+        "transport_order",
+        "vehicle_transfer_act",
+        "insurance_policy",
+        "power_of_attorney",
+        "waybill"
+      ],
+      "description": "Тип документа: карточка предприятия, приказ, банковская выписка, сводный отчет по филиалам, счет на оплату, УПД или товарная накладная, акт оказанных услуг, реестр размещений, договор, приложение к договору, список участников мероприятий, счет-фактура, платежное поручение, акт сверки, договор-заявка на перевозку, акт приема-передачи ТС, страховой полис, доверенность, путевой лист."
+    },
+
+    "title": {
+      "type": ["string", "null"],
+      "description": "Вид документа из заголовка, без номера, даты и темы: «Счет на оплату», «Приказ». Тема приказа или предмет договора сюда не входят."
+    },
+
+    "document_number": {
+      "type": ["string", "null"],
+      "description": "Номер документа как напечатан, например «ХТС-2197/26»; для приложения — номер приложения. Коды бланков вида «Форма CR-FIN/BR-07» номером не считаются."
+    },
+
+    "document_date": {
+      "$ref": "#/$defs/date",
+      "description": "Дата документа. Только если она явно напечатана в документе."
+    },
+
+    "currency": {
+      "type": ["string", "null"],
+      "pattern": "^[A-Z]{3}$",
+      "description": "Валюта по ISO 4217, если в документе есть денежные суммы. Рубли — RUB."
+    },
+
+    "period": {
+      "description": "Отчетный период или срок действия.",
+      "anyOf": [
+        { "$ref": "#/$defs/period" },
+        { "type": "null" }
+      ]
+    },
+
+    "parties": {
+      "type": "array",
+      "description": "Организации, выступающие сторонами документа: из шапки, реквизитов, блоков подписей и печатей. Реквизиты стороны можно брать с её печати.",
+      "items": { "$ref": "#/$defs/party" }
+    },
+
+    "references": {
+      "type": "array",
+      "description": "Документы, на которые ссылается данный документ (договор, заявка, счет и т.п.).",
+      "items": { "$ref": "#/$defs/reference" }
+    },
+
+    "line_items": {
+      "type": "array",
+      "description": "Табличная часть с товарами или услугами в исходном порядке.",
+      "items": { "$ref": "#/$defs/line_item" }
+    },
+
+    "totals": {
+      "description": "Итоговые суммы документа.",
+      "anyOf": [
+        { "$ref": "#/$defs/totals" },
+        { "type": "null" }
+      ]
+    },
+
+    "signatories": {
+      "type": "array",
+      "description": "Лица, указанные у подписей.",
+      "items": { "$ref": "#/$defs/signatory" }
+    },
+
+    "stamps": {
+      "type": "array",
+      "description": "Одна печать или штамп — одна строка: весь читаемый текст, включая вписанные от руки значения, в порядке чтения. Неразборчивые фрагменты пропускаются.",
+      "items": { "type": "string" }
+    },
+
+    "handwritten_notes": {
+      "type": "array",
+      "description": "Рукописные пометки вне печатей и штампов. Одна пометка — одна строка, даже если она написана в несколько строк.",
+      "items": { "type": "string" }
+    }
+  },
+
+  "$defs": {
+    "date": {
+      "type": ["string", "null"],
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Дата в формате YYYY-MM-DD."
+    },
+
+    "money": {
+      "type": ["number", "null"],
+      "description": "Сумма числом с двумя знаками после точки, со знаком, если он напечатан."
+    },
+
+    "period": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["from", "to"],
+      "properties": {
+        "from": { "$ref": "#/$defs/date" },
+        "to": { "$ref": "#/$defs/date" }
+      }
+    },
+
+    "party": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "role",
+        "name",
+        "inn",
+        "kpp",
+        "ogrn",
+        "address",
+        "phone",
+        "email",
+        "bank_account",
+        "bank_name",
+        "bik",
+        "corr_account",
+        "representative_name",
+        "representative_position"
+      ],
+      "properties": {
+        "role": {
+          "type": "string",
+          "enum": [
+            "issuer",
+            "supplier",
+            "buyer",
+            "consignee",
+            "contractor",
+            "customer",
+            "sponsor",
+            "recipient",
+            "bank",
+            "client",
+            "consignor",
+            "payer",
+            "payee",
+            "lessor",
+            "lessee",
+            "forwarder",
+            "insurer",
+            "policyholder"
+          ],
+          "description": "Роль в документе: issuer — организация, выпустившая внутренний документ; consignor — грузоотправитель; payer/payee — плательщик/получатель платежа; lessor/lessee — арендодатель/арендатор; forwarder — экспедитор; insurer/policyholder — страховщик/страхователь."
+        },
+        "name": {
+          "type": ["string", "null"],
+          "description": "Только наименование, без адреса и реквизитов."
+        },
+        "inn": { "type": ["string", "null"] },
+        "kpp": { "type": ["string", "null"] },
+        "ogrn": { "type": ["string", "null"] },
+        "address": { "type": ["string", "null"] },
+        "phone": { "type": ["string", "null"] },
+        "email": { "type": ["string", "null"] },
+        "bank_account": { "type": ["string", "null"] },
+        "bank_name": { "type": ["string", "null"] },
+        "bik": { "type": ["string", "null"] },
+        "corr_account": { "type": ["string", "null"] },
+        "representative_name": {
+          "type": ["string", "null"],
+          "description": "Только из формулировки «в лице ...», в именительном падеже. Лица у подписей сюда не переносятся — они в signatories."
+        },
+        "representative_position": {
+          "type": ["string", "null"],
+          "description": "Должность из той же формулировки «в лице ...»."
+        }
+      }
+    },
+
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "number", "date"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "contract",
+            "supplementary_agreement",
+            "request",
+            "invoice",
+            "act",
+            "transport_document",
+            "other"
+          ]
+        },
+        "number": { "type": ["string", "null"] },
+        "date": { "$ref": "#/$defs/date" }
+      }
+    },
+
+    "vehicle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["model", "year", "vin", "color", "epts", "plate"],
+      "properties": {
+        "model": { "type": ["string", "null"], "description": "Марка и модель." },
+        "year": { "type": ["integer", "null"] },
+        "vin": { "type": ["string", "null"] },
+        "color": { "type": ["string", "null"] },
+        "epts": { "type": ["string", "null"], "description": "Номер электронного паспорта ТС, только цифры." },
+        "plate": { "type": ["string", "null"], "description": "Регистрационный знак или знак «Транзит», как напечатан." }
+      }
+    },
+
+    "line_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["line_number", "description", "unit", "quantity", "unit_price", "amount"],
+      "properties": {
+        "line_number": { "type": ["integer", "null"] },
+        "description": { "type": ["string", "null"] },
+        "unit": { "type": ["string", "null"] },
+        "quantity": { "type": ["number", "null"] },
+        "unit_price": { "$ref": "#/$defs/money" },
+        "amount": { "$ref": "#/$defs/money" }
+      }
+    },
+
+    "totals": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["amount_without_vat", "vat_rate", "vat_amount", "total"],
+      "properties": {
+        "amount_without_vat": { "$ref": "#/$defs/money" },
+        "vat_rate": {
+          "type": ["number", "null"],
+          "description": "Ставка НДС в процентах, например 22."
+        },
+        "vat_amount": { "$ref": "#/$defs/money" },
+        "total": { "$ref": "#/$defs/money" }
+      }
+    },
+
+    "signatory": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["side", "position", "name"],
+      "properties": {
+        "side": {
+          "type": ["string", "null"],
+          "description": "Роль стороны из parties, от которой подписано, или null."
+        },
+        "position": { "type": ["string", "null"] },
+        "name": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

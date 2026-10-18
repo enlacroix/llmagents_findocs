@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "contract_appendix.json",
+  "title": "Приложение к договору: план и смета мероприятий",
+  "description": "Базовая схема плюс мероприятия со сметой, отметка о согласовании и список аккредитованных лиц. Номер приложения — в document_number, основной договор — в references.",
+  "allOf": [{ "$ref": "default_scheme.json" }],
+  "required": ["events", "approval", "accredited_persons"],
+  "properties": {
+    "document_type": { "const": "contract_appendix" },
+
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["line_number", "name", "dates", "responsible", "amount"],
+        "properties": {
+          "line_number": { "type": ["integer", "null"] },
+          "name": { "type": ["string", "null"] },
+          "dates": { "type": ["string", "null"], "description": "Период как напечатан, например «05-26.09»." },
+          "responsible": { "type": ["string", "null"] },
+          "amount": { "$ref": "default_scheme.json#/$defs/money" }
+        }
+      }
+    },
+
+    "approval": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["organization", "date"],
+          "properties": {
+            "organization": { "type": ["string", "null"] },
+            "date": { "$ref": "default_scheme.json#/$defs/date" }
+          }
+        },
+        { "type": "null" }
+      ]
+    },
+
+    "accredited_persons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["full_name", "role", "internal_number", "access"],
+        "properties": {
+          "full_name": { "type": ["string", "null"] },
+          "role": { "type": ["string", "null"] },
+          "internal_number": { "type": ["string", "null"] },
+          "access": { "type": ["string", "null"] }
+        }
+      }
+    }
+  },
+  "unevaluatedProperties": false
+}

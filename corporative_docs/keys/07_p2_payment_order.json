@@ -1,0 +1,83 @@
+{
+  "source_file": "07_Платежные_поручения.pdf",
+  "page": 2,
+  "schema": "payment_order.json",
+  "expected": {
+    "document_type": "payment_order",
+    "title": "Платежное поручение",
+    "document_number": "1911",
+    "document_date": "2026-10-12",
+    "currency": "RUB",
+    "period": null,
+    "parties": [
+      {
+        "role": "payer",
+        "name": "ООО «Чистые руки»",
+        "inn": "7700004127",
+        "kpp": "770001001",
+        "ogrn": null,
+        "address": null,
+        "phone": null,
+        "email": null,
+        "bank_account": "40702810900000412700",
+        "bank_name": "АО «Платежом-Красен-Банк» г. Москва",
+        "bik": "044500412",
+        "corr_account": "30101810900000000412",
+        "representative_name": null,
+        "representative_position": null
+      },
+      {
+        "role": "payee",
+        "name": "ООО «ПраймКаст Альянс»",
+        "inn": "7700008614",
+        "kpp": "771001001",
+        "ogrn": null,
+        "address": null,
+        "phone": null,
+        "email": null,
+        "bank_account": "40702810500000086410",
+        "bank_name": "АО «Платежом-Красен-Банк» г. Москва",
+        "bik": "044500412",
+        "corr_account": "30101810900000000412",
+        "representative_name": null,
+        "representative_position": null
+      }
+    ],
+    "references": [
+      {
+        "type": "invoice",
+        "number": "PCA-10/26-51",
+        "date": "2026-10-01"
+      },
+      {
+        "type": "contract",
+        "number": "18/02-MEDIA",
+        "date": "2026-02-18"
+      },
+      {
+        "type": "supplementary_agreement",
+        "number": "3",
+        "date": null
+      }
+    ],
+    "line_items": [],
+    "totals": {
+      "amount_without_vat": null,
+      "vat_rate": 22,
+      "vat_amount": 268688.52,
+      "total": 1490000.0
+    },
+    "signatories": [],
+    "stamps": [
+      "АО «ПЛАТЕЖОМ-КРАСЕН-БАНК» ИСПОЛНЕНО 12.10.2026 БИК 044500412"
+    ],
+    "handwritten_notes": [],
+    "purpose": "Оплата по счету № PCA-10/26-51 от 01.10.2026 за организацию размещения информационных материалов, договор № 18/02-MEDIA от 18.02.2026, доп. соглашение № 3. Сумма 1 490 000,00, в т.ч. НДС (22%) 268 688,52",
+    "payment_kind": "электронно",
+    "operation_type": "01",
+    "priority": "5",
+    "received_by_bank": "2026-10-12",
+    "debited": "2026-10-12",
+    "executed": "2026-10-12"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "source_file": "15_Акт_и_счет-фактура_клининг.pdf",
+  "page": 1,
+  "schema": "default_scheme.json",
+  "expected": {
+    "document_type": "service_act",
+    "title": "Акт",
+    "document_number": "214",
+    "document_date": "2026-09-30",
+    "currency": "RUB",
+    "period": null,
+    "parties": [
+      {
+        "role": "contractor",
+        "name": "ООО «Город-Сервис»",
+        "inn": "7701456120",
+        "kpp": "770101001",
+        "ogrn": null,
+        "address": "105064, г. Москва, ул. Земляной Вал, д. 9, офис 314",
+        "phone": "+7 (495) 000-72-15",
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      },
+      {
+        "role": "customer",
+        "name": "ООО «Чистые руки»",
+        "inn": "7700004127",
+        "kpp": null,
+        "ogrn": null,
+        "address": "109000, г. Москва, ул. Условная, д. 14, стр. 2, помещ. 6/1",
+        "phone": null,
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      }
+    ],
+    "references": [
+      {
+        "type": "contract",
+        "number": "К-08/25",
+        "date": "2025-08-01"
+      }
+    ],
+    "line_items": [
+      {
+        "line_number": 1,
+        "description": "Комплексная уборка помещений подразделения CH-02, сентябрь 2026 г.",
+        "unit": "усл.",
+        "quantity": 1,
+        "unit_price": 34800.0,
+        "amount": 34800.0
+      },
+      {
+        "line_number": 2,
+        "description": "Комплексная уборка помещений подразделения CH-03, сентябрь 2026 г.",
+        "unit": "усл.",
+        "quantity": 1,
+        "unit_price": 36200.0,
+        "amount": 36200.0
+      },
+      {
+        "line_number": 3,
+        "description": "Комплексная уборка помещений подразделения CH-04, сентябрь 2026 г.",
+        "unit": "усл.",
+        "quantity": 1,
+        "unit_price": 31400.0,
+        "amount": 31400.0
+      },
+      {
+        "line_number": 4,
+        "description": "Комплексная уборка помещений подразделения CH-05, сентябрь 2026 г.",
+        "unit": "усл.",
+        "quantity": 1,
+        "unit_price": 28600.0,
+        "amount": 28600.0
+      },
+      {
+        "line_number": 5,
+        "description": "Химчистка ковровых покрытий, CH-03, CH-05",
+        "unit": "кв. м",
+        "quantity": 116,
+        "unit_price": 100.0,
+        "amount": 11600.0
+      }
+    ],
+    "totals": {
+      "amount_without_vat": null,
+      "vat_rate": null,
+      "vat_amount": 25714.75,
+      "total": 142600.0
+    },
+    "signatories": [
+      {
+        "side": "contractor",
+        "position": "Генеральный директор",
+        "name": "Абрамова Н. В."
+      },
+      {
+        "side": "customer",
+        "position": "Исполнительный директор",
+        "name": "Линь Чан"
+      }
+    ],
+    "stamps": [
+      "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ МОСКВА «ГОРОД-СЕРВИС» ИНН 7701456120"
+    ],
+    "handwritten_notes": [
+      "в оплату, CH-02 — CH-05 ЛЧ 01.10"
+    ]
+  }
+}

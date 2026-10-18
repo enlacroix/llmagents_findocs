@@ -1,0 +1,99 @@
+{
+  "source_file": "10_Счет_на_аренду_и_акт_сверки.pdf",
+  "page": 1,
+  "schema": "default_scheme.json",
+  "expected": {
+    "document_type": "invoice",
+    "title": "Счет на оплату",
+    "document_number": "0918",
+    "document_date": "2026-09-18",
+    "currency": "RUB",
+    "period": null,
+    "parties": [
+      {
+        "role": "lessor",
+        "name": "ООО «МосАренда Плюс»",
+        "inn": "7702334671",
+        "kpp": "770201001",
+        "ogrn": null,
+        "address": "127051, г. Москва, Цветной б-р, д. 11, стр. 2",
+        "phone": "+7 (495) 000-50-11",
+        "email": null,
+        "bank_account": "40702810100000233467",
+        "bank_name": "АО «Платежом-Красен-Банк» г. Москва",
+        "bik": "044500412",
+        "corr_account": "30101810900000000412",
+        "representative_name": null,
+        "representative_position": null
+      },
+      {
+        "role": "lessee",
+        "name": "ООО «Чистые руки»",
+        "inn": "7700004127",
+        "kpp": "770001001",
+        "ogrn": null,
+        "address": "109000, г. Москва, ул. Условная, д. 14, стр. 2, помещ. 6/1",
+        "phone": "+7 (495) 000-31-40",
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      }
+    ],
+    "references": [
+      {
+        "type": "contract",
+        "number": "А-112/24",
+        "date": null
+      },
+      {
+        "type": "contract",
+        "number": "А-131/25",
+        "date": null
+      }
+    ],
+    "line_items": [
+      {
+        "line_number": 1,
+        "description": "Арендная плата за октябрь 2026 г., нежилое помещение 118,4 кв. м, г. Москва, ул. Полевая, д. 27 (договор № А-112/24)",
+        "unit": "мес.",
+        "quantity": 1,
+        "unit_price": 168000.0,
+        "amount": 168000.0
+      },
+      {
+        "line_number": 2,
+        "description": "Арендная плата за октябрь 2026 г., нежилое помещение 96,2 кв. м, г. Москва, б-р Восточный, д. 11 (договор № А-131/25)",
+        "unit": "мес.",
+        "quantity": 1,
+        "unit_price": 144000.0,
+        "amount": 144000.0
+      }
+    ],
+    "totals": {
+      "amount_without_vat": null,
+      "vat_rate": 22,
+      "vat_amount": 56262.3,
+      "total": 312000.0
+    },
+    "signatories": [
+      {
+        "side": "lessor",
+        "position": "Руководитель",
+        "name": "Лесков А. П."
+      },
+      {
+        "side": "lessor",
+        "position": "Бухгалтер",
+        "name": "Гусева Т. В."
+      }
+    ],
+    "stamps": [],
+    "handwritten_notes": [
+      "в оплату 25.09 аренда CH-02, CH-04"
+    ]
+  }
+}

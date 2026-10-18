@@ -1,0 +1,128 @@
+{
+  "source_file": "11_Выписка_по_счету_октябрь.pdf",
+  "page": 1,
+  "schema": "bank_statement.json",
+  "expected": {
+    "document_type": "bank_statement",
+    "title": "Выписка из лицевого счета",
+    "document_number": null,
+    "document_date": null,
+    "currency": "RUB",
+    "period": {
+      "from": "2026-10-01",
+      "to": "2026-10-15"
+    },
+    "parties": [
+      {
+        "role": "bank",
+        "name": "АО «Платежом-Красен-Банк»",
+        "inn": null,
+        "kpp": null,
+        "ogrn": null,
+        "address": null,
+        "phone": null,
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": "044500412",
+        "corr_account": "30101810900000000412",
+        "representative_name": null,
+        "representative_position": null
+      },
+      {
+        "role": "client",
+        "name": "ООО «Чистые руки»",
+        "inn": "7700004127",
+        "kpp": null,
+        "ogrn": null,
+        "address": null,
+        "phone": null,
+        "email": null,
+        "bank_account": "40702810900000412700",
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      }
+    ],
+    "references": [],
+    "line_items": [],
+    "totals": null,
+    "signatories": [],
+    "stamps": [
+      "АО «ПЛАТЕЖОМ-КРАСЕН-БАНК» Отделение «Красные Ворота» ДЛЯ ВЫПИСОК"
+    ],
+    "handwritten_notes": [],
+    "generated_at": "2026-10-16T07:58:31",
+    "opening_balance": 3971225.2,
+    "total_credit": null,
+    "total_debit": null,
+    "closing_balance": null,
+    "transactions": [
+      {
+        "date": "2026-10-01",
+        "document_number": "9046",
+        "counterparty": "АО «Эквайринг Сервис»",
+        "purpose": "Зачисление по реестру эквайринга № 2763",
+        "amount": 512340.0
+      },
+      {
+        "date": "2026-10-02",
+        "document_number": "9071",
+        "counterparty": "ООО «Город-Сервис»",
+        "purpose": "Клининг CH-02 - CH-05 за сентябрь по акту № 214",
+        "amount": -142600.0
+      },
+      {
+        "date": "2026-10-05",
+        "document_number": "9112",
+        "counterparty": "АО «Эквайринг Сервис»",
+        "purpose": "Зачисление по реестру эквайринга № 2790",
+        "amount": 598170.0
+      },
+      {
+        "date": "2026-10-06",
+        "document_number": "9138",
+        "counterparty": "ООО «Империя Фортуны»",
+        "purpose": "Оплата по договору № ИФ-26/09 от 01.09.2026 за корпоративные подарочные сертификаты, реестр № 19. НДС не облагается",
+        "amount": 1260000.0
+      },
+      {
+        "date": "2026-10-07",
+        "document_number": "9150",
+        "counterparty": "ООО «Балтийская Экспедиция»",
+        "purpose": "Оплата по договору-заявке № БЭ-1029 от 22.09.2026 за организацию доставки ТС",
+        "amount": -690000.0
+      },
+      {
+        "date": "2026-10-07",
+        "document_number": "9163",
+        "counterparty": "АО «Эквайринг Сервис»",
+        "purpose": "Зачисление по реестру эквайринга № 2811",
+        "amount": 466920.0
+      },
+      {
+        "date": "2026-10-08",
+        "document_number": "9177",
+        "counterparty": "ООО «Столичный Интернет»",
+        "purpose": "Услуги связи CH-00 - CH-05, октябрь",
+        "amount": -41806.0
+      },
+      {
+        "date": "2026-10-09",
+        "document_number": "9188",
+        "counterparty": "ООО «ХимТекстильСнаб»",
+        "purpose": "Оплата по счету № ХТС-2311/26 от 05.10.2026",
+        "amount": -254755.52
+      },
+      {
+        "date": "2026-10-09",
+        "document_number": "9192",
+        "counterparty": "ООО «ФК «Золотые сферы»»",
+        "purpose": "Спонсорский взнос по договору ЗС-04/26 за октябрь",
+        "amount": -420000.0
+      }
+    ]
+  }
+}

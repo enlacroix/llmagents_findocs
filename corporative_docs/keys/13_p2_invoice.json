@@ -1,0 +1,81 @@
+{
+  "source_file": "13_Полис_КАСКО_и_счет_на_премию.pdf",
+  "page": 2,
+  "schema": "default_scheme.json",
+  "expected": {
+    "document_type": "invoice",
+    "title": "Счет",
+    "document_number": "С-0411829",
+    "document_date": "2026-10-09",
+    "currency": "RUB",
+    "period": null,
+    "parties": [
+      {
+        "role": "payee",
+        "name": "АО «Страховая компания «Гарант-Полис»»",
+        "inn": "7705098712",
+        "kpp": "770501001",
+        "ogrn": null,
+        "address": "115054, г. Москва, ул. Валовая, д. 8, стр. 2",
+        "phone": null,
+        "email": null,
+        "bank_account": "40701810800000098712",
+        "bank_name": "АО «Платежом-Красен-Банк»",
+        "bik": "044500412",
+        "corr_account": "30101810900000000412",
+        "representative_name": null,
+        "representative_position": null
+      },
+      {
+        "role": "payer",
+        "name": "ООО «Чистые руки»",
+        "inn": "7700004127",
+        "kpp": "770001001",
+        "ogrn": null,
+        "address": null,
+        "phone": null,
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      }
+    ],
+    "references": [
+      {
+        "type": "other",
+        "number": "ГП-77-0411829",
+        "date": "2026-10-09"
+      }
+    ],
+    "line_items": [
+      {
+        "line_number": 1,
+        "description": "Страховая премия по договору КАСКО, ТС BMW X5 xDrive40d, VIN WBA11EV0X0LK40427",
+        "unit": null,
+        "quantity": null,
+        "unit_price": null,
+        "amount": 214600.0
+      }
+    ],
+    "totals": {
+      "amount_without_vat": null,
+      "vat_rate": null,
+      "vat_amount": null,
+      "total": 214600.0
+    },
+    "signatories": [
+      {
+        "side": "payee",
+        "position": "Начальник отдела урегулирования корпоративных договоров",
+        "name": "Ларина Е. А."
+      }
+    ],
+    "stamps": [],
+    "handwritten_notes": [
+      "в оплату — до 14.10 НК"
+    ]
+  }
+}

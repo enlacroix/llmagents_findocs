@@ -1,0 +1,261 @@
+{
+  "source_file": "03_Счет_и_передаточный_документ.pdf",
+  "page": 1,
+  "schema": "default_scheme.json",
+  "expected": {
+    "document_type": "invoice",
+    "title": "Счет на оплату",
+    "document_number": "ХТС-2197/26",
+    "document_date": "2026-09-16",
+    "currency": "RUB",
+    "period": null,
+    "parties": [
+      {
+        "role": "supplier",
+        "name": "ООО «ХимТекстильСнаб»",
+        "inn": "5900002197",
+        "kpp": "590001001",
+        "ogrn": "1235900000000",
+        "address": "614000, г. Пермь, ул. Промышленная, д. 28, склад 4",
+        "phone": "+7 (342) 000-18-27",
+        "email": "docs@hts-example.ru",
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      },
+      {
+        "role": "buyer",
+        "name": "ООО «Чистые руки»",
+        "inn": "7700004127",
+        "kpp": "770001001",
+        "ogrn": null,
+        "address": "125315, г. Москва, ул. Викторенко, д. 6, стр. 1",
+        "phone": "+7 (495) 000-45-67",
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      },
+      {
+        "role": "consignee",
+        "name": "Подразделение CH-03",
+        "inn": null,
+        "kpp": null,
+        "ogrn": null,
+        "address": "г. Москва, ул. Монтажная, д. 19, стр. 4",
+        "phone": null,
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      }
+    ],
+    "references": [
+      {
+        "type": "contract",
+        "number": "41-П/26",
+        "date": "2026-02-11"
+      },
+      {
+        "type": "request",
+        "number": "ХОЗ-184",
+        "date": "2026-09-14"
+      }
+    ],
+    "line_items": [
+      {
+        "line_number": 1,
+        "description": "Перчатки нитриловые, размер M, уп. 100 шт",
+        "unit": "уп.",
+        "quantity": 18,
+        "unit_price": 486,
+        "amount": 8748
+      },
+      {
+        "line_number": 2,
+        "description": "Салфетка техническая нетканая 35×40 см, рулон",
+        "unit": "рул.",
+        "quantity": 12,
+        "unit_price": 1165,
+        "amount": 13980
+      },
+      {
+        "line_number": 3,
+        "description": "Средство моющее нейтральное 5 л",
+        "unit": "кан.",
+        "quantity": 10,
+        "unit_price": 1240,
+        "amount": 12400
+      },
+      {
+        "line_number": 4,
+        "description": "Кислота ортофосфорная техническая 85%, канистра 10 л",
+        "unit": "кан.",
+        "quantity": 6,
+        "unit_price": 4680,
+        "amount": 28080
+      },
+      {
+        "line_number": 5,
+        "description": "Канистра ПНД 20 л с крышкой, натуральная",
+        "unit": "шт.",
+        "quantity": 24,
+        "unit_price": 742,
+        "amount": 17808
+      },
+      {
+        "line_number": 6,
+        "description": "Тара пластиковая 5 л с контрольным кольцом",
+        "unit": "шт.",
+        "quantity": 40,
+        "unit_price": 228,
+        "amount": 9120
+      },
+      {
+        "line_number": 7,
+        "description": "Канат полиамидный 12 мм, бухта 50 м",
+        "unit": "бух.",
+        "quantity": 4,
+        "unit_price": 3860,
+        "amount": 15440
+      },
+      {
+        "line_number": 8,
+        "description": "Веревка полипропиленовая 8 мм, моток 100 м",
+        "unit": "мот.",
+        "quantity": 3,
+        "unit_price": 2140,
+        "amount": 6420
+      },
+      {
+        "line_number": 9,
+        "description": "Напильник плоский № 2, 250 мм",
+        "unit": "шт.",
+        "quantity": 8,
+        "unit_price": 684,
+        "amount": 5472
+      },
+      {
+        "line_number": 10,
+        "description": "Напильник круглый № 1, 200 мм",
+        "unit": "шт.",
+        "quantity": 6,
+        "unit_price": 596,
+        "amount": 3576
+      },
+      {
+        "line_number": 11,
+        "description": "Щетка хозяйственная жесткая 280 мм",
+        "unit": "шт.",
+        "quantity": 18,
+        "unit_price": 318,
+        "amount": 5724
+      },
+      {
+        "line_number": 12,
+        "description": "Пакет полиэтиленовый усиленный 70×110 см",
+        "unit": "уп.",
+        "quantity": 10,
+        "unit_price": 1084,
+        "amount": 10840
+      },
+      {
+        "line_number": 13,
+        "description": "Скотч упаковочный 48 мм × 66 м",
+        "unit": "шт.",
+        "quantity": 36,
+        "unit_price": 176,
+        "amount": 6336
+      },
+      {
+        "line_number": 14,
+        "description": "Маркер промышленный черный",
+        "unit": "шт.",
+        "quantity": 12,
+        "unit_price": 284,
+        "amount": 3408
+      },
+      {
+        "line_number": 15,
+        "description": "Очки защитные прозрачные",
+        "unit": "шт.",
+        "quantity": 12,
+        "unit_price": 538,
+        "amount": 6456
+      },
+      {
+        "line_number": 16,
+        "description": "Фартук ПВХ химстойкий",
+        "unit": "шт.",
+        "quantity": 6,
+        "unit_price": 1482,
+        "amount": 8892
+      },
+      {
+        "line_number": 17,
+        "description": "Ведро пластиковое 12 л с крышкой",
+        "unit": "шт.",
+        "quantity": 12,
+        "unit_price": 616,
+        "amount": 7392
+      },
+      {
+        "line_number": 18,
+        "description": "Крепежный хомут 4,8×300 мм, уп. 100 шт",
+        "unit": "уп.",
+        "quantity": 8,
+        "unit_price": 412,
+        "amount": 3296
+      },
+      {
+        "line_number": 19,
+        "description": "Бахилы повышенной плотности, уп. 100 пар",
+        "unit": "уп.",
+        "quantity": 16,
+        "unit_price": 694,
+        "amount": 11104
+      },
+      {
+        "line_number": 20,
+        "description": "Полотенце бумажное, 2 слоя, рулон",
+        "unit": "уп.",
+        "quantity": 24,
+        "unit_price": 512,
+        "amount": 12288
+      }
+    ],
+    "totals": {
+      "amount_without_vat": 196780.0,
+      "vat_rate": 22,
+      "vat_amount": 43291.6,
+      "total": 240071.6
+    },
+    "signatories": [
+      {
+        "side": "supplier",
+        "position": "Руководитель",
+        "name": "Смирнов О. П."
+      },
+      {
+        "side": "supplier",
+        "position": "Бухгалтер",
+        "name": "Павлова Е. Н."
+      }
+    ],
+    "stamps": [
+      "ООО «ХимТекстильСнаб» ИНН 5900002197 ОГРН 1235900000000 Россия г. Пермь"
+    ],
+    "handwritten_notes": [
+      "Счёт принят к оплате Петрова 16.09.2026"
+    ]
+  }
+}

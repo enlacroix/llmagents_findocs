@@ -1,0 +1,95 @@
+{
+  "source_file": "12_Договор-заявка_и_акт_приема-передачи_ТС.pdf",
+  "page": 2,
+  "schema": "vehicle_transfer_act.json",
+  "expected": {
+    "document_type": "vehicle_transfer_act",
+    "title": "Акт приема-передачи транспортного средства",
+    "document_number": null,
+    "document_date": "2026-10-05",
+    "currency": null,
+    "period": null,
+    "parties": [
+      {
+        "role": "forwarder",
+        "name": "ООО «Балтийская Экспедиция»",
+        "inn": null,
+        "kpp": null,
+        "ogrn": null,
+        "address": null,
+        "phone": null,
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": "Мартыненко Олег Викторович",
+        "representative_position": "водитель-экспедитор"
+      },
+      {
+        "role": "customer",
+        "name": "ООО «Чистые руки»",
+        "inn": null,
+        "kpp": null,
+        "ogrn": null,
+        "address": null,
+        "phone": null,
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": "Шадипов Марк Ильич",
+        "representative_position": null
+      }
+    ],
+    "references": [
+      {
+        "type": "contract",
+        "number": "БЭ-1029",
+        "date": "2026-09-22"
+      }
+    ],
+    "line_items": [],
+    "totals": null,
+    "signatories": [
+      {
+        "side": "forwarder",
+        "position": null,
+        "name": "Мартыненко О. В."
+      },
+      {
+        "side": "customer",
+        "position": null,
+        "name": "Шадипов М. И."
+      }
+    ],
+    "stamps": [
+      "ООО «ЧИСТЫЕ РУКИ» ПОЛУЧЕНО «05» 10 2026 г."
+    ],
+    "handwritten_notes": [
+      "ключи 2 шт. — ЛЧ"
+    ],
+    "place": "г. Москва",
+    "vehicle": {
+      "model": "BMW X5 xDrive40d",
+      "year": 2026,
+      "vin": "WBA11EV0X0LK40427",
+      "color": "черный (Carbon Black)",
+      "epts": "164301000427519",
+      "plate": "ВА 0427 39"
+    },
+    "odometer_km": 214,
+    "completeness": "ключи — 2 шт., карта-ключ — 1 шт., комплект ковриков, ремкомплект шин, аптечка, знак аварийной остановки",
+    "documents": "ЭПТС (выписка), свидетельство о безопасности конструкции ТС, CMR № 0927114, декларация на товары № 10012020/031026/5004127",
+    "transferred_by": {
+      "name": "Мартыненко Олег Викторович",
+      "basis": "доверенность № 117 от 24.09.2026"
+    },
+    "accepted_by": {
+      "name": "Шадипов Марк Ильич",
+      "basis": "доверенность № 29 от 01.10.2026"
+    },
+    "condition_notes": "Транспортное средство осмотрено при дневном освещении. Видимых повреждений лакокрасочного покрытия, кузова, остекления и салона не обнаружено. Стороны претензий друг к другу не имеют."
+  }
+}

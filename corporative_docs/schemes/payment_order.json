@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "payment_order.json",
+  "title": "Платежное поручение",
+  "description": "Базовая схема плюс назначение платежа и служебные поля формы 0401060. Плательщик и получатель — в parties (роли payer и payee) вместе с банковскими реквизитами; сумма — в totals.total, НДС из назначения — в totals.vat_amount.",
+  "allOf": [
+    {
+      "$ref": "default_scheme.json"
+    }
+  ],
+  "required": [
+    "purpose",
+    "payment_kind",
+    "operation_type",
+    "priority",
+    "received_by_bank",
+    "debited",
+    "executed"
+  ],
+  "properties": {
+    "document_type": {
+      "const": "payment_order"
+    },
+    "purpose": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Назначение платежа целиком."
+    },
+    "payment_kind": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Вид платежа, например «электронно»."
+    },
+    "operation_type": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Вид операции, например «01»."
+    },
+    "priority": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Очередность платежа."
+    },
+    "received_by_bank": {
+      "$ref": "default_scheme.json#/$defs/date"
+    },
+    "debited": {
+      "$ref": "default_scheme.json#/$defs/date"
+    },
+    "executed": {
+      "$ref": "default_scheme.json#/$defs/date",
+      "description": "Дата из отметки банка об исполнении."
+    }
+  },
+  "unevaluatedProperties": false
+}

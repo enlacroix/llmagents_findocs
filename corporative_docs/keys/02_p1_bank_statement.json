@@ -1,0 +1,191 @@
+{
+  "source_file": "02_Банковская_выписка_и_сводный_отчет.pdf",
+  "page": 1,
+  "schema": "bank_statement.json",
+  "expected": {
+    "document_type": "bank_statement",
+    "title": "Выписка по счету",
+    "document_number": null,
+    "document_date": null,
+    "currency": "RUB",
+    "period": {
+      "from": "2026-09-15",
+      "to": "2026-09-30"
+    },
+    "parties": [
+      {
+        "role": "bank",
+        "name": "АО «Платежом-Красен-Банк»",
+        "inn": null,
+        "kpp": null,
+        "ogrn": null,
+        "address": "107078, г. Москва, ул. Садовая-Черногрязская, д. 10, стр. 1",
+        "phone": "+7 (495) 755-22-11, доб. 331",
+        "email": "info@pkbank-example.ru",
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      },
+      {
+        "role": "client",
+        "name": "ООО «Чистые руки»",
+        "inn": null,
+        "kpp": null,
+        "ogrn": null,
+        "address": null,
+        "phone": null,
+        "email": null,
+        "bank_account": "40702810900000412700",
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      }
+    ],
+    "references": [],
+    "line_items": [],
+    "totals": null,
+    "signatories": [],
+    "stamps": [],
+    "handwritten_notes": [
+      "сверено с 51 счетом 01/10 НК"
+    ],
+    "generated_at": "2026-10-01T08:41:12",
+    "opening_balance": 4218735.2,
+    "total_credit": 4077770.0,
+    "total_debit": -4325280.0,
+    "closing_balance": 3971225.2,
+    "transactions": [
+      {
+        "date": "2026-09-15",
+        "document_number": "8451",
+        "counterparty": "АО «Эквайринг Сервис»",
+        "purpose": "Зачисление по реестру эквайринга № 2591",
+        "amount": 486240.0
+      },
+      {
+        "date": "2026-09-16",
+        "document_number": "8477",
+        "counterparty": "ООО «Город-Сервис»",
+        "purpose": "Клининг CH-00, CH-01 за сентябрь",
+        "amount": -118400.0
+      },
+      {
+        "date": "2026-09-16",
+        "document_number": "8482",
+        "counterparty": "ООО «ПраймКаст Альянс»",
+        "purpose": "Оплата по акту № PCA-09/26-44 от 15.09.2026",
+        "amount": -1812600.0
+      },
+      {
+        "date": "2026-09-17",
+        "document_number": "8519",
+        "counterparty": "АО «Эквайринг Сервис»",
+        "purpose": "Зачисление по реестру эквайринга № 2608",
+        "amount": 533710.0
+      },
+      {
+        "date": "2026-09-18",
+        "document_number": "8572",
+        "counterparty": "ООО «Линия Поставок»",
+        "purpose": "Расходные материалы по счету ЛП-1884",
+        "amount": -96870.0
+      },
+      {
+        "date": "2026-09-18",
+        "document_number": "8598",
+        "counterparty": "ООО «ФК «Золотые сферы»»",
+        "purpose": "Спонсорский взнос по договору ЗС-04/26",
+        "amount": -420000.0
+      },
+      {
+        "date": "2026-09-19",
+        "document_number": "8621",
+        "counterparty": "АО «Эквайринг Сервис»",
+        "purpose": "Зачисление по реестру эквайринга № 2624",
+        "amount": 624480.0
+      },
+      {
+        "date": "2026-09-21",
+        "document_number": "8670",
+        "counterparty": "ООО «Столичный Интернет»",
+        "purpose": "Услуги связи CH-00 - CH-05, сентябрь",
+        "amount": -41806.0
+      },
+      {
+        "date": "2026-09-22",
+        "document_number": "8714",
+        "counterparty": "ООО «ХимТекстильСнаб»",
+        "purpose": "Оплата счета ХТС-2197/26 от 16.09.2026",
+        "amount": -268914.0
+      },
+      {
+        "date": "2026-09-22",
+        "document_number": "8728",
+        "counterparty": "ООО «ТехСвет»",
+        "purpose": "Светильники и лампы по заявке ХОЗ-176",
+        "amount": -77430.0
+      },
+      {
+        "date": "2026-09-23",
+        "document_number": "8754",
+        "counterparty": "АО «Эквайринг Сервис»",
+        "purpose": "Зачисление по реестру эквайринга № 2661",
+        "amount": 571920.0
+      },
+      {
+        "date": "2026-09-24",
+        "document_number": "8797",
+        "counterparty": "ООО «ПраймКаст Альянс»",
+        "purpose": "Аванс по доп. соглашению № 3 к договору 18/02-MEDIA",
+        "amount": -640000.0
+      },
+      {
+        "date": "2026-09-25",
+        "document_number": "8831",
+        "counterparty": "ООО «МосАренда Плюс»",
+        "purpose": "Аренда CH-02 и CH-04 за октябрь",
+        "amount": -312000.0
+      },
+      {
+        "date": "2026-09-25",
+        "document_number": "8848",
+        "counterparty": "АО «Эквайринг Сервис»",
+        "purpose": "Зачисление по реестру эквайринга № 2689",
+        "amount": 693550.0
+      },
+      {
+        "date": "2026-09-28",
+        "document_number": "8927",
+        "counterparty": "ООО «Вода и Сервис»",
+        "purpose": "Питьевая вода, сентябрь",
+        "amount": -34260.0
+      },
+      {
+        "date": "2026-09-29",
+        "document_number": "8972",
+        "counterparty": "АО «Эквайринг Сервис»",
+        "purpose": "Зачисление по реестру эквайринга № 2720",
+        "amount": 748210.0
+      },
+      {
+        "date": "2026-09-30",
+        "document_number": "9011",
+        "counterparty": "ФНС (единый налоговый счет)",
+        "purpose": "Перечисление обязательных платежей",
+        "amount": -523000.0
+      },
+      {
+        "date": "2026-09-30",
+        "document_number": "9033",
+        "counterparty": "АО «Эквайринг Сервис»",
+        "purpose": "Зачисление по реестру эквайринга № 2741",
+        "amount": 419660.0
+      }
+    ]
+  }
+}

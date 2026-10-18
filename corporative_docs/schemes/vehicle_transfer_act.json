@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vehicle_transfer_act.json",
+  "title": "Акт приема-передачи транспортного средства",
+  "description": "Базовая схема плюс ТС, комплектность и лица, которые передали и приняли ТС.",
+  "allOf": [
+    {
+      "$ref": "default_scheme.json"
+    }
+  ],
+  "required": [
+    "place",
+    "vehicle",
+    "odometer_km",
+    "completeness",
+    "documents",
+    "transferred_by",
+    "accepted_by",
+    "condition_notes"
+  ],
+  "properties": {
+    "document_type": {
+      "const": "vehicle_transfer_act"
+    },
+    "place": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "vehicle": {
+      "$ref": "default_scheme.json#/$defs/vehicle"
+    },
+    "odometer_km": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "completeness": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Комплектность как напечатана."
+    },
+    "documents": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Переданные документы как напечатаны."
+    },
+    "transferred_by": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "basis"
+          ],
+          "properties": {
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "ФИО в именительном падеже."
+            },
+            "basis": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "Основание полномочий."
+            }
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "accepted_by": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "basis"
+          ],
+          "properties": {
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "ФИО в именительном падеже."
+            },
+            "basis": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "Основание полномочий."
+            }
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "condition_notes": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Заключение об осмотре."
+    }
+  },
+  "unevaluatedProperties": false
+}

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "company_card.json",
+  "title": "Карточка предприятия",
+  "description": "Базовая схема плюс адрес для корреспонденции, учредители, руководство и подразделения. Реквизиты самой организации — в parties с ролью issuer, юридический адрес — в её address.",
+  "allOf": [{ "$ref": "default_scheme.json" }],
+  "required": ["postal_address", "founders", "management", "branches"],
+  "properties": {
+    "document_type": { "const": "company_card" },
+
+    "postal_address": {
+      "type": ["string", "null"],
+      "description": "Адрес для корреспонденции."
+    },
+
+    "founders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "share_percent"],
+        "properties": {
+          "name": { "type": ["string", "null"] },
+          "share_percent": { "type": ["number", "null"] }
+        }
+      }
+    },
+
+    "management": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["position", "name"],
+        "properties": {
+          "position": { "type": ["string", "null"] },
+          "name": { "type": ["string", "null"] }
+        }
+      }
+    },
+
+    "branches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["code", "name", "address"],
+        "properties": {
+          "code": { "type": ["string", "null"] },
+          "name": { "type": ["string", "null"] },
+          "address": { "type": ["string", "null"] }
+        }
+      }
+    }
+  },
+  "unevaluatedProperties": false
+}

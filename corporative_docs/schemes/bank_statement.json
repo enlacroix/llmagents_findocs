@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "bank_statement.json",
+  "title": "Банковская выписка",
+  "description": "Базовая схема плюс остатки, обороты и операции. Банк — в parties с ролью bank, владелец счета — с ролью client. Суммы операций со знаком: + поступление, − списание.",
+  "allOf": [{ "$ref": "default_scheme.json" }],
+  "required": [
+    "generated_at",
+    "opening_balance",
+    "total_credit",
+    "total_debit",
+    "closing_balance",
+    "transactions"
+  ],
+  "properties": {
+    "document_type": { "const": "bank_statement" },
+
+    "generated_at": {
+      "type": ["string", "null"],
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(:\\d{2})?$",
+      "description": "Дата и время формирования выписки, YYYY-MM-DDTHH:MM:SS."
+    },
+
+    "opening_balance": { "$ref": "default_scheme.json#/$defs/money" },
+    "total_credit": { "$ref": "default_scheme.json#/$defs/money" },
+    "total_debit": { "$ref": "default_scheme.json#/$defs/money" },
+    "closing_balance": { "$ref": "default_scheme.json#/$defs/money" },
+
+    "transactions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["date", "document_number", "counterparty", "purpose", "amount"],
+        "properties": {
+          "date": {
+            "$ref": "default_scheme.json#/$defs/date",
+            "description": "Год берется из периода выписки."
+          },
+          "document_number": { "type": ["string", "null"] },
+          "counterparty": { "type": ["string", "null"] },
+          "purpose": { "type": ["string", "null"] },
+          "amount": { "$ref": "default_scheme.json#/$defs/money" }
+        }
+      }
+    }
+  },
+  "unevaluatedProperties": false
+}

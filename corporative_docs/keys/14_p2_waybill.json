@@ -1,0 +1,102 @@
+{
+  "source_file": "14_Доверенность_и_путевой_лист.pdf",
+  "page": 2,
+  "schema": "waybill.json",
+  "expected": {
+    "document_type": "waybill",
+    "title": "Путевой лист легкового автомобиля",
+    "document_number": "0007",
+    "document_date": "2026-10-14",
+    "currency": null,
+    "period": null,
+    "parties": [
+      {
+        "role": "issuer",
+        "name": "ООО «Чистые руки»",
+        "inn": null,
+        "kpp": null,
+        "ogrn": null,
+        "address": "109000, г. Москва, ул. Условная, д. 14, стр. 2, помещ. 6/1",
+        "phone": "+7 (495) 000-31-40",
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      }
+    ],
+    "references": [],
+    "line_items": [],
+    "totals": null,
+    "signatories": [
+      {
+        "side": null,
+        "position": "Медицинский работник",
+        "name": "Гладких И. Р."
+      },
+      {
+        "side": "issuer",
+        "position": "Ответственный",
+        "name": "Линь Чан"
+      },
+      {
+        "side": null,
+        "position": "водитель",
+        "name": "Шадипов М. И."
+      },
+      {
+        "side": "issuer",
+        "position": "Диспетчер",
+        "name": "Линь Чан"
+      }
+    ],
+    "stamps": [
+      "ООО «ЧИСТЫЕ РУКИ» ДЛЯ ПУТЕВЫХ ЛИСТОВ"
+    ],
+    "handwritten_notes": [],
+    "vehicle": {
+      "model": "BMW X5 xDrive40d",
+      "year": null,
+      "vin": "WBA11EV0X0LK40472",
+      "color": null,
+      "epts": null,
+      "plate": "«Транзит» ВА 0427 39"
+    },
+    "driver": {
+      "name": "Шадипов Марк Ильич",
+      "license": "77 00 000912"
+    },
+    "basis": "доверенность № 29 от 01.10.2026",
+    "trips": [
+      {
+        "assigned_to": "Линь Чан",
+        "from": "г. Москва, ул. Тихая, д. 32, помещ. 2",
+        "to": "г. Москва, Покровский б-р, д. 4/17, стр. 3",
+        "departure": "09:20",
+        "return": null
+      },
+      {
+        "assigned_to": "Линь Чан",
+        "from": "г. Москва, Покровский б-р, д. 4/17, стр. 3",
+        "to": "г. Москва, ул. Тверская, д. 15, стр. 1",
+        "departure": "12:40",
+        "return": null
+      },
+      {
+        "assigned_to": "Линь Чан",
+        "from": "г. Москва, ул. Тверская, д. 15, стр. 1",
+        "to": "г. Москва, ул. Тихая, д. 32, помещ. 2",
+        "departure": "16:10",
+        "return": "17:05"
+      }
+    ],
+    "odometer_out": 1186,
+    "odometer_in": 1241,
+    "fuel_out": 52,
+    "fuel_in": 44,
+    "time_out": "09:05",
+    "time_in": "17:05"
+  }
+}

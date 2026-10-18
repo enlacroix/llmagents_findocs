@@ -1,0 +1,104 @@
+{
+  "source_file": "13_Полис_КАСКО_и_счет_на_премию.pdf",
+  "page": 1,
+  "schema": "insurance_policy.json",
+  "expected": {
+    "document_type": "insurance_policy",
+    "title": "Полис страхования транспортного средства (КАСКО)",
+    "document_number": "ГП-77 № 0411829",
+    "document_date": "2026-10-09",
+    "currency": "RUB",
+    "period": {
+      "from": "2026-10-10",
+      "to": "2027-10-09"
+    },
+    "parties": [
+      {
+        "role": "insurer",
+        "name": "АО «Страховая компания «Гарант-Полис»»",
+        "inn": "7705098712",
+        "kpp": null,
+        "ogrn": null,
+        "address": "115054, г. Москва, ул. Валовая, д. 8, стр. 2",
+        "phone": "8 (800) 000-44-17",
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      },
+      {
+        "role": "policyholder",
+        "name": "ООО «Чистые руки»",
+        "inn": "7700004127",
+        "kpp": "770001001",
+        "ogrn": "1267700004127",
+        "address": "109000, г. Москва, ул. Условная, д. 14, стр. 2, помещ. 6/1",
+        "phone": null,
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      }
+    ],
+    "references": [],
+    "line_items": [],
+    "totals": {
+      "amount_without_vat": null,
+      "vat_rate": null,
+      "vat_amount": null,
+      "total": 214600.0
+    },
+    "signatories": [
+      {
+        "side": "insurer",
+        "position": "представитель",
+        "name": "Ларина Е. А."
+      },
+      {
+        "side": "policyholder",
+        "position": null,
+        "name": "Линь Чан"
+      }
+    ],
+    "stamps": [
+      "АКЦИОНЕРНОЕ ОБЩЕСТВО МОСКВА СТРАХОВАЯ КОМПАНИЯ «ГАРАНТ-ПОЛИС» для полисов"
+    ],
+    "handwritten_notes": [],
+    "vehicle": {
+      "model": "BMW X5 xDrive40d",
+      "year": 2026,
+      "vin": "WBA11EV0X0LK40427",
+      "color": null,
+      "epts": "164301000427519",
+      "plate": "ВА 0427 39"
+    },
+    "risks": [
+      "Ущерб",
+      "Хищение",
+      "Полная гибель"
+    ],
+    "sum_insured": 12800000.0,
+    "deductible": 30000.0,
+    "premium_due": "2026-10-14",
+    "drivers": [
+      {
+        "name": "Шадипов Марк Ильич",
+        "birth_date": "1997-03-14",
+        "license": "77 00 000912",
+        "experience_since": 2017
+      },
+      {
+        "name": "Линь Чан",
+        "birth_date": "1988-11-02",
+        "license": "77 00 000533",
+        "experience_since": 2012
+      }
+    ]
+  }
+}

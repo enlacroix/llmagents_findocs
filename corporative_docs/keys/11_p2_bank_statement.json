@@ -1,0 +1,100 @@
+{
+  "source_file": "11_Выписка_по_счету_октябрь.pdf",
+  "page": 2,
+  "schema": "bank_statement.json",
+  "expected": {
+    "document_type": "bank_statement",
+    "title": "Выписка из лицевого счета",
+    "document_number": null,
+    "document_date": null,
+    "currency": "RUB",
+    "period": {
+      "from": "2026-10-01",
+      "to": "2026-10-15"
+    },
+    "parties": [
+      {
+        "role": "bank",
+        "name": "АО «Платежом-Красен-Банк»",
+        "inn": null,
+        "kpp": null,
+        "ogrn": null,
+        "address": null,
+        "phone": null,
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": "044500412",
+        "corr_account": "30101810900000000412",
+        "representative_name": null,
+        "representative_position": null
+      },
+      {
+        "role": "client",
+        "name": "ООО «Чистые руки»",
+        "inn": "7700004127",
+        "kpp": null,
+        "ogrn": null,
+        "address": null,
+        "phone": null,
+        "email": null,
+        "bank_account": "40702810900000412700",
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      }
+    ],
+    "references": [],
+    "line_items": [],
+    "totals": null,
+    "signatories": [],
+    "stamps": [],
+    "handwritten_notes": [
+      "сверено с 51 сч. 16/10 НК"
+    ],
+    "generated_at": "2026-10-16T07:58:31",
+    "opening_balance": 3971225.2,
+    "total_credit": 4092000.0,
+    "total_debit": 3739761.52,
+    "closing_balance": 4323463.68,
+    "transactions": [
+      {
+        "date": "2026-10-12",
+        "document_number": "9214",
+        "counterparty": "ООО «ПраймКаст Альянс»",
+        "purpose": "Оплата по счету № PCA-10/26-51 от 01.10.2026",
+        "amount": -1490000.0
+      },
+      {
+        "date": "2026-10-12",
+        "document_number": "9220",
+        "counterparty": "АО «Эквайринг Сервис»",
+        "purpose": "Зачисление по реестру эквайринга № 2846",
+        "amount": 703480.0
+      },
+      {
+        "date": "2026-10-13",
+        "document_number": "9236",
+        "counterparty": "АО «СК «Гарант-Полис»»",
+        "purpose": "Страховая премия по полису КАСКО № ГП-77-0411829 от 09.10.2026",
+        "amount": -214600.0
+      },
+      {
+        "date": "2026-10-14",
+        "document_number": "9251",
+        "counterparty": "ФНС (единый налоговый счет)",
+        "purpose": "Перечисление обязательных платежей",
+        "amount": -486000.0
+      },
+      {
+        "date": "2026-10-15",
+        "document_number": "9268",
+        "counterparty": "АО «Эквайринг Сервис»",
+        "purpose": "Зачисление по реестру эквайринга № 2870",
+        "amount": 551090.0
+      }
+    ]
+  }
+}

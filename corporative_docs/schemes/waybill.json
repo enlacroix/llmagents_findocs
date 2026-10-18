@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "waybill.json",
+  "title": "Путевой лист легкового автомобиля",
+  "description": "Базовая схема плюс автомобиль, водитель, задание и показания приборов. Организация — в parties с ролью issuer.",
+  "allOf": [
+    {
+      "$ref": "default_scheme.json"
+    }
+  ],
+  "required": [
+    "vehicle",
+    "driver",
+    "basis",
+    "trips",
+    "odometer_out",
+    "odometer_in",
+    "fuel_out",
+    "fuel_in",
+    "time_out",
+    "time_in"
+  ],
+  "properties": {
+    "document_type": {
+      "const": "waybill"
+    },
+    "vehicle": {
+      "$ref": "default_scheme.json#/$defs/vehicle"
+    },
+    "driver": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "license"
+          ],
+          "properties": {
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "license": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "basis": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Основание управления ТС."
+    },
+    "trips": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assigned_to",
+          "from",
+          "to",
+          "departure",
+          "return"
+        ],
+        "properties": {
+          "assigned_to": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "from": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "to": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "departure": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "return": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "odometer_out": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "odometer_in": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "fuel_out": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "fuel_in": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "time_out": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "time_in": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "unevaluatedProperties": false
+}

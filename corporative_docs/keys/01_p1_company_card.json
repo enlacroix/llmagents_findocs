@@ -1,0 +1,86 @@
+{
+  "source_file": "01_Карточка_предприятия_и_приказ.pdf",
+  "page": 1,
+  "schema": "company_card.json",
+  "expected": {
+    "document_type": "company_card",
+    "title": "Карточка предприятия",
+    "document_number": "000-412-26",
+    "document_date": null,
+    "currency": null,
+    "period": null,
+    "parties": [
+      {
+        "role": "issuer",
+        "name": "ООО «Чистые руки»",
+        "inn": "7700004127",
+        "kpp": "770001001",
+        "ogrn": "1267700004127",
+        "address": "109000, г. Москва, ул. Условная, д. 14, стр. 2, помещ. 6/1",
+        "phone": "+7 (495) 000-31-40",
+        "email": "office@cleanhands-example.ru",
+        "bank_account": "40702810900000412700",
+        "bank_name": "АО «Платежом-Красен-Банк», г. Москва",
+        "bik": "044500412",
+        "corr_account": "30101810900000000412",
+        "representative_name": null,
+        "representative_position": null
+      }
+    ],
+    "references": [],
+    "line_items": [],
+    "totals": null,
+    "signatories": [],
+    "stamps": [],
+    "handwritten_notes": [],
+    "postal_address": "109000, г. Москва, а/я 214",
+    "founders": [
+      {
+        "name": "Гудман Сергей",
+        "share_percent": 100
+      }
+    ],
+    "management": [
+      {
+        "position": "Генеральный директор",
+        "name": "Гудман Сергей"
+      },
+      {
+        "position": "Исполнительный директор",
+        "name": "Линь Чан"
+      }
+    ],
+    "branches": [
+      {
+        "code": "CH-00",
+        "name": "Головной салон",
+        "address": "г. Москва, ул. Условная, д. 14, стр. 2"
+      },
+      {
+        "code": "CH-01",
+        "name": "Филиал № 1",
+        "address": "г. Москва, пр-д Северный, д. 8, корп. 1"
+      },
+      {
+        "code": "CH-02",
+        "name": "Филиал № 2",
+        "address": "г. Москва, ул. Полевая, д. 27"
+      },
+      {
+        "code": "CH-03",
+        "name": "Филиал № 3",
+        "address": "г. Москва, ул. Монтажная, д. 19, стр. 4"
+      },
+      {
+        "code": "CH-04",
+        "name": "Филиал № 4",
+        "address": "г. Москва, б-р Восточный, д. 11"
+      },
+      {
+        "code": "CH-05",
+        "name": "Филиал № 5",
+        "address": "г. Москва, ул. Тихая, д. 32, помещ. 2"
+      }
+    ]
+  }
+}

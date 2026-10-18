@@ -1,0 +1,16 @@
+# secrets
+.env
+
+# pipeline output and uploaded files
+results/
+uploads/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ide
+.idea/
+.vscode/

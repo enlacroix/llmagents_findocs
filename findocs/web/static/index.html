@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Я, Ревизор</title>
+  <link rel="icon" href="/icons/main%20logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans+Caption:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="desktop">
+  <div class="window main">
+    <div class="titlebar">
+      <img class="tb-icon" src="/icons/main%20logo.png" alt="">
+      <span class="tb-title">Я, Ревизор</span>
+      <span class="tb-sub">— проверка первичных документов</span>
+      <div class="tb-buttons" aria-hidden="true">
+        <button class="tb-btn" tabindex="-1" disabled>_</button>
+        <button class="tb-btn" tabindex="-1" disabled>□</button>
+        <button class="tb-btn close" tabindex="-1" disabled>✕</button>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <button class="tool" id="open-file"><span class="glyph">▲</span>Открыть PDF…</button>
+      <button class="tool" id="refresh"><span class="glyph">↻</span>Обновить</button>
+      <span class="sep"></span>
+      <button class="tool" id="recompute"><span class="glyph">Σ</span>Пересчитать метрики</button>
+      <span class="sep"></span>
+      <button class="tool" id="about"><span class="glyph">?</span>О программе</button>
+      <input type="file" id="file-input" accept="application/pdf,.pdf" hidden>
+    </div>
+
+    <div class="addressbar">
+      <label>Адрес</label>
+      <div class="address" id="address">Ревизор ▸ <b>Документы</b></div>
+    </div>
+
+    <div class="workspace">
+      <aside class="taskpane">
+        <div class="taskpane-panels">
+        <section class="panel">
+          <h2><button class="panel-toggle" aria-expanded="true">Проверка документов<span class="chev">▲</span></button></h2>
+          <div class="panel-body">
+            <button class="task-link" id="open-file-2"><span class="bullet">■</span>Загрузить скан PDF…</button>
+            <label class="check"><input type="checkbox" id="fresh-ocr"> Распознать образцы заново</label>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2><button class="panel-toggle" aria-expanded="true">Образцы<span class="chev">▲</span></button></h2>
+          <div class="panel-body" id="samples"><span class="muted">Загрузка…</span></div>
+        </section>
+
+        <section class="panel">
+          <h2><button class="panel-toggle" aria-expanded="true">Сводка<span class="chev">▲</span></button></h2>
+          <div class="panel-body">
+            <dl class="tally">
+              <dt>Проверено страниц</dt><dd id="t-total">0</dd>
+              <dt>Одобрено</dt><dd id="t-ok">0</dd>
+              <dt>На проверку человеку</dt><dd id="t-bad" class="bad">0</dd>
+            </dl>
+          </div>
+        </section>
+        </div>
+
+        <div class="assistant" aria-live="polite">
+          <div class="balloon" id="balloon"><b>Готов к ревизии.</b><span>Выберите образец слева или загрузите свой скан.</span></div>
+          <img id="assistant-img" src="/icons/iamready.png" alt="Помощник ревизора">
+        </div>
+      </aside>
+
+      <main class="content">
+        <div class="tabs" role="tablist">
+          <button class="tab" role="tab" aria-selected="true" data-tab="documents">Документы</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="queue">На проверку<span class="count" id="queue-count"></span></button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="registry">Справочник</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="metrics">Метрики</button>
+        </div>
+        <section class="tabpanel" id="tab-documents" role="tabpanel"></section>
+        <section class="tabpanel" id="tab-queue" role="tabpanel" hidden></section>
+        <section class="tabpanel" id="tab-registry" role="tabpanel" hidden></section>
+        <section class="tabpanel" id="tab-metrics" role="tabpanel" hidden></section>
+      </main>
+    </div>
+
+    <div class="statusbar">
+      <span id="status-text">Готово</span>
+      <span id="status-docs">Документов: 0</span>
+      <span>Модель: <span id="status-model">—</span></span>
+      <span><i class="dot" id="db-dot"></i>База данных</span>
+    </div>
+  </div>
+</div>
+
+<div class="window dialog" id="progress-dialog" hidden role="dialog" aria-labelledby="progress-title">
+  <div class="titlebar"><img class="tb-icon" src="/icons/main%20logo.png" alt=""><span class="tb-title" id="progress-title">Ревизия документа</span></div>
+  <div class="dialog-body">
+    <div class="progress-row">
+      <img id="progress-img" src="/icons/ocr%20working.png" alt="">
+      <div>
+        <div class="stage" id="progress-stage">Подготовка…</div>
+        <div class="file" id="progress-file"></div>
+        <div class="file" id="progress-page"></div>
+      </div>
+    </div>
+    <div class="xp-progress"><div id="progress-bar"></div></div>
+  </div>
+  <div class="dialog-buttons"><button class="btn" id="progress-close" hidden>Закрыть</button></div>
+</div>
+
+<div class="window dialog" id="details-dialog" hidden role="dialog" aria-labelledby="details-title">
+  <div class="titlebar">
+    <img class="tb-icon" src="/icons/main%20logo.png" alt="">
+    <span class="tb-title" id="details-title">Свойства документа</span>
+    <div class="tb-buttons"><button class="tb-btn close" data-close="details-dialog" aria-label="Закрыть">✕</button></div>
+  </div>
+  <div class="dialog-body">
+    <div class="tabs" role="tablist" id="details-tabs">
+      <button class="tab" role="tab" aria-selected="true" data-dtab="summary">Общие</button>
+      <button class="tab" role="tab" aria-selected="false" data-dtab="fields">Поля</button>
+      <button class="tab" role="tab" aria-selected="false" data-dtab="checks">Проверки</button>
+      <button class="tab" role="tab" aria-selected="false" data-dtab="trace">Ход проверки</button>
+      <button class="tab" role="tab" aria-selected="false" data-dtab="ocr">Текст OCR</button>
+      <button class="tab" role="tab" aria-selected="false" data-dtab="scan">Скан</button>
+    </div>
+    <section class="tabpanel" id="dtab-summary"></section>
+    <section class="tabpanel" id="dtab-fields" hidden></section>
+    <section class="tabpanel" id="dtab-checks" hidden></section>
+    <section class="tabpanel" id="dtab-trace" hidden></section>
+    <section class="tabpanel" id="dtab-ocr" hidden></section>
+    <section class="tabpanel" id="dtab-scan" hidden></section>
+  </div>
+  <div class="dialog-buttons" style="padding-top:10px"><button class="btn default" data-close="details-dialog">ОК</button></div>
+</div>
+
+<div class="window dialog" id="about-dialog" hidden role="dialog" aria-labelledby="about-title">
+  <div class="titlebar">
+    <img class="tb-icon" src="/icons/main%20logo.png" alt="">
+    <span class="tb-title" id="about-title">О программе</span>
+    <div class="tb-buttons"><button class="tb-btn close" data-close="about-dialog" aria-label="Закрыть">✕</button></div>
+  </div>
+  <div class="dialog-body">
+    <div class="about">
+      <img src="/icons/main%20logo.png" alt="">
+      <div>
+        <h3>Я, Ревизор</h3>
+        <p>Проверяет счета, акты, договоры и выписки. Сверяет суммы и реквизиты, а бухгалтеру отдает только документы с замечаниями.</p>
+        <p class="muted">Учебный проект. Все организации и реквизиты вымышлены.</p>
+      </div>
+    </div>
+  </div>
+  <div class="dialog-buttons"><button class="btn default" data-close="about-dialog">ОК</button></div>
+</div>
+
+<div class="taskbar">
+  <button class="start" id="start"><img src="/icons/iamready.png" alt="">ревизор</button>
+  <div class="task-button"><img src="/icons/main%20logo.png" alt="">Я, Ревизор</div>
+  <div class="tray" id="clock">--:--</div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

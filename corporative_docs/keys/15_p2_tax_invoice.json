@@ -1,0 +1,118 @@
+{
+  "source_file": "15_Акт_и_счет-фактура_клининг.pdf",
+  "page": 2,
+  "schema": "default_scheme.json",
+  "expected": {
+    "document_type": "tax_invoice",
+    "title": "Счет-фактура",
+    "document_number": "214",
+    "document_date": "2026-09-30",
+    "currency": "RUB",
+    "period": null,
+    "parties": [
+      {
+        "role": "supplier",
+        "name": "ООО «Город-Сервис»",
+        "inn": "7701456120",
+        "kpp": "770101001",
+        "ogrn": null,
+        "address": "105064, г. Москва, ул. Земляной Вал, д. 9, офис 314",
+        "phone": null,
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      },
+      {
+        "role": "buyer",
+        "name": "ООО «Чистые руки»",
+        "inn": "7700004127",
+        "kpp": "770001001",
+        "ogrn": null,
+        "address": "109000, г. Москва, ул. Условная, д. 14, стр. 2, помещ. 6/1",
+        "phone": null,
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      }
+    ],
+    "references": [
+      {
+        "type": "act",
+        "number": "214",
+        "date": "2026-09-30"
+      }
+    ],
+    "line_items": [
+      {
+        "line_number": 1,
+        "description": "Комплексная уборка помещений подразделения CH-02, сентябрь 2026 г.",
+        "unit": "усл.",
+        "quantity": 1,
+        "unit_price": 28524.59,
+        "amount": 28524.59
+      },
+      {
+        "line_number": 2,
+        "description": "Комплексная уборка помещений подразделения CH-03, сентябрь 2026 г.",
+        "unit": "усл.",
+        "quantity": 1,
+        "unit_price": 29672.13,
+        "amount": 29672.13
+      },
+      {
+        "line_number": 3,
+        "description": "Комплексная уборка помещений подразделения CH-04, сентябрь 2026 г.",
+        "unit": "усл.",
+        "quantity": 1,
+        "unit_price": 25737.7,
+        "amount": 25737.7
+      },
+      {
+        "line_number": 4,
+        "description": "Комплексная уборка помещений подразделения CH-05, сентябрь 2026 г.",
+        "unit": "усл.",
+        "quantity": 1,
+        "unit_price": 23442.62,
+        "amount": 23442.62
+      },
+      {
+        "line_number": 5,
+        "description": "Химчистка ковровых покрытий, CH-03, CH-05",
+        "unit": "кв. м",
+        "quantity": 116,
+        "unit_price": 81.97,
+        "amount": 9508.2
+      }
+    ],
+    "totals": {
+      "amount_without_vat": 116885.24,
+      "vat_rate": 22,
+      "vat_amount": 25714.76,
+      "total": 142600.0
+    },
+    "signatories": [
+      {
+        "side": "supplier",
+        "position": "Руководитель организации или иное уполномоченное лицо",
+        "name": "Абрамова Н. В."
+      },
+      {
+        "side": "supplier",
+        "position": "Главный бухгалтер или иное уполномоченное лицо",
+        "name": "Абрамова Н. В."
+      }
+    ],
+    "stamps": [
+      "ООО «ЧИСТЫЕ РУКИ» ВХ. № 1499 «01» октября 2026 г."
+    ],
+    "handwritten_notes": []
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "source_file": "04_Акт_оказанных_услуг_и_реестр.pdf",
+  "page": 1,
+  "schema": "default_scheme.json",
+  "expected": {
+    "document_type": "service_act",
+    "title": "Акт оказанных услуг",
+    "document_number": "PCA-09/26-44",
+    "document_date": null,
+    "currency": "RUB",
+    "period": {
+      "from": "2026-09-01",
+      "to": "2026-09-15"
+    },
+    "parties": [
+      {
+        "role": "contractor",
+        "name": "ООО «ПраймКаст Альянс»",
+        "inn": "7700008614",
+        "kpp": null,
+        "ogrn": null,
+        "address": "125047, г. Москва, ул. 1-я Тверская-Ямская, д. 23, стр. 1",
+        "phone": "+7 (495) 123-45-67",
+        "email": "info@primecast-alliance.ru",
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": "Симонюк Мария Дмитриевна",
+        "representative_position": "Генеральный директор"
+      },
+      {
+        "role": "customer",
+        "name": "ООО «Чистые руки»",
+        "inn": "7700004127",
+        "kpp": null,
+        "ogrn": null,
+        "address": null,
+        "phone": null,
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": "Линь Чан",
+        "representative_position": "Исполнительный директор"
+      }
+    ],
+    "references": [
+      {
+        "type": "contract",
+        "number": "18/02-MEDIA",
+        "date": "2026-02-18"
+      }
+    ],
+    "line_items": [
+      {
+        "line_number": 1,
+        "description": "Пакет размещений PC-SEP-A",
+        "unit": "усл.",
+        "quantity": 1,
+        "unit_price": null,
+        "amount": 1460000.0
+      },
+      {
+        "line_number": 2,
+        "description": "Подготовка графических материалов и адаптация форматов",
+        "unit": "усл.",
+        "quantity": 1,
+        "unit_price": null,
+        "amount": 184000.0
+      },
+      {
+        "line_number": 3,
+        "description": "Сводный отчет по размещениям и передача исходных материалов",
+        "unit": "усл.",
+        "quantity": 1,
+        "unit_price": null,
+        "amount": 168600.0
+      }
+    ],
+    "totals": {
+      "amount_without_vat": null,
+      "vat_rate": 22,
+      "vat_amount": 326862.3,
+      "total": 1812600.0
+    },
+    "signatories": [
+      {
+        "side": "contractor",
+        "position": "Генеральный директор",
+        "name": "Симонюк М. Д."
+      },
+      {
+        "side": "customer",
+        "position": "Исполнительный директор",
+        "name": "Линь Чан"
+      }
+    ],
+    "stamps": [
+      "Общество с ограниченной ответственностью «ПраймКаст Альянс» Москва"
+    ],
+    "handwritten_notes": []
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "source_file": "06_Счет_и_товарная_накладная.pdf",
+  "page": 2,
+  "schema": "transfer_document.json",
+  "expected": {
+    "document_type": "transfer_document",
+    "title": "Товарная накладная",
+    "document_number": "2311",
+    "document_date": "2026-10-08",
+    "currency": "RUB",
+    "period": null,
+    "parties": [
+      {
+        "role": "consignor",
+        "name": "ООО «ХимТекстильСнаб»",
+        "inn": "5900002197",
+        "kpp": "590001001",
+        "ogrn": null,
+        "address": "614000, г. Пермь, ул. Промышленная, д. 28, склад 4",
+        "phone": "+7 (342) 000-18-27",
+        "email": null,
+        "bank_account": "40702810649000021970",
+        "bank_name": "Пермский филиал АО «Уралстройкредит»",
+        "bik": "045773961",
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      },
+      {
+        "role": "consignee",
+        "name": "ООО «Чистые руки»",
+        "inn": "7700004127",
+        "kpp": "770001001",
+        "ogrn": null,
+        "address": "г. Москва, ул. Тихая, д. 32, помещ. 2",
+        "phone": null,
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      },
+      {
+        "role": "supplier",
+        "name": "ООО «ХимТекстильСнаб»",
+        "inn": "5900002197",
+        "kpp": "590001001",
+        "ogrn": null,
+        "address": "614000, г. Пермь, ул. Промышленная, д. 28, склад 4",
+        "phone": "+7 (342) 000-18-27",
+        "email": null,
+        "bank_account": "40702810649000021970",
+        "bank_name": null,
+        "bik": "045773961",
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      },
+      {
+        "role": "buyer",
+        "name": "ООО «Чистые руки»",
+        "inn": "7700004127",
+        "kpp": "770001001",
+        "ogrn": null,
+        "address": "109000, г. Москва, ул. Условная, д. 14, стр. 2, помещ. 6/1",
+        "phone": "+7 (495) 000-31-40",
+        "email": null,
+        "bank_account": "40702810900000412700",
+        "bank_name": "АО «Платежом-Красен-Банк»",
+        "bik": "044500412",
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      }
+    ],
+    "references": [
+      {
+        "type": "contract",
+        "number": "41-П/26",
+        "date": "2026-02-11"
+      },
+      {
+        "type": "other",
+        "number": "27",
+        "date": "2026-10-06"
+      }
+    ],
+    "line_items": [
+      {
+        "line_number": 1,
+        "description": "Кислота серная техническая 92,5%, канистра 10 л",
+        "unit": "кан.",
+        "quantity": 12,
+        "unit_price": 2150.0,
+        "amount": 25800.0
+      },
+      {
+        "line_number": 2,
+        "description": "Кислота ортофосфорная техническая 85%, канистра 10 л",
+        "unit": "кан.",
+        "quantity": 6,
+        "unit_price": 4680.0,
+        "amount": 28080.0
+      },
+      {
+        "line_number": 3,
+        "description": "Канистра ПНД 30 л с крышкой, натуральная",
+        "unit": "шт.",
+        "quantity": 30,
+        "unit_price": 890.0,
+        "amount": 26700.0
+      },
+      {
+        "line_number": 4,
+        "description": "Бочка пластиковая 120 л с крышкой и обручем",
+        "unit": "шт.",
+        "quantity": 4,
+        "unit_price": 3450.0,
+        "amount": 13800.0
+      },
+      {
+        "line_number": 5,
+        "description": "Пленка полиэтиленовая техническая 200 мкм, рулон 3×100 м",
+        "unit": "рул.",
+        "quantity": 3,
+        "unit_price": 6940.0,
+        "amount": 20820.0
+      },
+      {
+        "line_number": 6,
+        "description": "Мешок полипропиленовый 55×105 см, уп. 100 шт",
+        "unit": "уп.",
+        "quantity": 2,
+        "unit_price": 1980.0,
+        "amount": 3960.0
+      },
+      {
+        "line_number": 7,
+        "description": "Канат полиамидный 12 мм, бухта 50 м",
+        "unit": "бух.",
+        "quantity": 2,
+        "unit_price": 3860.0,
+        "amount": 7720.0
+      },
+      {
+        "line_number": 8,
+        "description": "Веревка полипропиленовая 8 мм, моток 100 м",
+        "unit": "мот.",
+        "quantity": 4,
+        "unit_price": 2140.0,
+        "amount": 8560.0
+      },
+      {
+        "line_number": 9,
+        "description": "Напильник плоский № 2, 250 мм",
+        "unit": "шт.",
+        "quantity": 6,
+        "unit_price": 684.0,
+        "amount": 4104.0
+      },
+      {
+        "line_number": 10,
+        "description": "Совок металлический с ручкой",
+        "unit": "шт.",
+        "quantity": 10,
+        "unit_price": 238.0,
+        "amount": 2380.0
+      },
+      {
+        "line_number": 11,
+        "description": "Перчатки нитриловые, размер L, уп. 100 шт",
+        "unit": "уп.",
+        "quantity": 20,
+        "unit_price": 486.0,
+        "amount": 9720.0
+      },
+      {
+        "line_number": 12,
+        "description": "Перчатки резиновые технические КЩС, пара",
+        "unit": "пар",
+        "quantity": 40,
+        "unit_price": 164.0,
+        "amount": 6560.0
+      },
+      {
+        "line_number": 13,
+        "description": "Салфетка техническая нетканая 35×40 см, рулон",
+        "unit": "рул.",
+        "quantity": 10,
+        "unit_price": 1165.0,
+        "amount": 11650.0
+      },
+      {
+        "line_number": 14,
+        "description": "Бахилы повышенной плотности, уп. 100 пар",
+        "unit": "уп.",
+        "quantity": 12,
+        "unit_price": 694.0,
+        "amount": 8328.0
+      },
+      {
+        "line_number": 15,
+        "description": "Скотч упаковочный 48 мм × 66 м",
+        "unit": "шт.",
+        "quantity": 24,
+        "unit_price": 176.0,
+        "amount": 4224.0
+      },
+      {
+        "line_number": 16,
+        "description": "Ведро пластиковое 12 л с крышкой",
+        "unit": "шт.",
+        "quantity": 10,
+        "unit_price": 616.0,
+        "amount": 6160.0
+      },
+      {
+        "line_number": 17,
+        "description": "Полотенце бумажное, 2 слоя, рулон",
+        "unit": "уп.",
+        "quantity": 20,
+        "unit_price": 512.0,
+        "amount": 10240.0
+      },
+      {
+        "line_number": 18,
+        "description": "Средство моющее нейтральное 5 л",
+        "unit": "кан.",
+        "quantity": 8,
+        "unit_price": 1240.0,
+        "amount": 9920.0
+      }
+    ],
+    "totals": {
+      "amount_without_vat": 208726.0,
+      "vat_rate": 22,
+      "vat_amount": 45919.72,
+      "total": 254645.72
+    },
+    "signatories": [
+      {
+        "side": "supplier",
+        "position": "Руководитель",
+        "name": "Смирнов О. П."
+      },
+      {
+        "side": "supplier",
+        "position": "Главный (старший) бухгалтер",
+        "name": "Павлова Е. Н."
+      },
+      {
+        "side": "supplier",
+        "position": "Кладовщик",
+        "name": "Куницын А. В."
+      },
+      {
+        "side": "buyer",
+        "position": "Исп. директор",
+        "name": "Линь Чан"
+      },
+      {
+        "side": "consignee",
+        "position": null,
+        "name": "Линь Чан"
+      }
+    ],
+    "stamps": [
+      "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ г. ПЕРМЬ «ХИМТЕКСТИЛЬСНАБ» ИНН 5900002197 ОГРН 1235900000000",
+      "ООО «ЧИСТЫЕ РУКИ» ПОЛУЧЕНО «08» 10 2026 г."
+    ],
+    "handwritten_notes": [
+      "CH-05, 14 мест принято, без замечаний"
+    ],
+    "upd_status": null,
+    "shipment": {
+      "shipment_date": "2026-10-08",
+      "delivery_place": "г. Москва, ул. Тихая, д. 32, помещ. 2",
+      "packages": 14,
+      "gross_weight_kg": 312.6
+    }
+  }
+}

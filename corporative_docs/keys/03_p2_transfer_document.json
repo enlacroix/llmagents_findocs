@@ -1,0 +1,97 @@
+{
+  "source_file": "03_Счет_и_передаточный_документ.pdf",
+  "page": 2,
+  "schema": "transfer_document.json",
+  "expected": {
+    "document_type": "transfer_document",
+    "title": "Универсальный передаточный документ",
+    "document_number": null,
+    "document_date": null,
+    "currency": "RUB",
+    "period": null,
+    "parties": [
+      {
+        "role": "supplier",
+        "name": "ООО «ХимТекстильСнаб»",
+        "inn": "5900002197",
+        "kpp": null,
+        "ogrn": "1235900000000",
+        "address": "614000, г. Пермь, ул. Промышленная, д. 28, склад 4",
+        "phone": "+7 (342) 000-18-27",
+        "email": "docs@hts-example.ru",
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      },
+      {
+        "role": "buyer",
+        "name": "ООО «Чистые руки»",
+        "inn": null,
+        "kpp": null,
+        "ogrn": null,
+        "address": null,
+        "phone": null,
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": null,
+        "representative_position": null
+      }
+    ],
+    "references": [
+      {
+        "type": "invoice",
+        "number": "ХТС-2197/26",
+        "date": null
+      },
+      {
+        "type": "request",
+        "number": "ХОЗ-184",
+        "date": null
+      },
+      {
+        "type": "transport_document",
+        "number": "МЛ-522/26",
+        "date": "2026-09-23"
+      }
+    ],
+    "line_items": [],
+    "totals": {
+      "amount_without_vat": 196780.0,
+      "vat_rate": 22,
+      "vat_amount": 43291.6,
+      "total": 240071.6
+    },
+    "signatories": [
+      {
+        "side": "supplier",
+        "position": "Кладовщик",
+        "name": "Куницын А. В."
+      },
+      {
+        "side": "buyer",
+        "position": "Представитель",
+        "name": "Линь Чан"
+      }
+    ],
+    "stamps": [
+      "ООО «Чистые руки» ПОЛУЧЕНО 23.09.2026",
+      "ООО «ХимТекстильСнаб» ИНН 5900002197 ОГРН 1235900000000 Россия г. Пермь"
+    ],
+    "handwritten_notes": [
+      "CH-03 по заявке 184 11 мест, без замечаний"
+    ],
+    "upd_status": 2,
+    "shipment": {
+      "shipment_date": "2026-09-23",
+      "delivery_place": "г. Москва, ул. Монтажная, д. 19, стр. 4",
+      "packages": 11,
+      "gross_weight_kg": 186.4
+    }
+  }
+}

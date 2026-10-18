@@ -1,0 +1,117 @@
+{
+  "source_file": "05_Договор_спонсорской_поддержки_и_план.pdf",
+  "page": 2,
+  "schema": "contract_appendix.json",
+  "expected": {
+    "document_type": "contract_appendix",
+    "title": "План и смета мероприятий",
+    "document_number": "2",
+    "document_date": null,
+    "currency": "RUB",
+    "period": {
+      "from": "2026-09-01",
+      "to": "2026-09-30"
+    },
+    "parties": [],
+    "references": [
+      {
+        "type": "contract",
+        "number": "ЗС-04/26",
+        "date": "2026-04-01"
+      }
+    ],
+    "line_items": [],
+    "totals": {
+      "amount_without_vat": null,
+      "vat_rate": null,
+      "vat_amount": null,
+      "total": 420000.0
+    },
+    "signatories": [],
+    "stamps": [
+      "Общество с ограниченной ответственностью «Чистые руки» Москва"
+    ],
+    "handwritten_notes": [
+      "оригинал в папке ЗС-04 / акт за сентябрь после 30.09"
+    ],
+    "events": [
+      {
+        "line_number": 1,
+        "name": "Открытые тренировочные дни клуба",
+        "dates": "05-26.09",
+        "responsible": "Сафронов П. А.",
+        "amount": 126000.0
+      },
+      {
+        "line_number": 2,
+        "name": "Аренда дополнительной тренировочной зоны и инвентаря",
+        "dates": "01-30.09",
+        "responsible": "Кравцов А. П.",
+        "amount": 84000.0
+      },
+      {
+        "line_number": 3,
+        "name": "Выездное сопровождение презентационных мероприятий партнеров",
+        "dates": "11-29.09",
+        "responsible": "Мельник В. В.",
+        "amount": 96000.0
+      },
+      {
+        "line_number": 4,
+        "name": "Изготовление и размещение рекламных носителей Спонсора",
+        "dates": "01-30.09",
+        "responsible": "Серов Д. И.",
+        "amount": 62000.0
+      },
+      {
+        "line_number": 5,
+        "name": "Организационные расходы по мероприятиям",
+        "dates": "01-30.09",
+        "responsible": "Сафронов П. А.",
+        "amount": 52000.0
+      }
+    ],
+    "approval": {
+      "organization": "ООО «Чистые руки»",
+      "date": "2026-09-17"
+    },
+    "accredited_persons": [
+      {
+        "full_name": "Кравцов Алексей Петрович",
+        "role": "тренер",
+        "internal_number": "ZS-041",
+        "access": "общий"
+      },
+      {
+        "full_name": "Мельник Виктор Вадимович",
+        "role": "координатор",
+        "internal_number": "ZS-052",
+        "access": "выездные мероприятия"
+      },
+      {
+        "full_name": "Серов Денис Игоревич",
+        "role": "технический сотрудник",
+        "internal_number": "ZS-063",
+        "access": "монтаж / демонтаж"
+      },
+      {
+        "full_name": "Беляев Артем Русланович",
+        "role": "спортсмен",
+        "internal_number": "ZS-071",
+        "access": "по списку"
+      },
+      {
+        "full_name": "Ким Антон Сергеевич",
+        "role": "спортсмен",
+        "internal_number": "ZS-075",
+        "access": "по списку"
+      },
+      {
+        "full_name": "Орлов Илья Николаевич",
+        "role": "спортсмен",
+        "internal_number": "ZS-081",
+        "access": "по списку"
+      }
+    ]
+  }
+}

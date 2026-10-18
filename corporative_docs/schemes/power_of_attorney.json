@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "power_of_attorney.json",
+  "title": "Доверенность",
+  "description": "Базовая схема плюс доверенное лицо и полномочия. Доверитель — в parties с ролью issuer.",
+  "allOf": [
+    {
+      "$ref": "default_scheme.json"
+    }
+  ],
+  "required": [
+    "attorney",
+    "powers",
+    "term",
+    "substitution_allowed"
+  ],
+  "properties": {
+    "document_type": {
+      "const": "power_of_attorney"
+    },
+    "attorney": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "birth_date",
+            "passport"
+          ],
+          "properties": {
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "ФИО в именительном падеже."
+            },
+            "birth_date": {
+              "$ref": "default_scheme.json#/$defs/date"
+            },
+            "passport": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "powers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Полномочия по пунктам, без номеров."
+    },
+    "term": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Срок действия, как напечатан."
+    },
+    "substitution_allowed": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    }
+  },
+  "unevaluatedProperties": false
+}

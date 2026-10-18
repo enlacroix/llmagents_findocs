@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "reconciliation_act.json",
+  "title": "Акт сверки взаимных расчетов",
+  "description": "Базовая схема плюс сальдо, обороты и записи. Берутся данные первой стороны (левая половина акта); сумма в колонке «Кредит» сальдо записывается в *_credit, в «Дебет» — в *_debit.",
+  "allOf": [
+    {
+      "$ref": "default_scheme.json"
+    }
+  ],
+  "required": [
+    "data_of",
+    "opening_debit",
+    "opening_credit",
+    "turnover_debit",
+    "turnover_credit",
+    "closing_debit",
+    "closing_credit",
+    "entries",
+    "conclusion"
+  ],
+  "properties": {
+    "document_type": {
+      "const": "reconciliation_act"
+    },
+    "data_of": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Чьи данные взяты: наименование первой стороны."
+    },
+    "opening_debit": {
+      "$ref": "default_scheme.json#/$defs/money"
+    },
+    "opening_credit": {
+      "$ref": "default_scheme.json#/$defs/money"
+    },
+    "turnover_debit": {
+      "$ref": "default_scheme.json#/$defs/money"
+    },
+    "turnover_credit": {
+      "$ref": "default_scheme.json#/$defs/money"
+    },
+    "closing_debit": {
+      "$ref": "default_scheme.json#/$defs/money"
+    },
+    "closing_credit": {
+      "$ref": "default_scheme.json#/$defs/money"
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "date",
+          "document",
+          "debit",
+          "credit"
+        ],
+        "properties": {
+          "date": {
+            "$ref": "default_scheme.json#/$defs/date"
+          },
+          "document": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "debit": {
+            "$ref": "default_scheme.json#/$defs/money"
+          },
+          "credit": {
+            "$ref": "default_scheme.json#/$defs/money"
+          }
+        }
+      }
+    },
+    "conclusion": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Итоговая фраза первой стороны о задолженности."
+    }
+  },
+  "unevaluatedProperties": false
+}

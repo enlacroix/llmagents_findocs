@@ -1,0 +1,122 @@
+{
+  "source_file": "09_Акт_и_список_участников.pdf",
+  "page": 1,
+  "schema": "default_scheme.json",
+  "expected": {
+    "document_type": "service_act",
+    "title": "Акт",
+    "document_number": "ЗС-09/26",
+    "document_date": "2026-09-30",
+    "currency": "RUB",
+    "period": {
+      "from": "2026-09-01",
+      "to": "2026-09-30"
+    },
+    "parties": [
+      {
+        "role": "recipient",
+        "name": "ООО «Фитнес-клуб «Золотые сферы»»",
+        "inn": null,
+        "kpp": null,
+        "ogrn": null,
+        "address": null,
+        "phone": null,
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": "Сафронов Павел Андреевич",
+        "representative_position": "Директор"
+      },
+      {
+        "role": "sponsor",
+        "name": "ООО «Чистые руки»",
+        "inn": null,
+        "kpp": null,
+        "ogrn": null,
+        "address": null,
+        "phone": null,
+        "email": null,
+        "bank_account": null,
+        "bank_name": null,
+        "bik": null,
+        "corr_account": null,
+        "representative_name": "Гудман Сергей",
+        "representative_position": "Генеральный директор"
+      }
+    ],
+    "references": [
+      {
+        "type": "contract",
+        "number": "ЗС-04/26",
+        "date": "2026-04-01"
+      }
+    ],
+    "line_items": [
+      {
+        "line_number": 1,
+        "description": "Проведение открытых тренировочных дней клуба (05-26.09.2026)",
+        "unit": null,
+        "quantity": null,
+        "unit_price": null,
+        "amount": 126000.0
+      },
+      {
+        "line_number": 2,
+        "description": "Аренда дополнительной тренировочной зоны и инвентаря",
+        "unit": null,
+        "quantity": null,
+        "unit_price": null,
+        "amount": 84000.0
+      },
+      {
+        "line_number": 3,
+        "description": "Выездное сопровождение презентационных мероприятий партнеров",
+        "unit": null,
+        "quantity": null,
+        "unit_price": null,
+        "amount": 96000.0
+      },
+      {
+        "line_number": 4,
+        "description": "Изготовление и размещение рекламных носителей Спонсора",
+        "unit": null,
+        "quantity": null,
+        "unit_price": null,
+        "amount": 62000.0
+      },
+      {
+        "line_number": 5,
+        "description": "Организационные расходы по мероприятиям",
+        "unit": null,
+        "quantity": null,
+        "unit_price": null,
+        "amount": 52000.0
+      }
+    ],
+    "totals": {
+      "amount_without_vat": null,
+      "vat_rate": null,
+      "vat_amount": null,
+      "total": 420000.0
+    },
+    "signatories": [
+      {
+        "side": "recipient",
+        "position": "Директор",
+        "name": "Сафронов П. А."
+      },
+      {
+        "side": "sponsor",
+        "position": "Генеральный директор",
+        "name": "Гудман С."
+      }
+    ],
+    "stamps": [
+      "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ МОСКВА «ЗОЛОТЫЕ СФЕРЫ» для документов",
+      "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ МОСКВА «ЧИСТЫЕ РУКИ»"
+    ],
+    "handwritten_notes": []
+  }
+}
